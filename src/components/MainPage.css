@@ -301,7 +301,7 @@ line-height: 280%; /* 458.333% */
     margin-top: 13.33px; /* 40px/3 */
     height: 294.67px; /* 884px/3 */
     background: url("../assets/mainphoto.png") lightgray 0px -0.1153px / 100% 100% no-repeat;
-    width: 481.67px; /* 1445px/3 */
+    width: 520px; /* 1445px/3 */
   }
   
   .service {
@@ -418,8 +418,8 @@ line-height: 280%; /* 458.333% */
   
   .footer_green {
     margin-top: 20.33px; /* 61px/3 */
-    width: 510px; /* 1530px/3 */
-    height: 55vh; /* 781px/3 */
+    width: 550px; /* 1530px/3 */
+    height: 70vh; /* 781px/3 */
     background: linear-gradient(to bottom, #00BA9D, white);
   }
   
@@ -447,7 +447,7 @@ line-height: 280%; /* 458.333% */
   }
   
   .footer_black {
-    width: 510px; /* 1530px/3 */
+    width: 550px; /* 1530px/3 */
     height: 64.33px; /* 193px/3 */
     background: #3E3E3E;
   }
