@@ -1,0 +1,109 @@
+html{
+    margin:0px;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#929292;
+
+ 
+}
+.header{
+    background-color: red;
+}
+
+.parent{
+    width:300px;
+    border:5px solid red;
+    overflow-x: hidden; 
+    float:left;
+  }
+  .child{
+    width:1000px;
+    float:left;
+    font-size:15px;
+    font-family:arial;
+    padding:10px;
+    cursor: pointer;
+  }
+.example img {
+    width: 100%;
+    position: relative;
+  }
+  
+  .example .overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 0%;
+    font-weight: bold;
+    text-align: right;
+    font-size: 30px;
+  }
+
+  .shape {
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    width: 20%; /* Adjust as needed */
+    height: 350px; /* Adjust as needed */
+    background-color: #00BA9D; /* Your desired color */
+    border-top-left-radius: 0; /* Top left corner */
+    border-top-right-radius: 0; /* Top right corner */
+    border-bottom-left-radius: 0; /* Bottom left corner */
+    border-bottom-right-radius: 50px; /* Bottom right corner, adjust the pixel value to get the desired roundness */
+  }
+
+ 
+  .service_sector{
+    display: flex;
+    /*background-color: red;*/
+
+  }
+  hr{
+    border:1px solid #6D6D6D;
+  }
+  .service_box{
+    padding:20px;
+    /*background-color: yellow;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .service_message{
+    font-size: large;
+    padding:20px;
+    width: 100%;
+    /*background-color: blue;*/
+ 
+  }
+
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    width: 300%; /* Adjust based on the number of slides */
+    transition: transform 0.3s ease-out;
+  }
+  
+  .slide {
+    width: 100%; /* This should match the parent's width */
+    flex-shrink: 0;
+    flex-grow: 1;
+    background-color: #4CAF50; /* Example color */
+    border-bottom-right-radius: 50px; /* Adjust the radius as needed */
+    /* Other styling for the slide */
+  }
+  img{
+    margin:0;
+  }
+  .endpage{
+    width: 100vw;
+    height: 100px;
+    background-color: #3E3E3E;
+    
+  }

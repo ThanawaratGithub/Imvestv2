@@ -1,0 +1,10 @@
+/* FadeEdge.css */
+.fade-edge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    background: linear-gradient(to bottom, #00BA9D, white);
+    height: 400px;
+
+  }

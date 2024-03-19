@@ -1,0 +1,25 @@
+/* HorizontalScrollMenu.css */
+.scroll-menu-container {
+    overflow: hidden;
+    cursor: grab;
+  }
+  
+  .scroll-menu-container.grabbing {
+    cursor: grabbing;
+  }
+  
+  .scroll-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    user-select: none; /* Prevents selecting text while dragging */
+  }
+  

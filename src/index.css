@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "LINE Seed Sans TH";
+
+  src: local('LineSeedSans'), url('./WOFF/LINESeedSansTH_W_Rg.woff') format('woff');
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   font-family: "LINE Seed Sans TH";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
