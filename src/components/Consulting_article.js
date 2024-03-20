@@ -16,9 +16,9 @@ function Consulting_article() {
           <div className="menu">
             <div className="menu_box">About us</div>
             <div className="menu_box">
-              <a href="Consulting_article">Consulting</a>
+              Consulting
             </div>
-            <div className="menu_box">Academy</div>
+            <div className="menu_box"><a href="Consulting_article">Academy</a></div>
             <div className="menu_box">Innovation</div>
             <div className="menu_box">Contact us</div>
             <div className="button_signin">Sign in</div>

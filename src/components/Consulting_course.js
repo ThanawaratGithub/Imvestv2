@@ -16,9 +16,9 @@ function Consulting_course() {
           <div className="menu">
             <div className="menu_box">About us</div>
             <div className="menu_box">
-              <a href="Consulting_article">Consulting</a>
+              Consulting
             </div>
-            <div className="menu_box">Academy</div>
+            <div className="menu_box"><a href="Consulting_article">Academy</a></div>
             <div className="menu_box">Innovation</div>
             <div className="menu_box">Contact us</div>
             <div className="button_signin">Sign in</div>
@@ -26,11 +26,11 @@ function Consulting_course() {
           <div className="underline"></div>
         </div>
       </div>
-      <div className="appbar_selector">
-        <div className="appbar_article">บทความน่าสนใจ</div>
-        <div className="appbar_course_group">
-          <div className="appbar_course">คอร์สเรียน</div>
-          <div className="searchbar">
+      <div className="appbar_selector_course">
+        <div className="appbar_article_course"><a href="Consulting_article">บทความน่าสนใจ</a></div>
+        <div className="appbar_course_group_course">
+          <div className="appbar_course_course"><a href="Consulting_course">คอร์สเรียน</a></div>
+          <div className="searchbar_course">
             <form action="/search" method="GET">
               <input
                 type="text"
@@ -43,24 +43,8 @@ function Consulting_course() {
           </div>
         </div>
       </div>
-      <div className="fader">
-      <table className="table" style={{width:'100%',paddingLeft:'60px'}}>
-  <tr>
-    <th><Card/></th>
-    <th><Card/></th>
-    <th><Card/></th>
-  </tr>
-  <tr>
-  <th><Card/></th>
-    <th><Card/></th>
-    <th><Card/></th>
-  </tr>
-  <tr>
-  <th><Card/></th>
-    <th><Card/></th>
-    <th><Card/></th>
-  </tr>
-</table>
+      <div className="fader_course">
+      COMING SOON
       </div>
     </>
   );

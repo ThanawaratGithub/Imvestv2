@@ -1,41 +1,48 @@
-.fader{
+.fader_course{
+    width: 1380px;
     position:relative;
     height: 163px;
-    background: linear-gradient(180deg, #C8F0C0 0%, rgba(217, 217, 217, 0.00) 100%);
+    background: linear-gradient(180deg, #89CDBA 0%, rgba(217, 217, 217, 0.00) 100%);
     margin-left:69px;
     margin-right:90px;
-    border-top: solid;
+    color: #000;
+font-family: "LINE Seed Sans TH";
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: 400px; /* 458.333% */
+text-align: center;
 
 
 }
-.appbar_selector{
+.appbar_selector_course{
         margin-top: 60px;
     margin-left:69px;
     margin-right:90px;
     display: flex;
+    width: 1380px;
+    
 
 }
-.appbar_course_group{
-    height: 100px;
-    border-bottom-width: 1px;
-}
+
 .search{
+    margin-left: 60px;
     width: 700px;
 height: 51px;
 border-radius: 50px;
 
 }
-.appbar_course_group{
-    width: 100%;
+.appbar_course_group_course{
+    width: 1512px;
+
+    flex-direction: row;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
 }
-.appbar_article{
+.appbar_article_course{
     width: 400px;
     height: 107px;
     border-radius: 10px 10px 0px 0px;
-background: #C8F0C0;
 color: #000;
 font-family: "LINE Seed Sans TH";
 font-size: 24px;
@@ -44,12 +51,11 @@ font-weight: 700;
 line-height: 110px; /* 458.333% */
 text-align: center;
 border-radius: 10px 10px 0px 0px;
-background: #C8F0C0;
 
 
 
 }
-.appbar_course{
+.appbar_course_course{
     width: 306px;
     height: 107px;
     border-radius: 10px 10px 0px 0px;
@@ -60,8 +66,8 @@ font-style: normal;
 font-weight: 700;
 line-height: 110px; /* 458.333% */
 text-align: center;
-
+background-color: #89CDBA;
 }
-.table{
+.table_course{
     border-spacing: 0 61px;
 }
