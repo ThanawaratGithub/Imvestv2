@@ -3,11 +3,46 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainPage from "./components/Mainpage";
+import Consulting_article from "./components/Consulting_article";
+import Consulting_course from "./components/Consulting_course";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="App">
+              <MainPage />
+            </div>
+          }
+        ></Route>
+
+        <Route
+          path="/Consulting_article"
+          element={
+            <>
+            <Consulting_article/>
+            </>
+          }
+        ></Route>
+
+        
+<Route
+          path="/Consulting_course"
+          element={
+            <>
+            <Consulting_course/>
+            </>
+          }
+        ></Route>
+      </Routes>
+
+
+    </BrowserRouter>
   </React.StrictMode>
 );
 

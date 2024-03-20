@@ -6,39 +6,7 @@ import Consulting_article from "./components/Consulting_article";
 import Consulting_course from "./components/Consulting_course";
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="App">
-              <MainPage />
-            </div>
-          }
-        ></Route>
-
-        <Route
-          path="/Consulting_article"
-          element={
-            <>
-            <Consulting_article/>
-            </>
-          }
-        ></Route>
-
-        
-<Route
-          path="/Consulting_course"
-          element={
-            <>
-            <Consulting_course/>
-            </>
-          }
-        ></Route>
-      </Routes>
-
-
-    </BrowserRouter>
+      <></>
   );
 }
 
