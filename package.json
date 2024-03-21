@@ -14,11 +14,12 @@
     "react-dom": "^18.2.0",
     "react-horizontal-scrolling-menu": "^2.8.2",
     "react-scripts": "5.0.1",
+    "swiper": "^11.0.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false && react-scripts build",  
+    "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
