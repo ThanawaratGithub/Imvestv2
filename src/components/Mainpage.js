@@ -7,10 +7,14 @@ import x from "../assets/X_logo.png";
 import email from "../assets/email_logo.png";
 import line from "../assets/Line_logo.png";
 import BackToTopButton from "./Backtotop";
+import { useEffect } from "react";
 function MainPage() {
+  var isMobile = window.innerWidth <= 700;
+
   return (
+    
     <>
-      <div className="lord">
+    {isMobile?<>this is mobile</>:<> <div className="lord">
         <div className="landlord">
       <div className="header">
         <div className="logo_box">
@@ -22,7 +26,7 @@ function MainPage() {
             <div className="menu_box"><a href="Consulting_service">Consulting</a></div>
             <div className="menu_box"><a href="Consulting_article">Academy</a></div>
             <div className="menu_box"><a href="Innovation">Innovation</a></div>
-            <div className="menu_box">Contact us</div>
+            <div className="menu_box"><a href="Contact">Contact us</a></div>
             <div className="button_signin">Sign in</div>
           </div>
           <div className="underline"></div>
@@ -105,7 +109,8 @@ function MainPage() {
       </div>
       <BackToTopButton/>
       </div>
-      </div>
+      </div></>}
+     
     </>
     
   );

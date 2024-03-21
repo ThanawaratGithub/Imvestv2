@@ -9,6 +9,7 @@ import Consulting_article from "./components/Consulting_article";
 import Consulting_course from "./components/Consulting_course";
 import Consulting_service from "./components/Consulting_service";
 import Innovation from "./components/Innovation";
+import Contact from "./components/Contact";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -56,6 +57,14 @@ root.render(
           element={
             <>
               <Innovation />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/Contact"
+          element={
+            <>
+              <Contact />
             </>
           }
         ></Route>
