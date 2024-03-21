@@ -8,6 +8,7 @@ import MainPage from "./components/Mainpage";
 import Consulting_article from "./components/Consulting_article";
 import Consulting_course from "./components/Consulting_course";
 import Consulting_service from "./components/Consulting_service";
+import Innovation from "./components/Innovation";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -40,11 +41,21 @@ root.render(
           }
         ></Route>
 
-<Route
+        <Route
           path="/Consulting_service"
           element={
             <>
               <Consulting_service />
+            </>
+          }
+        ></Route>
+
+        
+<Route
+          path="/Innovation"
+          element={
+            <>
+              <Innovation />
             </>
           }
         ></Route>
