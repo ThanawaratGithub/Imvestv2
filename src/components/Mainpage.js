@@ -9,9 +9,10 @@ import line from "../assets/Line_logo.png";
 import BackToTopButton from "./Backtotop";
 import AnchorTemporaryDrawer from "./Drawer";
 import './Mainpage_mol.css'
+import SampleComponent from "./Swiper";
 import { useEffect } from "react";
 function MainPage() {
-  var isMobile = window.innerWidth <= 5000;
+  var isMobile = window.innerWidth <= 500;
 
   return (
     
@@ -23,7 +24,7 @@ function MainPage() {
       <svg xmlns="http://www.w3.org/2000/svg" width="29" height="19" viewBox="0 0 29 19" fill="none">
 <path d="M0.625 18.75H28.375V15.6667H0.625V18.75ZM0.625 11.0417H28.375V7.95833H0.625V11.0417ZM0.625 0.25V3.33333H28.375V0.25H0.625Z" fill="black"/>
 </svg>
-<AnchorTemporaryDrawer/>
+<AnchorTemporaryDrawer/>  
     </div>
     
     
@@ -34,6 +35,8 @@ function MainPage() {
     
     </>:<> <div className="lord">
         <div className="landlord">
+        <SampleComponent/>  
+
       <div className="header">
         <div className="logo_box">
           <img src={pic}></img>
