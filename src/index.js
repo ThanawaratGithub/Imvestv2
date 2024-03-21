@@ -10,9 +10,7 @@ import Consulting_course from "./components/Consulting_course";
 import Consulting_service from "./components/Consulting_service";
 import Innovation from "./components/Innovation";
 import Contact from "./components/Contact";
-import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
-register();
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
