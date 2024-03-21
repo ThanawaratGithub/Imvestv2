@@ -10,7 +10,7 @@ import { Pagination } from 'swiper/modules';
 export default function SampleComponent() {
   return (
     <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper" style={{height:'500px'}}>
+      <Swiper pagination={true} modules={[Pagination]} className="mySwiper" >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
