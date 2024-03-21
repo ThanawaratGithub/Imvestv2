@@ -9,14 +9,20 @@ import line from "../assets/Line_logo.png";
 import BackToTopButton from "./Backtotop";
 import AnchorTemporaryDrawer from "./Drawer";
 import "./Mainpage_mol.css";
-import molser from '../assets/molser.png.png'
+import molser from "../assets/molser.png.png";
+import highlight from "../assets/highlight.png";
+import cheatail from "../assets/cheatail.png"
 import { useEffect } from "react";
+/* git rm -r --cached .
+git add --all .
+git commit -a -m "Versioning untracked files"
+git push origin master */
 function MainPage() {
   var isMobile = window.innerWidth <= 5000;
 
   return (
     <>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
       {isMobile ? (
         <>
@@ -46,6 +52,7 @@ function MainPage() {
                 fontStyle: "normal",
                 fontWeight: 700,
                 marginLeft: "20px",
+                paddingTop:'48px'
               }}
             >
               บริการของเรา
@@ -69,7 +76,8 @@ function MainPage() {
               }}
             >
               <swiper-container
-                pagination="true" navigation="true" 
+                pagination="true"
+                navigation="true"
                 className="mySwiper"
                 style={{
                   height: "550px",
@@ -124,7 +132,7 @@ function MainPage() {
                     </div>
                   </div>
                 </swiper-slide>
-                  <swiper-slide
+                <swiper-slide
                   style={{
                     borderRadius: "0px 0px 70px 0px",
                     position: "relative",
@@ -266,15 +274,240 @@ function MainPage() {
                   </div>
                 </swiper-slide>
               </swiper-container>
+              <div
+                style={{
+                  width: "323px",
+                  height: "67px",
+                  background: "#12574C",
+                  color: "white",
+                  borderRadius: "15px",
+                  fontFamily: '"LINE Seed Sans TH"',
+                  fontSize: "24px",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  lineHeight: "65px",
+                  textAlign: "center",
+                }}
+              >
+                เรียนรู้เพิ่มเติมเลย!
+              </div>
             </div>
+           
           </div>
+
+          <div className="mol_service" style={{height:'730px',background:'#E2F9CC',marginTop:'38px'}}>
+            {" "}
+            <div
+              style={{
+                color: "#3A3A3A",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "35px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                marginLeft: "20px",
+                paddingTop:'48px',
+              }}
+            >
+              Highlights
+            </div>
+            <div
+              style={{
+                width: "329px",
+                height: "2px",
+                background: "#6D6D6D",
+                marginLeft: "20px",
+              }}
+            ></div>
+            <div
+              style={{
+                marginTop: "28px",
+                width: "325px",
+                height: "325px",
+                borderRadius: "0px 0px 70px 0px",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            >
+              <swiper-container
+                pagination="true"
+                navigation="true"
+                className="mySwiper"
+                style={{
+                  height: "550px",
+                  borderRadius: "0px 0px 70px 0px",
+                  position: "relative",
+                }}
+              >
+                <swiper-slide
+                  style={{
+                    borderRadius: "30px 0px 70px 0px",
+                    position: "relative",
+                    background:'white'
+                  }}
+                >
+                  <img
+                    src={highlight}
+                    style={{
+                      position: "absolute",
+                      width: "325px",
+                      height: "325px",
+                    }}
+                  ></img>
+                  <div
+                    style={{
+                      marginTop: "349px",
+                      position: "absolute",
+                      width: "329px",
+                      height: "114px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        color: "#3A3A3A",
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "23px",
+                        fontStyle: "normal",
+                        fontWeight: 700,
+                        marginLeft:'20px'
+                      }}
+                    >
+Convention 2023                    </div>
+                    <div
+                      style={{
+                        color: "#3A3A3A",
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "16px",
+                        fontStyle: "normal",
+                        fontWeight: 400,
+                        lineHeight: '24px',
+                        width:'283px',
+                        height:'96px',                        marginLeft:'20px'
+
+                      }}
+                    >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide
+                  style={{
+                    borderRadius: "30px 0px 70px 0px",
+                    position: "relative",
+                    background:'white'
+                  }}
+                >
+                  <img
+                    src={highlight}
+                    style={{
+                      position: "absolute",
+                      width: "325px",
+                      height: "325px",
+                    }}
+                  ></img>
+                  <div
+                    style={{
+                      marginTop: "349px",
+                      position: "absolute",
+                      width: "329px",
+                      height: "114px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        color: "#3A3A3A",
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "23px",
+                        fontStyle: "normal",
+                        fontWeight: 700,
+                        marginLeft:'20px'
+                      }}
+                    >
+Convention 2023                    </div>
+                    <div
+                      style={{
+                        color: "#3A3A3A",
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "16px",
+                        fontStyle: "normal",
+                        fontWeight: 400,
+                        lineHeight: '24px',
+                        width:'283px',
+                        height:'96px',                        marginLeft:'20px'
+
+                      }}
+                    >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide
+                  style={{
+                    borderRadius: "30px 0px 70px 0px",
+                    position: "relative",
+                    background:'white'
+                  }}
+                >
+                  <img
+                    src={highlight}
+                    style={{
+                      position: "absolute",
+                      width: "325px",
+                      height: "325px",
+                    }}
+                  ></img>
+                  <div
+                    style={{
+                      marginTop: "349px",
+                      position: "absolute",
+                      width: "329px",
+                      height: "114px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        color: "#3A3A3A",
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "23px",
+                        fontStyle: "normal",
+                        fontWeight: 700,
+                        marginLeft:'20px'
+                      }}
+                    >
+Convention 2023                    </div>
+                    <div
+                      style={{
+                        color: "#3A3A3A",
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "16px",
+                        fontStyle: "normal",
+                        fontWeight: 400,
+                        lineHeight: '24px',
+                        width:'283px',
+                        height:'96px',                        marginLeft:'20px'
+
+                      }}
+                    >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </div>
+                  </div>
+                </swiper-slide>
+               
+              </swiper-container>
+            
+            </div>
+           
+          </div>
+          <img src={cheatail} style={{width:'100%'}}></img>
+       
         </>
       ) : (
         <>
           {" "}
           <div className="lord">
             <div className="landlord">
-
               <div className="header">
                 <div className="logo_box">
                   <img src={pic}></img>
