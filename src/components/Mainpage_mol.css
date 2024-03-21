@@ -1,0 +1,16 @@
+.molbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.molbar img{
+    width: 168px;
+height: 43px;
+margin-left: 16px;
+margin-top:16px;
+}
+.molbar svg{
+    margin-top: 25px;
+    margin-right: 20px;
+    align-self: center;
+}
