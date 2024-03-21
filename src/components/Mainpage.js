@@ -9,21 +9,15 @@ import line from "../assets/Line_logo.png";
 import BackToTopButton from "./Backtotop";
 import AnchorTemporaryDrawer from "./Drawer";
 import "./Mainpage_mol.css";
-import SampleComponent from "./Swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import molser from "../assets/molser.png.png";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "./Swiper.css";
-// import required modules
-import { Pagination } from "swiper/modules";
+import molser from '../assets/molser.png.png'
 import { useEffect } from "react";
 function MainPage() {
   var isMobile = window.innerWidth <= 5000;
 
   return (
     <>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
       {isMobile ? (
         <>
           <div className="molbar">
@@ -74,9 +68,8 @@ function MainPage() {
                 marginRight: "auto",
               }}
             >
-              <Swiper
-                pagination={true}
-                modules={[Pagination]}
+              <swiper-container
+                pagination="true" navigation="true" 
                 className="mySwiper"
                 style={{
                   height: "550px",
@@ -84,7 +77,7 @@ function MainPage() {
                   position: "relative",
                 }}
               >
-                <SwiperSlide
+                <swiper-slide
                   style={{
                     borderRadius: "0px 0px 70px 0px",
                     position: "relative",
@@ -130,8 +123,8 @@ function MainPage() {
                       ตั้งแต่ เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ
                     </div>
                   </div>
-                </SwiperSlide>
-                  <SwiperSlide
+                </swiper-slide>
+                  <swiper-slide
                   style={{
                     borderRadius: "0px 0px 70px 0px",
                     position: "relative",
@@ -177,8 +170,8 @@ function MainPage() {
                       ตั้งแต่ เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ
                     </div>
                   </div>
-                </SwiperSlide>
-                <SwiperSlide
+                </swiper-slide>
+                <swiper-slide
                   style={{
                     borderRadius: "0px 0px 70px 0px",
                     position: "relative",
@@ -224,8 +217,8 @@ function MainPage() {
                       ตั้งแต่ เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ
                     </div>
                   </div>
-                </SwiperSlide>
-                <SwiperSlide
+                </swiper-slide>
+                <swiper-slide
                   style={{
                     borderRadius: "0px 0px 70px 0px",
                     position: "relative",
@@ -271,8 +264,8 @@ function MainPage() {
                       ตั้งแต่ เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ
                     </div>
                   </div>
-                </SwiperSlide>
-              </Swiper>
+                </swiper-slide>
+              </swiper-container>
             </div>
           </div>
         </>
@@ -281,7 +274,6 @@ function MainPage() {
           {" "}
           <div className="lord">
             <div className="landlord">
-              <SampleComponent />
 
               <div className="header">
                 <div className="logo_box">
