@@ -1,16 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPage from "./components/Mainpage";
 import Consulting_article from "./components/Consulting_article";
 import Consulting_course from "./components/Consulting_course";
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Consulting_service from "./components/Consulting_service";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-     <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
@@ -25,23 +26,29 @@ root.render(
           path="/Consulting_article"
           element={
             <>
-            <Consulting_article/>
+              <Consulting_article />
             </>
           }
         ></Route>
 
-        
-<Route
+        <Route
           path="/Consulting_course"
           element={
             <>
-            <Consulting_course/>
+              <Consulting_course />
+            </>
+          }
+        ></Route>
+
+<Route
+          path="/Consulting_service"
+          element={
+            <>
+              <Consulting_service />
             </>
           }
         ></Route>
       </Routes>
-
-
     </BrowserRouter>
   </React.StrictMode>
 );

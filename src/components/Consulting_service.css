@@ -1,0 +1,158 @@
+
+.service_selector{
+    margin-top: 60px;
+    width: 1380px;
+    margin-left: 66px;
+    display: flex;
+    align-items: baseline;
+}
+.consulting_text{
+    height: 74px;
+    color: #000;
+    font-family: "LINE Seed Sans TH";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+.ourservice{
+    margin-left: 99px;
+    margin-right:193px;
+    width: 335px;
+    height: 74px;
+    flex-shrink: 0;
+    background: #C8F0C0;
+
+    color: #000;
+    text-align: center;
+    font-family: "LINE Seed Sans TH";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 300%;
+
+}
+.portfolio{
+
+    color: #000;
+    text-align: center;
+    font-family: "LINE Seed Sans TH";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+.service_fader{
+    margin-left: 66px;
+}
+.service_fader_top{
+    width:  1363px;
+    height: 163px;
+    background: linear-gradient(180deg, #C8F0C0 0%, rgba(217, 217, 217, 0.00) 100%);
+    padding-top: 100px;
+}
+.fader_text{
+    margin-left: 30px;
+    color: #000;
+font-family: "LINE Seed Sans TH";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px; /* 133.333% */
+display: flex;
+}
+.fader_pic{
+    width: 612px;
+height: 459px;
+background: #E4E4E4;}
+.service_fader_body{
+        display: flex;
+        gap: 40px;
+}
+.service_fader_bot{
+    width:  1363px;
+    height: 163px;
+    background: linear-gradient(0deg, #C8F0C0 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+.service_main{
+    margin-left: 27px;
+    
+}
+.service_content_top{
+    margin-top: 66px;
+    color: #12574C;
+font-family: "LINE Seed Sans TH";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px; /* 177.778% */
+}
+.service_content_body_text{
+    display: flex;
+width: 449px;
+height: 298px;
+flex-direction: column;
+justify-content: center;
+color: #114940;
+font-family: "LINE Seed Sans TH";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
+.pictop{
+
+position: relative;
+    width: 237px;
+height: 359px;
+border-radius: 10px 10px 70px 0px;
+background: #C8F0C0;
+}
+.pictop svg{
+    margin-top: 33px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+.picbot{
+    position:absolute;
+    top: 270px;
+    width: 237px;
+height: 89px;
+border-radius: 0px 0px 70px 0px;
+background: #56D7A6;
+color: #114940;
+font-family: "LINE Seed Sans TH";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+}
+.pictop_text{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    gap:11px;
+}
+.picbot_text{
+    margin: 23px 0px 0px 23px;
+
+}
+.pictop_group{
+    display: flex;
+}
+.service_content_body{
+    display: flex;
+}
+.service_content_body_pic{
+    display: flex;
+}
+.pictop_text_group{
+    margin-top:20px;
+}
+.service_content_body_text{
+
+    margin-top:72px;
+    margin-right: 88px;
+}
+.service_content_body_pic{
+    margin-top: 34px;
+    gap:43px;
+}
