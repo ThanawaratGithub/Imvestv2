@@ -14,10 +14,7 @@ import molser from "../assets/molser.png.png";
 import highlight from "../assets/highlight.png";
 import cheatail from "../assets/cheatail.png";
 import hi1 from "../assets/hi1.png";
-import hi2 from "../assets/hi2.png";
-import ScrollableList from "./Scrollablelist";
 import pic2 from "../assets/pic2.png";
-import MasonryLayout from "./MansoryLayout";
 import { useEffect } from "react";
 /* git rm -r --cached .
 git add --all .
