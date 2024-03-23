@@ -9,10 +9,104 @@ import x from "../assets/X_logo.png";
 import email from "../assets/email_logo.png";
 import line from "../assets/Line_logo.png";
 import pic2 from "../assets/pic2.png";
+import AnchorTemporaryDrawer from "./Drawer";
+
 function Consulting_course() {
+  var isMobile = window.innerWidth <= 5000;
+
   return (
+    
     <>
-      <div className="header">
+    {isMobile?(<>
+    
+      <div className="molbar">
+            <img src={pic}></img>
+
+            <AnchorTemporaryDrawer />
+          </div>
+      <div className="molsearch">
+            <form>
+              <input placeholder="ค้นหาสิ่งที่น่าสนใจ..."></input>
+            </form>
+          </div>
+
+          <div className="molar_select">
+            <div style={{ width: "350px", display: "flex" }}>
+              <div
+                className="molar_ar"
+                style={{
+                  width: "186px",
+                  height: "74px",
+                  borderRadius: "10px 10px 0px 0px",
+                  color: "#000",
+                  fontFamily: '"LINE Seed Sans TH"',
+                  fontSize: "20px",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  lineHeight: "80px",
+                  textAlign: "center",
+                }}
+              >
+                <a href="Consulting_article">บทความน่าสนใจ</a>
+              </div>
+              <div
+                className="molar_course"
+                style={{
+                  width: "164px",
+                  height: "74px",
+                  background: "#89CDBA",
+
+                  borderRadius: "10px 10px 0px 0px",
+                  color: "#000",
+                  fontFamily: '"LINE Seed Sans TH"',
+                  fontSize: "20px",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  lineHeight: "80px",
+                  textAlign: "center",
+                }}
+              >
+                <a href="Consulting_course">คอร์สเรียน</a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              width: "350px",
+              height: "163px",
+              background:
+                "linear-gradient(180deg, #89CDBA 0%, rgba(217, 217, 217, 0.00) 100%)",
+              marginLeft: "auto",
+              marginRight: "auto",
+              position: "relative",
+              
+            }}
+          >
+          <div style={{
+                  width: "164px",
+                  height: "74px",
+                  color: "#000",
+                  fontFamily: '"LINE Seed Sans TH"',
+                  fontSize: "20px",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  lineHeight: "80px",
+                  textAlign: "center",
+                  marginLeft:'auto',
+                  marginRight:'auto',
+                  paddingTop:'px'
+                }}>COMING SOON</div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </>):(<>   <div className="header">
         <div className="logo_box">
           <a href="/">
             {" "}
@@ -90,7 +184,8 @@ height: '59px',marginLeft:'110px',marginRight:'387px'}}></img>
                         <div>Sign in</div>
                       </div>
                     </div>
-                </div>
+                </div></>)}
+   
     </>
   );
 }
