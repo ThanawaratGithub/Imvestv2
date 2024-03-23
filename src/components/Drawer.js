@@ -41,7 +41,7 @@ export default function AnchorTemporaryDrawer() {
       <img src={pic} style={{width:'168px',height:'43px',marginLeft:'20px',marginTop:'40px',
     marginBottom:'40px'}}></img>
       {['About us', 'Consulting', 'Academy', 'Innovation', 'Contact'].map((text, index) => {
-  let path = '';
+  let path = '/';
   if (index === 1) {
     path = 'Consulting_service';
   } else if (index === 2) {

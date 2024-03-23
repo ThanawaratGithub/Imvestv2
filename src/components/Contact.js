@@ -9,7 +9,7 @@ import line from "../assets/Line_logo.png";
 import pic2 from "../assets/pic2.png";
 import AnchorTemporaryDrawer from "./Drawer";
 function Contact() {
-  var isMobile = window.innerWidth <= 5000;
+  var isMobile = window.innerWidth <= 500;
 
   return (
     <>
@@ -84,7 +84,46 @@ function Contact() {
 
             </div>
           </div>
+          <div className="momofooter" style={{marginTop:'30px',marginLeft:'auto',marginRight:'auto'}}>
+            <img src={pic2} className="foot1" ></img>
+            <div className="foot2">
+            <div style={{color:'white',display:'flex',gap:'90px',marginBottom:'32px',marginTop:'16px',lineHeight:'30px'}}>
+                  <div>
+                        <div><a href="/">About us</a></div>
+                        <div><a href="Consulting_article">Academy</a></div>
+
+                        <div><a href="Contact">Contact us</a></div>
+                      </div>
+                      <div>
+                        {" "}
+                        <div><a href="Consulting_service">Consulting</a></div>
+                        <div><a href="Innovation">Innovation</a></div>
+                        <div>Sign in</div>
+                      </div>
+                    </div>
+
+            </div>
+            <div className="foot3">
+
+            <div className="footer_log" style={{marginLeft:'16px'}}>
+                    <img src={line} style={{marginRight:'17px'}}></img>
+                    <img src={face} style={{marginRight:'17px'}}></img>
+
+                    <img src={ig} style={{marginRight:'17px'}}></img>
+
+                    <img src={link} style={{marginRight:'17px'}}></img>
+
+                    <img src={x} style={{marginRight:'17px'}}></img>
+
+                    <img src={email} style={{marginRight:'17px'}}></img>
+
+                  </div>
+                  © 2023 Impvest. All Rights Reserved
+            </div>
+
+          </div>
         </>
+        
       ) : (
         <>
           <>
@@ -99,7 +138,7 @@ function Contact() {
                     </div>
                     <div className="appbar">
                       <div className="menu">
-                        <div className="menu_box">About us</div>
+                        <div className="menu_box"><a href = '/'>About us</a></div>
                         <div className="menu_box">
                           <a href="Consulting_service">Consulting</a>
                         </div>
