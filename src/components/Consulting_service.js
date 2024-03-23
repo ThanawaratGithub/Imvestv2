@@ -19,313 +19,1720 @@ import hi1 from "../assets/hi1.png";
 import hi2 from "../assets/hi2.png";
 import ScrollableList from "./Scrollablelist";
 import pic2 from "../assets/pic2.png";
+import { SwipeableDrawer } from "@mui/material";
+import p11 from "../assets/1.1.png";
+import p12 from "../assets/1.2.png";
+import p13 from "../assets/1.3.png";
+import p21 from "../assets/2.1.png";
+import p22 from "../assets/2.2.png";
+import p23 from "../assets/2.3.png";
+import p31 from "../assets/3.1.png";
+import p32 from "../assets/3.2.png";
+import p33 from "../assets/3.3.png";
 function Consulting_service() {
+  var isMobile = window.innerWidth <= 5000;
+
   return (
     <>
-      <>
-        <div className="header">
-          <div className="logo_box">
-            <a href="/">
-              {" "}
-              <img src={pic}></img>
-            </a>
+      {isMobile ? (
+        <>
+          <div className="molbar">
+            <img src={pic}></img>
+
+            <AnchorTemporaryDrawer />
           </div>
-          <div className="appbar">
-            <div className="menu">
-            <div className="menu_box">About us</div>
-                    <div className="menu_box">
-                      <a href="Consulting_service">Consulting</a>
-                    </div>
-                    <div className="menu_box">
-                      <a href="Consulting_article">Academy</a>
-                    </div>
-                    <div className="menu_box">
-                      <a href="Innovation">Innovation</a>
-                    </div>
-                    <div className="menu_box">
-                      <a href="Contact">Contact us</a>
-                    </div>
-                    <div className="button_signin">Sign in</div>
+
+          <div className="molar_select">
+            <div style={{ width: "350px", display: "flex" }}>
+              <div
+                className="molar_ar"
+                style={{
+                  width: "186px",
+                  height: "74px",
+                  borderRadius: "10px 10px 0px 0px",
+                  background: "#C8F0C0",
+                  color: "#000",
+                  fontFamily: '"LINE Seed Sans TH"',
+                  fontSize: "20px",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  lineHeight: "80px",
+                  textAlign: "center",
+                }}
+              >
+                our service
+              </div>
+              <div
+                className="molar_course"
+                style={{
+                  width: "164px",
+                  height: "74px",
+                  borderRadius: "10px 10px 25px 10px",
+                  background: "white",
+                  color: "#000",
+                  fontFamily: '"LINE Seed Sans TH"',
+                  fontSize: "20px",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  lineHeight: "80px",
+                  textAlign: "center",
+                }}
+              >
+                <a href="Consulting_course">portfolio</a>
+              </div>
             </div>
-            <div className="underline"></div>
           </div>
-        </div>
-        <div className="service_selector">
-          <div className="consulting_text">Consulting</div>
-          <div className="ourservice">Our service</div>
-          <div className="portfolio"><a href="Consulting_portfolio">Portfolio</a></div>
-        </div>
-        <div></div>
-        <div className="service_fader">
-          <div className="service_fader_top">
-            {" "}
-            <div className="service_fader_body">
-              <div>
-                <div className="fader_text">
-                  Impvest พร้อมรับฟัง<br></br>
-                  และช่วยเหลือ SME ไทย <br></br>
-                  สู่การเติบโตแบบยั่งยืน
+          <div
+            style={{
+              width: "350px",
+              height: "163px",
+              background:
+                "linear-gradient(180deg, #C8F0C0 0%, rgba(217, 217, 217, 0.00) 100%)",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            <div
+              style={{
+                width: "348px",
+                height: "136px",
+                color: "#000",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "32px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                lineHeight: "40px",
+                paddingTop: "57px",
+              }}
+            >
+              Impvest พร้อมรับฟัง
+              <br></br>และช่วยเหลือ SME ไทย<br></br>สู่การเติบโตแบบยั่งยืน
+            </div>
+            <div
+              style={{ width: "349px", height: "262px", background: "#E4E4E4" }}
+            ></div>
+
+<div
+              style={{
+                marginTop:'22px',
+                width: "354px",
+                height: "188px",
+                color: "#000",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "14px",
+                fontStyle: "normal",
+                fontWeight: 400,
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>  
+         
+              <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'350px',height:'163px',background: 'linear-gradient(0deg, #C8F0C0 0%, rgba(217, 217, 217, 0.00) 100%)'}}>
+                <div style={{width:'193px',height:'56px',background: '#56D7A6',borderRadius:'8px',color: "#000",marginTop:'10px',
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "24px",
+                fontStyle: "normal",
+                fontWeight: 700,lineHeight:'52px',color:'white',textAlign:'center'}}>
+                  <div>คุยกับเราเลย</div>
                 </div>
-                <div
+
+
+              </div>
+            <div
+              style={{
+                width: "100%",
+                height: "64px",
+                color: "#12574C",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "24px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                lineHeight: "64px",
+                marginTop:'10px'
+              }}
+            >
+              Business Strategy
+      
+            </div>
+            <div style={{width:'347px',height:'2px',background:'#114940',marginBottom:'25px'}}></div>
+            <div className="groupcard">
+              <swiper-container
+                pagination={true}
+                style={{ width: "323px", height: "500px", background: "white" }}
+              >
+                <swiper-slide
                   style={{
-                    color: "#6D6D6D",
-                    fontFamily: '"LINE Seed Sans TH"',
-                    fontSize: "14px",
-                    fontStyle: "normal",
-                    fontWeight: 400,
-                    lineHeight: "20px",
-                    width: "572px",
-                    height: "118px",
-                    marginLeft: "30px",
-                    marginTop: "55px",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </div>
-                <div
-                  style={{
-                    width: "216px",
-                    height: "45px",
-                    marginLeft: "30px",
-                    marginTop: "55px",
-                    color: "#FFF", // Changed to white (#FFF)
-                    fontFamily: '"LINE Seed Sans TH"',
-                    fontSize: "24px", // Updated font size
-                    fontStyle: "normal",
-                    fontWeight: 700, // Updated font weight
-                    lineHeight: "45px", // Updated line height
-                    borderRadius: "8px",
-                    textAlign: "center",
+                    height: "470px",
+                    borderRadius: "0px 0px 70px 0px",
                     background: "#56D7A6",
-                    boxShadow: "6px 7px 14.7px 1px rgba(0, 0, 0, 0.25)",
                   }}
                 >
-                  คุยกับเราเลย!
-                </div>
-              </div>
-              <div className="fader_pic"></div>
-            </div>
-            <div className="service_fader_bot"></div>
-            <div className="service_main">
-              <div className="service_content_top">Business Strategy</div>
-              <div
-                style={{
-                  width: "1340px",
-                  height: "2px",
-                  background: "#114940",
-                  marginTop: "19px",
-                }}
-              ></div>
-              <div className="service_content_body">
-                <div className="service_content_body_text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-                <div className="service_content_body_pic">
-                  <Servicecard
-                    val={{
-                      subword1: "ออกแบบภาพรวมธุรกิจ",
-                      subword2: "วางตำแหน่งทางการตลาด",
-                      tail: "พัฒนากลยุทธ์",
-                      picid: 0,
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "369px",
+                      background: "#C8F0C0",
+                      borderRadius: "0px 0px 70px 0px",
                     }}
-                  />
-                  <Servicecard
-                    val={{
-                      subword1: "กำจัดงานซ้ำซ้อน",
-                      subword2: "พัฒนาบุคลากร",
-                      tail: "เพิ่มประสิทธิภาพ",
-                      picid: 1,
-                    }}
-                  />
-                  <Servicecard
-                    val={{
-                      subword1: "กู้ยืมธนาคาร",
-                      subword2: "ออกแบบ Pitch Deck",
-                      tail: "สรรหาเงินทุน",
-                      picid: 2,
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="service_main" style={{marginTop:'112px'}}>
-              <div  className="service_content_top" style={{marginLeft:'960px'}} >Marketing & Branding</div>
-              <div
-                style={{
-                  width: "1340px",
-                  height: "2px",
-                  background: "#114940",
-                  marginTop: "19px",
-                }}
-              ></div>
-              <div className="service_content_body">
-                {" "}
-               
-                <div className="service_content_body_pic">
-                  <Servicecard
-                    val={{
-                      subword1: "พัฒนาเอกลักษณ์",
-                      subword2: "ขยายกลุ่มลูกค้า",
-                      tail: "กลยุทธ์แบรนด์",
-                      picid: 3,
-                    }}
-                  />
-                  <Servicecard
-                    val={{
-                      subword1: "การตลาดออนไลน์",
-                      subword2: "แคมเปญโฆษณา",
-                      tail: "เพิ่มยอดขาย",
-                      picid: 4,
-                    }}
-                  />
-                  <Servicecard
-                    val={{
-                      subword1: "เพิ่มความพึงพอใจ",
-                      subword2: "สร้างลูกค้าประจำ",
-                      tail: "รักษาลูกค้า",
-                      picid: 5,
-                    }}
-                  />
-                </div>
-
-                <span className="service_content_body_text" style={{direction:'rtl',marginLeft:'90px', marginRight: '0px'}}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </span>
-              </div>
-            </div>
-            <div className="service_main" style={{marginTop:'112px'}}>
-            <div className="service_content_top">Digital Transformation</div>
-              <div
-                style={{
-                  width: "1340px",
-                  height: "2px",
-                  background: "#114940",
-                  marginTop: "19px",
-                }}
-              ></div>
-              <div className="service_content_body">
-                {" "}
-                <div className="service_content_body_text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-                <div className="service_content_body_pic">
-                  <Servicecard
-                    val={{
-                      subword1: "สร้างหน้าร้านออนไลน์",
-                      subword2: "พัฒนา Database และ Digital Product",
-                      tail: "จัดวางระบบ IT",
-                      picid: 6,
-                    }}
-                  />
-                  <Servicecard
-                    val={{
-                      subword1: "ทำ Data Analysis",
-                      subword2: "สร้าง Dashboard",
-                      tail: "เติบโตด้วย Data",
-                      picid: 7,
-                    }}
-                  />
-                  <Servicecard
-                    val={{
-                      subword1: "ลดเวลาทำงาน",
-                      subword2: "บูรณาการระบบ Cloud",
-                      tail: "ประสิทธิภาพจาก AI",
-                      picid: 8,
-                    }}
-                  />
-                </div>
-                
-              </div>
-            </div>
-            
-            
-          </div>
-          
-        
-        </div>
-        <div className="footer_black" style={{marginTop:'2400px'}}>
-                  <img src={pic2} style={{width: '230.493px',
-height: '59px',marginLeft:'110px',marginRight:'387px'}}></img>
-                  <div className="footer_log">
-                    <img src={line} style={{marginRight:'17px'}}></img>
-                    <img src={face} style={{marginRight:'17px'}}></img>
-
-                    <img src={ig} style={{marginRight:'17px'}}></img>
-
-                    <img src={link} style={{marginRight:'17px'}}></img>
-
-                    <img src={x} style={{marginRight:'17px'}}></img>
-
-                    <img src={email} style={{marginRight:'17px'}}></img>
-
-                  </div>
-                  
-                  <div style={{display:'flex',gap:'90px',fontSize:'20px',fontStyle:'normal',fontWeight:'400',marginLeft:'96px',lineHeight:'30px'}}>
-                  <div>
-                        <div>About us</div>
-                        <div><a href="Consulting_article">Academy</a></div>
-
-                        <div><a href="Contact">Contact us</a></div>
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="167"
+                      height="196"
+                      viewBox="0 0 167 196"
+                      fill="none"
+                      style={{ marginLeft: "77px", marginTop: "40px" }}
+                    >
+                      <path
+                        d="M148.201 38.0983C146.488 40.4373 144.81 42.8065 143.053 45.1078C141.668 46.9215 139.713 47.0916 138.176 45.6443C136.963 44.4994 136.711 42.7234 137.805 41.2082C141.678 35.8386 145.591 30.5031 149.562 25.2129C150.926 23.3992 153.176 23.3689 154.544 25.1827C158.525 30.4615 162.435 35.8046 166.301 41.1779C167.485 42.8254 167.111 44.6316 165.588 45.8068C163.979 47.05 162.255 46.9026 160.973 45.24C159.17 42.901 157.463 40.4826 155.34 38.1474V40.2748C155.34 70.1794 155.347 100.084 155.336 129.992C155.336 138.608 154.454 147.083 151.225 155.113C146.066 167.938 136.639 175.654 124.104 179.172C118.877 180.638 113.409 181.462 108.002 181.851C101.134 182.346 94.2151 182.108 87.3215 182.184C87.0227 182.184 86.7204 182.195 86.4216 182.165C84.5497 181.968 83.1818 180.536 83.171 178.771C83.1602 176.924 84.5893 175.435 86.5764 175.401C93.2324 175.284 99.8956 175.382 106.541 175.087C114.064 174.755 121.426 173.326 128.352 170.058C139.698 164.703 145.962 155.306 147.787 142.568C148.309 138.91 148.543 135.177 148.55 131.477C148.608 100.942 148.586 70.4061 148.586 39.8743C148.586 39.3264 148.586 38.7784 148.586 38.2305C148.46 38.1852 148.331 38.1436 148.205 38.0983H148.201Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M78.3507 14.1304C76.6696 16.424 75.0389 18.6572 73.3974 20.8829C71.8711 22.9536 70.154 23.3579 68.4585 22.0618C66.835 20.8224 66.7378 18.8537 68.2605 16.7679C71.9071 11.7725 75.5609 6.7808 79.2471 1.8156C80.993 -0.538525 83.1889 -0.527189 84.9348 1.82694C88.6173 6.79214 92.2819 11.7762 95.9285 16.7717C97.4692 18.884 97.3468 20.6486 95.6477 22.0505C93.8046 23.5733 91.9435 23.271 90.3848 21.1701C88.6605 18.85 86.9578 16.5147 84.8736 14.274C84.8736 16.4958 84.9815 18.7215 84.8484 20.9358C84.6324 24.6314 84.6252 28.3949 83.8908 31.9885C81.7453 42.4781 74.8517 48.063 65.2763 49.9637C58.8831 51.2334 52.3171 51.5243 45.8375 52.3405C41.8597 52.8431 37.8207 53.1718 33.9474 54.1656C25.2791 56.395 20.7289 62.0593 19.6994 71.3776C19.4222 73.8715 19.307 76.3957 19.2926 78.9085C19.2458 87.5957 19.2746 96.2867 19.271 104.974C19.271 105.601 19.289 106.247 19.163 106.852C18.803 108.56 17.2947 109.731 15.7504 109.584C14.1485 109.429 12.9426 108.099 12.8058 106.323C12.7878 106.074 12.795 105.82 12.795 105.567C12.8058 95.6821 12.777 85.7971 12.8418 75.912C12.8742 71.0942 13.6697 66.3897 15.4912 61.9384C19.001 53.3608 25.6426 48.8188 34.0014 47.1372C40.157 45.8978 46.4854 45.622 52.7131 44.7378C57.5656 44.0463 62.4793 43.4606 67.195 42.1418C74.1246 40.2071 77.6956 34.8641 78.2931 27.5409C78.6495 23.1766 78.3579 18.7517 78.3579 14.1266L78.3507 14.1304Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M43.6775 133.904C43.6631 124.778 50.4739 117.603 59.1674 117.58C67.8321 117.561 74.7365 124.763 74.7473 133.84C74.7581 142.893 67.8429 150.182 59.225 150.194C50.5639 150.205 43.6883 142.999 43.6775 133.9V133.904ZM51.6726 133.892C51.6798 138.215 55.1536 141.858 59.2358 141.828C63.2928 141.798 66.7882 138.079 66.7738 133.806C66.7594 129.354 63.4799 125.961 59.2034 125.972C55.024 125.984 51.6654 129.517 51.6726 133.889V133.892Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M16.2903 117.58C24.9442 117.629 31.8486 124.929 31.7766 133.956C31.7046 143.025 24.7678 150.224 16.1283 150.193C7.53201 150.167 0.591622 142.817 0.638419 133.786C0.685216 124.736 7.6436 117.53 16.2903 117.58ZM23.7419 133.798C23.8139 129.373 20.7432 126.063 16.4811 125.976C12.2225 125.889 8.72354 129.365 8.64075 133.764C8.56155 137.992 12.0389 141.744 16.0995 141.824C20.2141 141.903 23.6663 138.279 23.7383 133.798H23.7419Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M59.1782 195.273C50.4883 195.262 43.6703 188.086 43.6775 178.96C43.6847 169.861 50.5567 162.659 59.2178 162.667C67.8429 162.674 74.7581 169.948 74.7473 179.002C74.7365 188.082 67.8429 195.284 59.1782 195.273ZM51.6726 178.764C51.6726 183.098 55.1032 186.707 59.2106 186.699C63.2711 186.692 66.7809 182.992 66.7737 178.73C66.7665 174.366 63.3863 170.855 59.1998 170.863C55.0312 170.87 51.6654 174.403 51.669 178.764H51.6726Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M102.084 117.584C110.774 117.534 117.642 124.665 117.693 133.783C117.743 142.878 110.896 150.16 102.26 150.198C93.6245 150.235 86.6625 143.007 86.6301 133.964C86.5977 124.858 93.4193 117.629 102.084 117.58V117.584ZM102.275 125.976C98.1386 125.942 94.6576 129.479 94.5965 133.779C94.5353 138.015 98.0342 141.771 102.091 141.828C106.166 141.888 109.669 138.261 109.701 133.945C109.737 129.494 106.49 126.01 102.275 125.972V125.976Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M13.7921 14.7616C14.8972 13.4919 15.8547 12.2865 16.9095 11.1907C19.2709 8.73834 22.5791 8.57963 24.5986 10.7562C26.7189 13.0423 26.6073 16.3562 24.2746 18.8388C23.2271 19.9573 22.0968 20.9889 20.8764 22.1829C22.2012 23.445 23.3423 24.5257 24.4762 25.614C26.8773 27.919 27.2121 31.4445 25.243 33.6739C23.1371 36.0583 19.8253 36.0318 17.4314 33.5455C16.3335 32.4043 15.3364 31.1535 14.0584 29.6799C12.7805 31.1573 11.7906 32.4232 10.6746 33.5568C8.34919 35.9223 5.14177 36.047 3.11149 33.9347C1.03442 31.7733 1.12081 28.2175 3.37788 25.8407C4.47221 24.6882 5.67814 23.6528 7.03886 22.3719C5.61335 20.9813 4.42542 19.9195 3.34548 18.7481C1.08841 16.3108 1.03442 12.6908 3.16189 10.6692C5.44776 8.50028 8.73796 8.82147 10.9554 11.4288C11.8266 12.4528 12.7013 13.473 13.7993 14.754L13.7921 14.7616Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M60.8916 89.6097C62.2811 90.9247 63.4511 91.9978 64.585 93.1125C66.8745 95.3646 67.1229 98.8826 65.1754 101.052C63.0731 103.391 59.8549 103.375 57.4826 100.984C56.3595 99.8537 55.2868 98.671 53.7496 97.0424C52.6913 98.3611 51.777 99.6799 50.6898 100.817C48.2672 103.353 45.1066 103.466 43.0079 101.203C40.9632 98.996 41.1 95.5158 43.4003 93.105C44.455 91.9978 45.6213 91.0078 46.928 89.7873C45.5277 88.3665 44.3902 87.2745 43.3211 86.1144C41.0532 83.6469 40.9704 80.076 43.0943 78.028C45.4017 75.8023 48.6091 76.1009 50.8878 78.7535C51.7626 79.7737 52.6265 80.8053 53.6705 82.0296C54.808 80.7713 55.8015 79.6037 56.8635 78.5117C59.2609 76.0442 62.5331 75.8855 64.5706 78.0847C66.6837 80.3708 66.5577 83.696 64.2322 86.1824C63.1847 87.3009 62.094 88.3741 60.8952 89.6021L60.8916 89.6097Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M101.753 59.2445C102.909 57.8917 103.884 56.6939 104.917 55.5565C106.98 53.2855 110.349 53.0626 112.362 55.0237C114.493 57.102 114.565 60.6502 112.448 62.9816C111.336 64.2059 110.094 65.3055 108.762 66.6092C110.187 67.9771 111.418 69.1334 112.624 70.3161C115.054 72.6967 115.349 76.1428 113.334 78.3798C111.177 80.768 107.966 80.7113 105.515 78.1758C104.449 77.0762 103.492 75.8632 102.03 74.1779C100.903 75.6214 100.079 76.8646 99.0784 77.9302C96.5333 80.6395 93.4735 80.87 91.2668 78.6217C89.071 76.3885 89.2438 72.8327 91.742 70.2632C92.7608 69.2165 93.9163 68.3172 95.3166 67.0815C93.7147 65.5663 92.4944 64.5385 91.418 63.3709C89.2258 60.9865 89.1646 57.427 91.1949 55.4092C93.4627 53.157 96.7313 53.4102 99.0028 56.0251C99.9135 57.0718 100.806 58.1374 101.757 59.2483L101.753 59.2445Z"
+                        fill="#00BA9D"
+                      />
+                    </svg>
+                    <div
+                      style={{
+                        marginLeft: "33px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          ออกแบบภาพรวมธุรกิจ
+                        </div>
                       </div>
-                      <div>
-                        {" "}
-                        <div><a href="Consulting_service">Consulting</a></div>
-                        <div><a href="Innovation">Innovation</a></div>
-                        <div>Sign in</div>
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          วางตำแหน่งทางการตลาด
+                        </div>
                       </div>
                     </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "199px",
+                      height: "59px",
+                      color: "#000",
+                      fontFamily: '"LINE Seed Sans TH"',
+                      fontSize: "32px",
+                      fontStyle: "normal",
+                      fontWeight: 700,
+                      textAlign: "center",
+                      marginLeft: "33px",
+                      marginTop: "24px",
+                    }}
+                  >
+                    พัฒนากลยุทธ์
+                  </div>
+                </swiper-slide>
+                <swiper-slide
+                  style={{
+                    height: "470px",
+                    borderRadius: "0px 0px 70px 0px",
+                    background: "#56D7A6",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "369px",
+                      background: "#C8F0C0",
+                      borderRadius: "0px 0px 70px 0px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="200"
+                      height="196"
+                      viewBox="0 0 167 196"
+                      fill="none"
+                      style={{ marginLeft: "50px", marginTop: "40px" }}
+                    >
+                      <path
+                        d="M89.8467 0C104.951 0 120.059 0 135.163 0C138.954 0 140.389 1.23094 140.62 5.03166C141.7 22.5297 154.28 36.7566 170.266 40.7928C171.967 41.2243 173.712 41.4842 175.447 41.7883C178.311 42.2934 179.849 44.3189 179.415 47.1387C177.389 60.2623 174.535 73.1945 170.444 85.8472C164.627 103.831 156.715 120.784 145.313 135.982C134.197 150.798 120.666 162.774 103.57 170.39C99.6859 172.121 95.5945 173.426 91.5375 174.74C90.4235 175.103 89.0136 175.069 87.8749 174.745C70.3753 169.772 55.8185 160.067 43.4308 146.992C28.9332 131.691 19.089 113.615 11.8427 94.0274C6.21814 78.8196 2.52596 63.1067 0.0710818 47.0946C-0.357783 44.2845 1.17528 42.215 4.09353 41.8079C16.0229 40.1307 25.4283 34.3928 32.2261 24.5159C36.2978 18.6015 38.4027 11.9907 38.8858 4.8404C39.1175 1.2996 40.6259 0 44.2244 0C59.4318 0 74.6393 0 89.8467 0ZM5.82378 47.4036C8.59908 65.1174 13.011 82.3751 19.9024 98.9659C26.8036 115.571 35.795 130.882 48.3405 143.947C59.5945 155.668 72.7316 164.456 88.4615 169.125C89.2601 169.36 90.2559 169.336 91.0643 169.1C104.749 165.079 116.535 157.811 126.892 148.15C138.412 137.4 147.191 124.654 154.236 110.672C162.724 93.8312 168.235 75.9997 171.893 57.5699C172.568 54.1566 173.12 50.7139 173.727 47.2859C152.214 44.1815 136.233 26.0116 134.932 5.61526H44.7026C41.4885 28.5716 28.6226 42.4258 5.82378 47.4085V47.4036Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M89.8409 13.8887C101.475 13.8887 113.108 13.8887 124.737 13.8887C127.137 13.8887 127.773 14.4232 128.458 16.7331C133.516 33.8388 144.331 45.7657 160.968 52.4305C163.512 53.4505 164.015 54.2205 163.482 56.8638C159.095 78.756 152.135 99.7016 140.205 118.784C131.584 132.574 120.877 144.383 106.877 153.005C102.115 155.938 97.0774 158.301 91.8078 160.194C90.3388 160.724 89.0276 160.68 87.5734 160.165C73.1793 155.06 61.3486 146.296 51.3269 134.997C38.6779 120.74 30.1647 104.155 23.8944 86.3329C20.4487 76.5442 17.8657 66.5201 15.8495 56.3489C15.4453 54.3186 16.096 53.3622 18.4128 52.455C32.8858 46.7858 43.1144 36.796 49.0495 22.4955C49.8136 20.6515 50.4051 18.7291 50.9868 16.8165C51.741 14.3399 52.2931 13.8838 54.9452 13.8838C66.5787 13.8838 78.2123 13.8838 89.8409 13.8838V13.8887ZM157.759 57.2512C157.429 57.0796 157.261 56.9815 157.079 56.903C140.6 49.6596 129.454 37.5758 123.795 20.5436C123.421 19.4108 122.765 19.4157 121.883 19.4157C100.479 19.4255 79.075 19.4353 57.6761 19.3912C56.4487 19.3912 55.9754 19.759 55.5811 20.9114C50.0699 37.1834 39.4715 48.9632 23.85 56.2704C23.1747 56.5843 22.4944 56.8785 21.8437 57.1679C21.8437 57.4278 21.8142 57.5847 21.8437 57.722C23.8254 65.2695 25.5261 72.9004 27.8577 80.34C33.0928 97.0387 40.5955 112.658 51.5044 126.498C60.9493 138.484 72.3364 148.022 86.6417 153.893C88.8698 154.805 90.7282 154.751 92.9219 153.853C107.173 148.003 118.55 138.508 127.936 126.542C143.967 106.097 152.381 82.3801 157.764 57.2561L157.759 57.2512Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M98.8128 53.7204V55.6575C98.8128 69.9286 98.8128 84.1997 98.8128 98.4708C98.8128 102.036 97.1318 103.723 93.5629 103.738C91.0981 103.748 88.6285 103.743 86.1637 103.738C82.3631 103.733 80.7019 102.1 80.7019 98.3678C80.7019 84.1458 80.7019 69.9237 80.7019 55.7066C80.7019 55.1181 80.7019 54.5296 80.7019 53.7547C78.7054 53.7547 76.8618 53.7302 75.0132 53.7596C72.9231 53.794 71.2225 53.1417 70.4042 51.0869C69.5958 49.0565 70.345 47.4382 71.8436 45.9669C76.6794 41.2197 81.461 36.4136 86.2722 31.6419C88.5989 29.332 90.896 29.3173 93.2129 31.6174C98.0586 36.4283 102.88 41.2638 107.745 46.0503C109.204 47.4872 109.879 49.086 109.106 51.0574C108.292 53.1123 106.611 53.7792 104.506 53.7302C102.658 53.691 100.804 53.7204 98.8177 53.7204H98.8128ZM93.1439 98.0294C93.1439 95.44 93.1439 92.9438 93.1439 90.4525C93.1439 78.0303 93.1439 65.6032 93.1439 53.1809C93.1439 49.8118 94.7755 48.1885 98.1177 48.1787C99.2515 48.1787 100.39 48.1787 101.376 48.1787C97.4177 44.2309 93.4692 40.2928 89.6883 36.5166C85.9025 40.3173 81.9885 44.2407 78.0646 48.1787C78.8681 48.1787 79.8096 48.2474 80.7413 48.1689C84.7342 47.8305 86.3461 50.2433 86.3264 53.6664C86.2327 67.7904 86.287 81.9193 86.287 96.0482C86.287 96.6857 86.287 97.3232 86.287 98.0392H93.1389L93.1439 98.0294Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M114.257 80.7077C112.152 80.7077 110.2 80.7224 108.253 80.7077C106.089 80.6881 104.649 79.8004 103.964 78.0349C103.245 76.186 103.742 74.6216 105.123 73.2534C110.106 68.3002 115.07 63.3274 120.064 58.384C122.12 56.3487 124.515 56.3487 126.581 58.3889C131.579 63.3273 136.543 68.3002 141.532 73.2485C142.917 74.6216 143.371 76.2008 142.666 78.0398C141.98 79.8151 140.561 80.6832 138.382 80.7077C136.519 80.7273 134.66 80.7322 132.797 80.7469C132.708 80.7469 132.619 80.8205 132.363 80.9382C132.363 81.3992 132.363 81.9337 132.363 82.4683C132.363 89.7264 132.363 96.9846 132.363 104.243C132.363 107.622 130.682 109.284 127.256 109.299C124.54 109.309 121.824 109.323 119.103 109.299C116.007 109.269 114.267 107.519 114.257 104.419C114.242 97.1121 114.252 89.8 114.252 82.4928C114.252 81.9582 114.252 81.4188 114.252 80.7126L114.257 80.7077ZM111.339 75.166C112.606 75.166 113.641 75.166 114.681 75.166C118.358 75.1758 119.906 76.7059 119.906 80.3595C119.906 87.5637 119.906 94.7728 119.906 101.977V103.664H126.734C126.734 103.017 126.734 102.472 126.734 101.933C126.734 94.6257 126.719 87.3185 126.738 80.0162C126.748 76.8236 128.37 75.2199 131.555 75.1709C132.738 75.1513 133.916 75.1709 134.916 75.1709C130.958 71.2279 127.01 67.2948 123.15 63.4549C119.384 67.1869 115.475 71.0612 111.324 75.1709L111.339 75.166Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M65.2623 80.7076C65.2623 81.4531 65.2623 81.9925 65.2623 82.5369C65.2623 89.7999 65.2673 97.0581 65.2623 104.321C65.2623 107.519 63.5321 109.269 60.3575 109.294C57.5378 109.318 54.7182 109.323 51.9034 109.294C48.8965 109.26 47.1564 107.499 47.1514 104.488C47.1416 97.1758 47.1514 89.8637 47.1514 82.5516V80.7076C45.1599 80.7076 43.267 80.6635 41.3741 80.7174C39.3136 80.7763 37.7312 80.075 36.8685 78.133C36.07 76.3331 36.5038 74.7197 38.2291 73.0032C43.0304 68.2168 47.8317 63.4352 52.6429 58.6635C55.0485 56.2751 57.3111 56.2702 59.7068 58.6438C64.5574 63.4499 69.3834 68.2805 74.2488 73.0719C75.7128 74.5137 76.3635 76.137 75.5452 78.0888C74.7318 80.026 73.1446 80.7861 71.0692 80.7224C69.2158 80.6684 67.3574 80.7125 65.2722 80.7125L65.2623 80.7076ZM44.5437 75.1659C45.4458 75.1659 46.481 75.1659 47.5211 75.1659C51.2232 75.1758 52.7119 76.6568 52.7168 80.3643C52.7217 87.5735 52.7168 94.7777 52.7217 101.987C52.7217 102.561 52.7858 103.129 52.8154 103.679H59.5836C59.5836 103.002 59.5836 102.413 59.5836 101.82C59.5836 94.5128 59.5737 87.2056 59.5885 79.8985C59.5984 76.9118 61.2596 75.2444 64.2321 75.1709C65.4694 75.1414 66.7017 75.1709 67.8306 75.1709C63.8476 71.1985 59.8991 67.2654 56.197 63.5725C52.4063 67.3438 48.4775 71.2475 44.5388 75.1659H44.5437Z"
+                        fill="#00BA9D"
+                      />
+                    </svg>
+                    <div
+                      style={{
+                        marginLeft: "33px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          กำจัดงานซ้ำซ้อน
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          พัฒนาบุคลากร
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "59px",
+                      color: "#000",
+                      fontFamily: '"LINE Seed Sans TH"',
+                      fontSize: "32px",
+                      fontStyle: "normal",
+                      fontWeight: 700,
+                      marginLeft: "33px",
+                      marginTop: "24px",
+                    }}
+                  >
+                    เพิ่มประสิทธิภาพ
+                  </div>
+                </swiper-slide>
+                <swiper-slide
+                  style={{
+                    height: "470px",
+                    borderRadius: "0px 0px 70px 0px",
+                    background: "#56D7A6",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "369px",
+                      background: "#C8F0C0",
+                      borderRadius: "0px 0px 70px 0px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="167"
+                      height="196"
+                      viewBox="0 0 167 196"
+                      fill="none"
+                      style={{ marginLeft: "85px", marginTop: "40px" }}
+                    >
+                      <path
+                        d="M50.4423 48.4187C48.1224 45.2726 45.9011 42.2567 43.6765 39.2409C38.9923 32.8946 34.2668 26.577 29.6302 20.1958C26.2299 15.5147 28.2796 9.24472 33.6789 7.58586C35.6301 6.98523 37.54 7.17591 39.4086 7.99263C42.9456 9.53709 46.4858 11.072 50.0291 12.6038C52.4221 13.6398 53.6869 13.3093 55.2441 11.2404C56.296 9.84534 57.3192 8.428 58.3775 7.03926C64.5998 -1.10887 76.3358 -1.10252 82.5676 7.05197C83.6926 8.52334 84.7668 10.0328 85.8981 11.5042C87.236 13.2457 88.5993 13.6048 90.6363 12.7309C94.3291 11.1451 97.9868 9.48306 101.699 7.9386C106.755 5.83484 112.081 8.82206 112.932 14.2277C113.311 16.6143 112.497 18.6863 111.038 20.5739C104.371 29.2051 97.7294 37.8553 91.0781 46.4992C90.6935 46.9982 90.3154 47.5034 89.8419 48.1263C90.077 48.263 90.2264 48.3742 90.3916 48.4441C104.899 54.4885 115.897 64.7054 124.668 77.4901C132.531 88.9496 137.717 101.544 139.922 115.288C141.638 125.982 141.572 136.609 137.752 146.927C133.563 158.241 125.615 166.099 114.925 171.349C106.516 175.477 97.5292 177.572 88.2847 178.681C77.3051 180 66.3032 180.076 55.3108 178.983C43.149 177.772 31.3812 175.122 20.8687 168.489C8.95163 160.973 2.27804 150.042 0.574684 136.167C-1.68798 117.776 2.92633 100.765 11.7609 84.7865C19.0859 71.5379 28.9247 60.5487 42.0145 52.6834C43.327 51.8953 44.6903 51.1803 46.0568 50.4875C47.4201 49.7979 48.8215 49.1782 50.4423 48.4187ZM77.3114 53.0997C77.5752 53.5287 77.8358 53.9768 78.1186 54.409C80.0666 57.3708 82.0783 60.2913 83.9341 63.3103C84.414 64.0921 84.6714 65.2012 84.5666 66.1069C84.4235 67.359 83.4034 68.1058 82.1418 68.2837C80.7912 68.4744 79.8124 67.8229 79.0847 66.7138C76.5265 62.8241 73.9619 58.9375 71.3942 55.0541C71.1177 54.6378 70.7967 54.2469 70.409 53.729C67.5076 58.124 64.7237 62.3633 61.9145 66.5867C60.7355 68.3568 59.1148 68.8017 57.5894 67.8452C56.0131 66.8537 55.7589 65.1281 56.9633 63.2849C58.9876 60.1833 61.0406 57.1007 63.0744 54.0054C63.2873 53.6813 63.4303 53.3158 63.7036 52.7819C59.9823 53.1188 56.3818 52.1241 53.0132 53.8052C50.366 55.124 47.6108 56.2649 45.0843 57.7808C33.4087 64.788 24.625 74.63 17.8783 86.3151C9.35204 101.08 4.65511 116.864 6.29808 134.095C7.39763 145.624 12.352 155.133 21.8603 162.029C27.1959 165.896 33.1736 168.397 39.4912 170.132C51.1986 173.345 63.1634 173.971 75.2203 173.66C85.8472 173.383 96.3089 172.102 106.405 168.546C124.942 162.016 134.784 148.332 134.974 128.711C135.095 116.2 132.063 104.394 126.68 93.1826C120.054 79.3778 110.886 67.6418 97.99 59.125C91.7931 55.0319 85.3578 51.444 77.3114 53.1061V53.0997ZM69.9482 46.8488C73.9746 46.8488 77.9978 46.8901 82.0211 46.8075C82.6852 46.7948 83.5655 46.4007 83.9659 45.8859C91.4054 36.3109 98.7781 26.6882 106.186 17.091C106.926 16.1312 107.419 15.1937 106.586 14.0878C105.722 12.9374 104.657 13.09 103.469 13.6207C99.8491 15.2382 96.2167 16.8335 92.559 18.3653C88.3927 20.11 84.0994 18.9437 81.3442 15.3717C80.1143 13.7796 78.9607 12.1303 77.7277 10.5413C73.9619 5.68865 66.9578 5.6823 63.2015 10.5222C62.0988 11.9428 61.0565 13.4109 59.9728 14.8505C56.7854 19.0899 52.6255 20.218 47.7887 18.1333C44.1945 16.5857 40.6099 15.0158 37.0315 13.4395C35.9574 12.966 34.8769 13.0868 34.4098 14.0974C34.0793 14.8092 34.378 15.823 34.4447 16.7001C34.4574 16.8812 34.6735 17.0465 34.8007 17.2149C41.8461 26.7518 48.9042 36.2791 55.921 45.8382C56.4962 46.62 57.0936 46.871 58.0279 46.8615C62.0003 46.8138 65.9727 46.8424 69.945 46.8424L69.9482 46.8488Z"
+                        fill="#00BA9D"
+                      />
+                      <path
+                        d="M73.4313 143.076C73.4313 145.504 73.587 147.843 73.355 150.137C73.2597 151.081 72.5288 152.298 71.7279 152.74C70.9907 153.147 69.5415 153.007 68.8329 152.505C68.1242 152.003 67.6602 150.776 67.584 149.826C67.406 147.623 67.5268 145.399 67.5268 143.152C66.1475 142.907 64.8859 142.771 63.6688 142.45C57.6594 140.864 53.2898 135.268 53.2548 129.188C53.2453 127.237 54.2304 126.007 55.9084 125.871C57.7166 125.725 58.9146 126.792 59.1593 128.775C59.849 134.365 62.8394 137.028 68.4356 137.035C70.1295 137.035 71.8233 137.063 73.5171 137.025C78.1441 136.923 81.697 133.377 81.7383 128.855C81.7796 124.288 78.1695 120.675 73.4726 120.564C70.568 120.494 67.603 120.738 64.7683 120.249C57.4338 118.981 52.7908 112.641 53.2898 105.065C53.7379 98.2897 59.5153 92.7411 66.6211 92.2517C66.8308 92.2358 67.0374 92.2104 67.5172 92.1595C67.5172 90.6087 67.5172 89.0484 67.5172 87.488C67.5172 86.7476 67.5013 86.0039 67.5236 85.2635C67.5871 83.3027 68.7661 82.0538 70.5108 82.0792C72.1887 82.1015 73.3741 83.3186 73.4122 85.1872C73.4599 87.4562 73.4249 89.7284 73.4249 92.0801C74.5563 92.2549 75.5891 92.3661 76.606 92.5758C82.8474 93.8756 87.6111 99.6594 87.6683 105.971C87.6873 107.941 86.6037 109.276 84.8972 109.381C83.2224 109.485 81.983 108.275 81.751 106.311C81.1123 100.902 78.1123 98.2198 72.6877 98.2134C70.7809 98.2134 68.8742 98.1658 66.9706 98.2357C62.6391 98.3946 59.2452 101.938 59.1784 106.298C59.1117 110.617 62.4548 114.306 66.7768 114.541C69.5765 114.694 72.3985 114.503 75.1823 114.773C82.2722 115.463 87.6301 121.517 87.6746 128.664C87.7191 135.913 82.3993 141.986 75.2713 142.828C74.7025 142.895 74.1368 142.974 73.4249 143.066L73.4313 143.076Z"
+                        fill="#00BA9D"
+                      />
+                    </svg>
+                    <div
+                      style={{
+                        marginLeft: "33px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          กู้ยืมธนาคาร
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          ออกแบบ Pitch Deck
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "59px",
+                      color: "#000",
+                      fontFamily: '"LINE Seed Sans TH"',
+                      fontSize: "32px",
+                      fontStyle: "normal",
+                      fontWeight: 700,
+                      marginLeft: "33px",
+                      marginTop: "24px",
+                    }}
+                  >
+                    สรรหาเงินทุน
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <div
+              style={{
+                width: "354px",
+                height: "188px",
+                color: "#000",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "14px",
+                fontStyle: "normal",
+                fontWeight: 400,
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>  
+            <div
+              style={{
+                width: "100%",
+                height: "64px",
+                color: "#12574C",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "24px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                lineHeight: "64px",
+                marginTop:'10px'
+              }}
+            >
+Marketing & Branding
+      
+            </div>
+            <div style={{width:'347px',height:'2px',background:'#114940',marginBottom:'25px'}}></div>
+            <div className="groupcard">
+              <swiper-container
+                pagination={true}
+                style={{ width: "323px", height: "500px", background: "white" }}
+              >
+                <swiper-slide
+                  style={{
+                    height: "470px",
+                    borderRadius: "0px 0px 70px 0px",
+                    background: "#56D7A6",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "369px",
+                      background: "#C8F0C0",
+                      borderRadius: "0px 0px 70px 0px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="167"
+                      height="196"
+                      viewBox="0 0 167 196"
+                      fill="none"
+                      style={{ marginLeft: "77px", marginTop: "40px" }}
+                    >
+                    <path d="M80.3605 0C82.1358 0.68053 83.8747 1.50479 84.7372 3.37918C85.2468 4.48798 85.6725 5.77571 85.6781 6.98423C85.7481 18.2276 85.7621 29.4711 85.6669 40.7145C85.6529 42.1929 84.6224 43.6654 84.6224 45.1379C84.6224 46.6163 85.6585 48.0918 85.6697 49.576C85.7509 61.0629 85.6921 72.5498 85.6809 84.0367C85.6809 84.1276 85.7173 84.2185 85.7537 84.3975H120.834C120.834 83.8372 120.834 83.2681 120.834 82.6991C120.834 71.6023 120.815 60.5056 120.845 49.4088C120.857 45.8507 122.811 43.2225 125.931 42.4217C126.555 42.2603 127.221 42.2281 127.868 42.2281C138.321 42.2163 148.774 42.2134 159.227 42.2222C163.537 42.2251 166.323 45.0998 166.334 49.6435C166.362 60.6904 166.39 71.7402 166.287 82.7871C166.273 84.2655 165.197 85.7351 165.192 87.2105C165.186 88.6332 166.273 90.0588 166.287 91.4873C166.385 102.631 166.368 113.778 166.303 124.924C166.295 126.139 165.71 127.344 165.466 128.567C165.368 129.063 165.385 129.618 165.48 130.116C165.727 131.389 166.295 132.645 166.303 133.912C166.371 144.909 166.351 155.909 166.337 166.909C166.331 171.312 163.517 174.233 159.292 174.239C148.886 174.251 138.478 174.248 128.073 174.239C123.634 174.239 120.882 171.403 120.882 166.777C120.882 155.34 120.918 143.9 120.935 132.463C120.935 132.328 120.876 132.193 120.837 132.017H85.7397V134.293C85.7397 145.047 85.7453 155.803 85.7397 166.557C85.7369 171.485 83.0767 174.248 78.3528 174.248C68.0874 174.251 57.8192 174.254 47.5537 174.248C43.0231 174.248 40.3013 171.42 40.3041 166.703C40.3069 155.313 40.3237 143.923 40.3349 132.533C40.3349 132.395 40.2957 132.26 40.2621 132.032H38.0556C27.8349 132.032 17.6171 132.035 7.39649 132.032C2.67821 132.032 0.00404469 129.245 0.00124452 124.34C0.00124452 113.587 -0.00155565 102.83 0.00124452 92.0769C0.00124452 87.2516 2.68381 84.4385 7.29849 84.4356C18.2584 84.4297 29.2182 84.4356 40.3041 84.4356C40.3041 83.7609 40.3041 83.098 40.3041 82.4351C40.3041 71.5349 40.2565 60.6317 40.3517 49.7315C40.3685 47.9744 41.6034 46.0736 41.2282 44.5131C40.7969 42.7209 40.2929 41.0049 40.2957 39.1305C40.3153 28.9636 40.4049 18.7938 40.2565 8.62689C40.1921 4.30025 41.6734 1.38746 45.644 0.00293332H80.3661L80.3605 0ZM85.7397 108.248C85.7397 113.525 85.7397 118.799 85.7397 124.076C85.7397 126.177 86.1317 126.611 88.075 126.611C98.2424 126.617 108.407 126.617 118.574 126.611C120.414 126.611 120.826 126.191 120.826 124.305C120.834 113.607 120.834 102.91 120.826 92.2089C120.826 90.226 120.428 89.827 118.504 89.827C108.385 89.8241 98.2648 89.8241 88.145 89.827C86.1149 89.827 85.7397 90.2348 85.7369 92.423C85.7341 97.7001 85.7369 102.974 85.7369 108.251L85.7397 108.248ZM62.9995 47.6518C57.9144 47.6518 52.8265 47.6459 47.7414 47.6547C45.8456 47.6576 45.4592 48.0712 45.4592 50.0894C45.4536 60.7461 45.4536 71.4029 45.4592 82.0567C45.4592 83.9457 45.8988 84.4092 47.691 84.4092C57.9088 84.4151 68.1294 84.4151 78.3472 84.4092C80.1225 84.4092 80.5509 83.9428 80.5537 82.0361C80.5593 71.3794 80.5593 60.7226 80.5537 50.0688C80.5537 48.0683 80.1617 47.6576 78.2576 47.6547C73.1725 47.6459 68.0846 47.6547 62.9995 47.6547V47.6518ZM63.1451 89.8241C58.018 89.8241 52.8881 89.8212 47.761 89.8241C45.8708 89.8241 45.4592 90.2524 45.4592 92.2324C45.4536 102.88 45.4536 113.525 45.4592 124.173C45.4592 126.174 45.8428 126.576 47.7582 126.576C57.9228 126.582 68.0846 126.582 78.2492 126.576C80.1589 126.576 80.5537 126.162 80.5537 124.176C80.5593 113.528 80.5593 102.883 80.5537 92.2353C80.5537 90.2612 80.1309 89.8241 78.252 89.8212C73.2173 89.8153 68.1826 89.8212 63.1451 89.8212V89.8241ZM40.2845 108.289C40.2845 102.916 40.2901 97.5417 40.2845 92.1678C40.2845 90.2964 39.8421 89.827 38.0584 89.827C27.8461 89.8212 17.6339 89.8212 7.4189 89.827C5.60719 89.827 5.22356 90.2406 5.22356 92.1737C5.21796 102.872 5.21796 113.569 5.22356 124.27C5.22356 126.209 5.59598 126.611 7.4217 126.611C17.6339 126.62 27.8461 126.62 38.0612 126.611C39.8533 126.611 40.2817 126.147 40.2817 124.264C40.2873 118.94 40.2817 113.613 40.2817 108.289H40.2845ZM45.4816 23.6132C45.4816 29.0399 45.476 34.4665 45.4844 39.8902C45.4872 41.7734 45.9184 42.2134 47.7218 42.2163C57.8948 42.2222 68.0678 42.2193 78.2408 42.2163C80.1225 42.2163 80.5481 41.7763 80.5509 39.8081C80.5565 29.1513 80.5565 18.4946 80.5509 7.83783C80.5509 5.8989 80.1617 5.47944 78.364 5.47651C68.1434 5.47064 57.9256 5.47064 47.705 5.47651C45.8288 5.47651 45.4844 5.84024 45.4816 7.7733C45.476 13.0533 45.4816 18.3332 45.4816 23.6103V23.6132ZM161.092 66.0965C161.092 60.7226 161.098 55.3517 161.092 49.9779C161.092 48.0302 160.739 47.6547 158.886 47.6547C148.673 47.6488 138.464 47.6459 128.252 47.6547C126.44 47.6547 126.026 48.1006 126.023 49.9838C126.02 60.6816 126.02 71.3764 126.023 82.0743C126.023 83.9311 126.477 84.4092 128.255 84.4121C138.467 84.418 148.676 84.418 158.889 84.4121C160.7 84.4121 161.089 83.9927 161.092 82.0713C161.101 76.7474 161.092 71.4234 161.092 66.0994V66.0965ZM161.092 108.351C161.092 102.977 161.095 97.6062 161.092 92.2324C161.092 90.226 160.714 89.827 158.813 89.827C148.648 89.8212 138.484 89.8212 128.319 89.827C126.449 89.827 126.023 90.2788 126.023 92.2411C126.02 102.889 126.02 113.537 126.023 124.185C126.023 126.177 126.404 126.579 128.327 126.579C138.492 126.584 148.657 126.584 158.821 126.579C160.767 126.579 161.089 126.23 161.092 124.176C161.098 118.902 161.092 113.625 161.092 108.351ZM62.9211 168.76C68.1014 168.76 73.2817 168.766 78.4592 168.757C80.1169 168.754 80.5677 168.305 80.5705 166.613C80.5817 155.809 80.5817 145.006 80.5705 134.202C80.5705 132.533 80.0749 132.038 78.4592 132.038C68.1938 132.032 57.9256 132.032 47.6601 132.038C45.938 132.038 45.49 132.492 45.4872 134.284C45.4788 145.038 45.4788 155.794 45.4872 166.548C45.4872 168.37 45.8792 168.757 47.6629 168.76C52.7481 168.769 57.836 168.763 62.9211 168.763V168.76ZM161.092 150.491C161.092 145.117 161.098 139.746 161.092 134.372C161.092 132.436 160.711 132.035 158.897 132.032C148.685 132.026 138.475 132.026 128.263 132.032C126.465 132.032 126.023 132.492 126.023 134.355C126.017 145.053 126.02 155.748 126.023 166.445C126.023 168.349 126.409 168.757 128.246 168.757C138.458 168.763 148.668 168.763 158.88 168.757C160.784 168.757 161.089 168.44 161.092 166.463C161.101 161.139 161.092 155.815 161.095 150.491H161.092Z" fill="#00BA9D"/>
+
+                    </svg>
+                    <div
+                      style={{
+                        marginLeft: "33px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+พัฒนาเอกลักษณ์                        </div>
+                      </div>
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+ขยายกลุ่มลูกค้า                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "199px",
+                      height: "59px",
+                      color: "#000",
+                      fontFamily: '"LINE Seed Sans TH"',
+                      fontSize: "32px",
+                      fontStyle: "normal",
+                      fontWeight: 700,
+                      textAlign: "center",
+                      marginLeft: "33px",
+                      marginTop: "24px",
+                    }}
+                  >
+                    กลยุทธ์แบรนด์
+                  </div>
+                </swiper-slide>
+                <swiper-slide
+                  style={{
+                    height: "470px",
+                    borderRadius: "0px 0px 70px 0px",
+                    background: "#56D7A6",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "369px",
+                      background: "#C8F0C0",
+                      borderRadius: "0px 0px 70px 0px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="180"
+                      height="196"
+                      viewBox="0 0 167 196"
+                      fill="none"
+                      style={{ marginLeft: "70px", marginTop: "40px" }}
+                    >
+                     <g clip-path="url(#clip0_735_1202)">
+<path d="M174 87.0326C173.978 135.088 134.921 174.077 86.884 174C38.8654 173.92 -0.0216516 134.964 9.04457e-06 86.9614C0.0216697 38.8902 39.0418 -0.0618139 87.1099 7.36439e-05C135.113 0.0619612 174.022 39.0357 174 87.0326ZM5.7834 86.8995C5.672 131.607 41.9319 167.988 86.8252 168.217C131.514 168.443 168.096 131.982 168.22 87.0945C168.343 42.4054 132.031 5.97222 87.1748 5.78347C42.4394 5.59162 5.89171 42.0155 5.78031 86.8995H5.7834Z" fill="#00BA9D"/>
+<path d="M89.8668 124.069C89.8668 128.048 89.8916 131.802 89.8545 135.555C89.839 137.195 88.9261 138.248 87.4625 138.517C86.1814 138.752 84.7766 138.022 84.3496 136.784C84.1546 136.218 84.1299 135.571 84.1268 134.961C84.1051 131.92 84.1175 128.878 84.1175 125.836C84.1175 125.329 84.1175 124.824 84.1175 124.208C81.905 124.088 79.807 124.081 77.7338 123.843C69.4285 122.887 62.7725 115.405 62.692 107.022C62.6734 105.138 63.7781 103.816 65.446 103.73C67.1231 103.643 68.3454 104.853 68.4723 106.728C68.9519 113.783 73.7296 118.242 80.822 118.252C85.1015 118.258 89.381 118.27 93.6605 118.249C100.341 118.211 105.407 113.208 105.521 106.546C105.549 104.998 105.537 103.451 105.521 101.907C105.469 94.951 100.474 89.9474 93.4965 89.8917C89.217 89.8577 84.9375 89.901 80.658 89.8793C70.2082 89.8298 62.7291 82.3878 62.692 71.9474C62.6827 69.3265 62.5775 66.6436 63.0602 64.0908C64.6384 55.739 71.6657 50.0454 80.1752 49.934C81.4068 49.9185 82.6415 49.934 84.1144 49.934C84.1144 49.2285 84.1144 48.6313 84.1144 48.0371C84.1144 44.8932 84.0927 41.7463 84.1268 38.6024C84.1484 36.6931 85.3181 35.4337 86.9798 35.4275C88.6415 35.4183 89.8421 36.6808 89.8576 38.5776C89.8885 42.2816 89.8668 45.9856 89.8668 49.8009C92.0762 49.9185 94.1742 49.9185 96.2444 50.1661C104.599 51.1563 111.169 58.5425 111.283 66.9778C111.308 68.8561 110.206 70.1867 108.548 70.2826C106.889 70.3755 105.648 69.1501 105.518 67.2873C105.023 60.2135 100.261 55.77 93.1685 55.7607C88.889 55.7576 84.6095 55.7421 80.33 55.7638C73.5749 55.7978 68.5249 60.8448 68.4692 67.6122C68.4537 69.5709 68.3485 71.5451 68.5404 73.4853C69.15 79.6895 73.9865 84.0371 80.3207 84.1207C84.6497 84.1795 88.9818 84.1207 93.314 84.1362C103.77 84.1764 111.221 91.5812 111.286 102.056C111.302 104.627 111.41 107.254 110.958 109.764C109.457 118.112 102.473 123.883 93.9638 124.075C92.6796 124.103 91.3955 124.078 89.8606 124.078L89.8668 124.069Z" fill="#00BA9D"/>
+</g>
+<defs>
+<clipPath id="clip0_735_1202">
+<rect width="174" height="174" fill="white"/>
+</clipPath>
+</defs>
+                    </svg>
+                    <div
+                      style={{
+                        marginLeft: "33px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          การตลาดออนไลน์
+
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+แคมเปญโฆษณา                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "59px",
+                      color: "#000",
+                      fontFamily: '"LINE Seed Sans TH"',
+                      fontSize: "32px",
+                      fontStyle: "normal",
+                      fontWeight: 700,
+                      marginLeft: "33px",
+                      marginTop: "24px",
+                    }}
+                  >
+เพิ่มยอดขาย                  </div>
+                </swiper-slide>
+                <swiper-slide
+                  style={{
+                    height: "470px",
+                    borderRadius: "0px 0px 70px 0px",
+                    background: "#56D7A6",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "369px",
+                      background: "#C8F0C0",
+                      borderRadius: "0px 0px 70px 0px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="200"
+                      height="196"
+                      viewBox="0 0 167 196"
+                      fill="none"
+                      style={{ marginLeft: "52px", marginTop: "40px" }}
+                    >
+<path d="M182.949 76.5365C182.949 83.4311 182.793 90.3322 182.985 97.2203C183.274 107.618 179.486 116.376 172.846 124.092C168.418 129.233 163.185 133.414 157.438 136.962C145.598 144.274 132.665 148.689 119.084 151.318C104.91 154.062 90.6203 154.688 76.2619 153.254C59.2626 151.556 42.9519 147.402 27.9212 138.979C20.0988 134.597 13.1243 129.168 7.74154 121.876C2.6609 114.988 0.0231269 107.331 0.0913451 98.6833C0.198545 85.3828 0.464921 72.0693 0.0263753 58.7818C-0.454401 44.1942 5.66251 33.0312 16.337 23.8883C27.2065 14.5825 39.9211 8.80225 53.6005 5.20831C83.4541 -2.63124 113.032 -1.80688 142.115 8.94887C152.559 12.81 162.129 18.2579 170.137 26.1594C176.244 32.184 180.75 39.1732 182.338 47.7523C182.77 50.0821 182.897 52.4965 182.92 54.8718C182.991 62.0923 182.946 69.3127 182.946 76.5332L182.949 76.5365ZM176.78 51.0921C176.549 49.8605 176.4 48.8537 176.166 47.8696C174.214 39.6489 169.351 33.3212 163.097 27.958C154.011 20.1641 143.382 15.2994 132.042 11.8879C114.289 6.54748 96.1557 5.20831 77.7562 6.92545C64.8045 8.13429 52.2458 10.9853 40.2622 16.1335C30.6207 20.2781 21.7815 25.6446 14.7875 33.6731C3.42105 46.7195 3.38856 62.3041 14.6608 75.3928C18.3771 79.7068 22.7853 83.1737 27.5216 86.2789C28.5286 86.9403 29.24 86.924 30.2731 86.3245C49.738 75.0115 69.2355 63.754 88.7037 52.4443C90.0648 51.6526 91.4064 51.2746 92.9852 51.2713C120.217 51.2388 147.446 51.1606 174.678 51.0954C175.312 51.0954 175.945 51.0954 176.78 51.0954V51.0921ZM31.8388 96.1158V97.7352C31.8388 109.299 31.8681 120.866 31.8031 132.43C31.7966 133.847 32.2936 134.502 33.4988 135.118C47.9384 142.498 63.3817 146.112 79.426 147.399C90.8509 148.314 102.247 147.907 113.577 146.125C126.048 144.166 138.035 140.68 149.314 134.883C150.438 134.303 150.828 133.662 150.821 132.394C150.769 120.719 150.789 109.048 150.789 97.3735V95.7704C111.095 112.899 71.5841 112.948 31.8356 96.119L31.8388 96.1158ZM147.391 90.2475C147.05 90.0292 146.751 89.8239 146.436 89.6414C128.504 79.2571 110.566 68.8826 92.6473 58.4723C91.754 57.9542 91.1303 58.0878 90.3019 58.57C72.4287 68.9478 54.5393 79.2995 36.6531 89.6577C36.2146 89.9119 35.789 90.1889 35.2627 90.5114C68.576 107.383 118.697 105.477 147.388 90.2508L147.391 90.2475ZM103.653 57.4035C103.624 57.5143 103.595 57.6251 103.569 57.7359C104.384 58.2149 105.196 58.7003 106.015 59.1728C121.549 68.1691 137.083 77.1718 152.637 86.1387C153.157 86.4385 154.073 86.7057 154.476 86.4548C162.883 81.2317 170.182 74.8812 174.311 65.595C175.461 63.0111 176.075 60.1861 176.955 57.4003H103.656L103.653 57.4035ZM156.893 130.224C157.338 129.98 157.575 129.882 157.78 129.738C161.837 126.904 165.566 123.698 168.733 119.879C173.301 114.375 176.575 108.23 176.76 100.935C176.985 92.0982 176.858 83.2519 176.874 74.412C176.874 74.2915 176.731 74.1709 176.533 73.8548C176.406 74.0894 176.341 74.2426 176.25 74.3729C171.439 81.2969 165.199 86.6699 158.134 91.137C157.283 91.6747 156.854 92.2058 156.86 93.3038C156.909 105.128 156.889 116.956 156.889 128.781C156.889 129.188 156.889 129.598 156.889 130.221L156.893 130.224ZM6.27972 74.324C6.23099 75.0767 6.19851 75.3276 6.19851 75.5785C6.19851 83.884 6.03933 92.196 6.28297 100.495C6.37392 103.584 7.02687 106.774 8.05989 109.693C11.0907 118.266 17.2401 124.385 24.4518 129.556C24.7799 129.791 25.1502 129.97 25.6017 130.23C25.67 129.869 25.7414 129.67 25.7414 129.471C25.7479 117.419 25.7609 105.366 25.7154 93.3169C25.7154 92.7955 25.2964 92.0722 24.8513 91.792C17.6787 87.2759 11.3084 81.8964 6.27972 74.3306V74.324Z" fill="#00BA9D"/>
+                    </svg>
+                    <div
+                      style={{
+                        marginLeft: "33px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          เพิ่มความพึงพอใจ
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+สร้างลูกค้าประจำ                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "59px",
+                      color: "#000",
+                      fontFamily: '"LINE Seed Sans TH"',
+                      fontSize: "32px",
+                      fontStyle: "normal",
+                      fontWeight: 700,
+                      marginLeft: "33px",
+                      marginTop: "24px",
+                    }}
+                  >
+                    รักษาลูกค้า
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <div
+              style={{
+                width: "354px",
+                height: "188px",
+                color: "#000",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "14px",
+                fontStyle: "normal",
+                fontWeight: 400,
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>  
+
+
+
+
+            <div
+              style={{
+                width: "100%",
+                height: "64px",
+                color: "#12574C",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "24px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                lineHeight: "64px",
+                marginTop:'10px'
+              }}
+            >
+Digital Transformation
+      
+            </div>
+            <div style={{width:'347px',height:'2px',background:'#114940',marginBottom:'25px'}}></div>
+            <div className="groupcard">
+              <swiper-container
+                pagination={true}
+                style={{ width: "323px", height: "500px", background: "white" }}
+              >
+                <swiper-slide
+                  style={{
+                    height: "470px",
+                    borderRadius: "0px 0px 70px 0px",
+                    background: "#56D7A6",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "369px",
+                      background: "#C8F0C0",
+                      borderRadius: "0px 0px 70px 0px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="209"
+                      height="196"
+                      viewBox="0 0 167 196"
+                      fill="none"
+                      style={{ marginLeft: "35px", marginTop: "40px" }}
+                    >
+  <path d="M172.758 0C173.342 0.195307 173.922 0.405637 174.514 0.58592C180.753 2.48265 184.887 8.22542 184.593 14.6029C184.295 21.1119 179.766 26.5054 173.496 27.8237C167.064 29.1758 160.614 26.126 157.833 20.218C157.185 18.8433 156.473 18.4527 155.03 18.4677C148.311 18.5429 141.59 18.4978 134.871 18.5053C134.257 18.5053 133.639 18.5579 132.927 18.5879V37.559C134.785 37.559 136.589 37.5214 138.394 37.5665C144.167 37.7092 148.3 40.3909 150.625 45.668C151.077 46.6933 151.559 47.0914 152.678 47.0576C155.188 46.9788 157.701 47.0238 160.214 47.0351C163.628 47.0539 165.787 48.9131 165.764 51.7976C165.742 54.637 163.677 56.3986 160.32 56.4211C157.622 56.4399 154.92 56.4474 152.223 56.4662C152.11 56.4662 152 56.5526 151.778 56.6465V74.9076C152.305 74.9452 152.848 75.0165 153.391 75.0165C161.932 75.0241 170.471 74.9902 179.012 75.0579C180.297 75.0691 180.855 74.6184 181.394 73.5179C184.487 67.2155 191.522 64.192 198.184 66.2052C204.695 68.1733 209.031 74.8363 208.093 81.4354C207.098 88.4364 201.394 93.6909 194.34 93.7472C188.425 93.7923 184.02 91.0317 181.326 85.7359C180.889 84.8758 180.493 84.38 179.397 84.3875C170.478 84.4363 161.563 84.4176 152.645 84.4213C152.4 84.4213 152.155 84.4739 151.661 84.5302C151.661 85.2025 151.661 85.8673 151.661 86.5321C151.661 96.9247 151.669 107.314 151.661 117.706C151.654 125.913 146.073 131.438 137.795 131.453C136.232 131.453 134.664 131.453 132.822 131.453V149.864C133.568 149.898 134.227 149.95 134.883 149.95C141.729 149.958 148.571 149.924 155.418 149.98C156.691 149.992 157.388 149.661 158.006 148.452C161.273 142.101 168.639 139.269 175.309 141.672C181.865 144.035 185.753 150.961 184.352 157.763C182.935 164.632 176.571 169.522 169.495 168.955C164.065 168.52 160.064 165.744 157.716 160.82C157.17 159.674 156.575 159.303 155.327 159.314C146.597 159.37 137.871 159.348 129.14 159.34C125.056 159.34 123.402 157.699 123.402 153.68C123.402 146.364 123.402 139.043 123.402 131.588H85.7C85.6699 132.193 85.6134 132.846 85.6134 133.503C85.6058 140.14 85.6134 146.773 85.6058 153.41C85.6021 157.706 83.9819 159.34 79.7241 159.344C69.4867 159.348 59.253 159.366 49.0156 159.318C47.8024 159.31 47.1505 159.607 46.5891 160.767C43.5069 167.115 36.5325 170.153 29.852 168.182C23.3373 166.259 18.9853 159.652 19.8595 153C20.7751 146.029 26.4722 140.722 33.5446 140.617C39.4602 140.531 43.8724 143.272 46.5966 148.561C47.0149 149.372 47.3276 149.988 48.4768 149.98C57.3314 149.924 66.186 149.947 75.0406 149.939C75.3458 149.939 75.6472 149.86 76.0655 149.8V131.445C74.2493 131.445 72.5086 131.479 70.7678 131.438C65.0029 131.299 60.8431 128.651 58.5145 123.374C58.0511 122.326 57.5273 122.007 56.4422 122.033C53.6803 122.104 50.9146 122.085 48.1528 122.048C45.2402 122.007 43.1301 119.956 43.1791 117.285C43.2281 114.671 45.2892 112.714 48.1151 112.677C51.1294 112.639 54.14 112.669 57.3088 112.669V84.5002C56.721 84.4701 56.1747 84.4138 55.6245 84.4138C47.1467 84.41 38.6689 84.4363 30.1911 84.38C28.8799 84.3725 28.2469 84.7744 27.6515 85.9762C24.7239 91.9143 18.0547 94.9416 11.702 93.3604C5.36434 91.7904 0.906894 86.1115 0.944573 79.6551C0.982252 73.0522 5.451 67.5047 11.962 65.9723C18.2619 64.4888 24.7842 67.5386 27.6817 73.4691C28.2695 74.6748 28.9213 75.0616 30.225 75.0541C39.1964 74.9978 48.1716 75.0241 57.3653 75.0241C57.3992 74.2691 57.4557 73.6118 57.4557 72.9583C57.4633 65.6982 57.4444 58.4343 57.4633 51.1741C57.4821 43.1703 63.0662 37.6003 71.0805 37.559C72.761 37.5515 74.4377 37.559 76.1974 37.559V18.6142C75.7452 18.5729 75.3835 18.5091 75.0218 18.5091C66.2312 18.5016 57.4369 18.5391 48.6464 18.464C47.3615 18.4527 47.1053 19.1588 46.6908 20.0189C43.7066 26.2425 37.0374 29.3824 30.3871 27.726C23.9552 26.126 19.4978 20.0565 19.7992 13.3184C20.0705 7.2902 24.4488 1.9756 30.4097 0.431928C30.892 0.304228 31.3629 0.142724 31.8377 0C33.3449 0 34.852 0 36.3592 0C36.8113 0.172771 37.256 0.371834 37.7156 0.510802C41.6343 1.69391 44.6373 4.03759 46.4384 7.69959C47.0149 8.87143 47.6893 9.1381 48.8837 9.13434C59.1739 9.09303 69.4641 9.10805 79.7505 9.11181C84.0158 9.11181 85.7151 10.7869 85.7151 14.9748C85.7151 21.7917 85.7151 28.6087 85.7151 35.4256V37.435H123.394C123.394 29.8143 123.394 22.3213 123.394 14.8245C123.394 10.8658 125.139 9.11932 129.129 9.11556C137.223 9.1043 145.32 9.0104 153.409 9.1719C155.953 9.22448 157.55 8.77753 158.85 6.29113C160.749 2.65542 164.393 1.0479 168.236 0C169.743 0 171.251 0 172.758 0ZM104.607 122.067C115.655 122.067 126.702 122.07 137.75 122.067C140.892 122.067 142.234 120.741 142.234 117.631C142.241 95.5463 142.241 73.4578 142.234 51.3732C142.234 48.2633 140.896 46.9562 137.739 46.9525C115.644 46.9487 93.5524 46.9487 71.4573 46.9525C68.1792 46.9525 66.8831 48.2332 66.8831 51.4783C66.8793 73.5029 66.8793 95.5237 66.8831 117.548C66.8831 120.782 68.1868 122.063 71.4686 122.067C82.5161 122.07 93.5637 122.067 104.611 122.067H104.607ZM29.2039 154.574C29.1436 157.147 31.167 159.265 33.7556 159.333C36.3667 159.4 38.5069 157.44 38.6162 154.882C38.7254 152.272 36.589 150.018 33.9703 149.977C31.4345 149.935 29.268 152.031 29.2077 154.574H29.2039ZM10.3644 79.6889C10.3681 82.2316 12.4782 84.365 15.0215 84.3988C17.6214 84.4326 19.8256 82.2053 19.7766 79.5987C19.7276 77.0372 17.6251 75.0203 15.0215 75.0391C12.4254 75.0579 10.3606 77.1198 10.3644 79.6926V79.6889ZM198.753 79.6288C198.722 77.0635 196.631 75.0316 194.031 75.0353C191.431 75.0428 189.355 77.086 189.344 79.6588C189.329 82.2729 191.563 84.4701 194.156 84.395C196.703 84.3199 198.786 82.164 198.753 79.6288ZM33.797 18.772C36.3441 18.8358 38.5257 16.7851 38.6124 14.2424C38.6991 11.7034 36.6682 9.50993 34.1173 9.40101C31.4911 9.28458 29.2454 11.3991 29.2077 14.017C29.1738 16.5635 31.2424 18.7119 33.797 18.772ZM170.493 18.772C173.059 18.772 175.154 16.6987 175.18 14.1297C175.207 11.5569 173.161 9.44233 170.591 9.3935C167.942 9.34092 165.787 11.4743 165.81 14.1259C165.836 16.7025 167.92 18.772 170.489 18.7757L170.493 18.772ZM170.561 150.236C167.984 150.202 165.874 152.238 165.817 154.814C165.757 157.466 167.882 159.637 170.527 159.618C173.093 159.603 175.177 157.511 175.184 154.942C175.192 152.369 173.131 150.27 170.561 150.236Z" fill="#00BA9D"/>
+<path d="M123.398 103.287C123.398 96.9244 123.372 90.8549 123.409 84.7891C123.428 81.4614 125.975 79.3318 129.091 79.9477C131.247 80.3759 132.791 82.1675 132.803 84.5111C132.84 92.3347 132.848 100.154 132.799 107.978C132.78 110.667 130.84 112.624 128.157 112.65C121.88 112.71 115.602 112.707 109.325 112.654C106.544 112.632 104.521 110.521 104.57 107.888C104.615 105.334 106.612 103.336 109.314 103.298C113.33 103.242 117.347 103.283 121.367 103.279C121.981 103.279 122.592 103.279 123.409 103.279L123.398 103.287Z" fill="#00BA9D"/>
+<path d="M95.1387 65.7281C90.4778 65.7281 86.0919 65.7356 81.7023 65.7281C78.4393 65.7206 76.2953 63.8426 76.3029 61.0257C76.3066 58.2088 78.4431 56.3496 81.7211 56.3459C87.5576 56.3346 93.3979 56.3346 99.2344 56.3459C102.716 56.3534 104.551 58.1938 104.555 61.6867C104.566 69.0708 104.566 76.4549 104.555 83.8353C104.551 87.0766 102.644 89.2024 99.8034 89.1761C96.9586 89.1499 95.1462 87.0503 95.1387 83.7526C95.1311 77.8221 95.1387 71.8878 95.1387 65.7281Z" fill="#00BA9D"/>
+<path d="M83.3603 103.287C81.0995 103.287 78.8388 103.313 76.5818 103.28C73.6315 103.238 71.5818 101.259 71.6119 98.5396C71.642 95.8841 73.6466 93.9348 76.4989 93.9085C81.0807 93.871 85.6624 93.871 90.248 93.9085C93.0664 93.9311 95.1161 95.9255 95.1388 98.5471C95.1614 101.233 93.0739 103.238 90.1463 103.28C87.8855 103.313 85.6248 103.287 83.3678 103.287H83.3603Z" fill="#00BA9D"/>
+
+                    </svg>
+                    <div
+                      style={{
+                        marginLeft: "33px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          ออกแบบภาพรวมธุรกิจ
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+                          วางตำแหน่งทางการตลาด
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "199px",
+                      height: "59px",
+                      color: "#000",
+                      fontFamily: '"LINE Seed Sans TH"',
+                      fontSize: "32px",
+                      fontStyle: "normal",
+                      fontWeight: 700,
+                      textAlign: "center",
+                      marginLeft: "33px",
+                      marginTop: "24px",
+                    }}
+                  >
+                    พัฒนากลยุทธ์
+                  </div>
+                </swiper-slide>
+                <swiper-slide
+                  style={{
+                    height: "470px",
+                    borderRadius: "0px 0px 70px 0px",
+                    background: "#56D7A6",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "369px",
+                      background: "#C8F0C0",
+                      borderRadius: "0px 0px 70px 0px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="195"
+                      height="196"
+                      viewBox="0 0 167 196"
+                      fill="none"
+                      style={{ marginLeft: "50px", marginTop: "40px" }}
+                    >
+<g clip-path="url(#clip0_735_1273)">
+<path d="M108.542 130.872C108.939 131.829 109.217 132.522 109.512 133.205C113.751 143.062 117.989 152.915 122.225 162.769C122.438 163.263 122.67 163.768 122.782 164.288C123.119 165.859 122.316 167.291 120.869 167.811C119.489 168.306 117.983 167.769 117.2 166.458C116.925 165.996 116.738 165.479 116.522 164.981C111.831 154.083 107.127 143.189 102.476 132.274C102.027 131.22 101.503 130.824 100.327 130.84C94.8762 130.908 89.4255 130.911 83.9748 130.84C82.658 130.824 81.9964 131.175 81.4526 132.453C76.847 143.328 72.1465 154.165 67.4754 165.014C67.3476 165.313 67.233 165.619 67.0921 165.912C66.2339 167.714 64.5797 168.439 62.9583 167.733C61.3106 167.014 60.685 165.365 61.4809 163.491C64.2816 156.91 67.1216 150.345 69.9485 143.777C71.5536 140.043 73.1586 136.312 74.7572 132.577C74.9635 132.092 75.1404 131.595 75.4221 130.872C74.6032 130.872 73.9776 130.872 73.3486 130.872C53.128 130.872 32.9041 130.872 12.6835 130.872C9.33253 130.872 8.45138 129.991 8.45138 126.621C8.45138 92.1311 8.44155 57.6385 8.47758 23.1491C8.47758 21.8023 8.24173 21.0834 6.807 20.5564C1.99834 18.7802 -0.740109 13.7541 0.177074 8.79314C1.09753 3.80613 5.39847 0.14639 10.4987 0.00975931C10.8819 0 11.2619 0 11.6451 0C65.2774 0 118.913 0 172.545 0C177.596 0 181.448 2.41055 183.188 6.62982C185.458 12.1308 182.805 18.4353 177.177 20.5629C175.85 21.0638 175.52 21.6884 175.523 23.0027C175.556 57.3294 175.549 91.6594 175.549 125.986C175.549 126.581 175.569 127.18 175.529 127.775C175.398 129.753 174.281 130.846 172.27 130.859C167.802 130.889 163.331 130.869 158.863 130.869C142.838 130.869 126.814 130.869 110.789 130.869C110.137 130.869 109.486 130.869 108.542 130.869V130.872ZM169.368 21.5453H14.6391V124.649H169.368V21.5453ZM92.0231 6.09957C65.4838 6.09957 38.9444 6.09957 12.4051 6.09957C11.6419 6.09957 10.8754 6.0833 10.1187 6.17114C8.08778 6.40861 6.52529 7.9701 6.23703 9.98377C5.78827 13.1263 7.98951 15.3124 11.6288 15.3124C65.1988 15.3124 118.769 15.3124 172.339 15.3124C172.719 15.3124 173.102 15.3286 173.482 15.2961C175.991 15.0977 177.845 13.123 177.835 10.6702C177.829 8.19782 175.991 6.285 173.439 6.11909C172.788 6.0768 172.133 6.09632 171.477 6.09632C144.994 6.09632 118.507 6.09632 92.0231 6.09632V6.09957Z" fill="#00BA9D"/>
+<path d="M135.425 53.5723C138.95 49.5157 142.36 45.5925 146.042 41.3569C143.991 41.3569 142.285 41.37 140.578 41.3569C138.357 41.3374 136.955 40.1143 136.988 38.247C137.021 36.4415 138.383 35.2444 140.522 35.2313C144.391 35.2086 148.263 35.1988 152.131 35.2313C154.66 35.2541 155.79 36.4252 155.8 38.9659C155.816 43.4682 155.816 47.9672 155.8 52.4695C155.793 54.6036 154.608 55.9601 152.793 55.9829C150.994 56.0057 149.733 54.6361 149.671 52.5411C149.619 50.7552 149.615 48.9659 149.586 47.18C149.586 47.1475 149.52 47.1117 149.373 46.975C148.993 47.3687 148.587 47.7623 148.217 48.1885C144.898 52.0011 141.593 55.8235 138.265 59.6296C136.31 61.8645 134.482 61.8417 132.536 59.6036C129.077 55.625 125.621 51.6433 122.162 47.668C121.815 47.2678 121.445 46.8872 120.999 46.4025C116.888 51.1325 112.866 55.7584 108.843 60.3876C107.988 61.3733 107.163 62.385 106.275 63.3382C104.981 64.7207 103.216 64.8639 101.899 63.7481C100.582 62.629 100.395 60.8137 101.621 59.3954C107.261 52.8502 112.925 46.3244 118.624 39.8312C120.066 38.1884 122.077 38.2762 123.584 39.9874C126.997 43.8618 130.368 47.7721 133.758 51.666C134.256 52.2386 134.757 52.8079 135.432 53.5756L135.425 53.5723Z" fill="#00BA9D"/>
+<path d="M80.2045 87.5409C80.2045 79.8441 80.2045 72.144 80.2045 64.4472C80.2045 63.9592 80.1783 63.468 80.2307 62.9833C80.3879 61.5064 81.5639 60.3775 83.0249 60.2637C84.4661 60.1498 85.819 61.0932 86.1728 62.5506C86.3234 63.172 86.3365 63.8388 86.3365 64.483C86.3464 79.8799 86.3431 95.2768 86.3398 110.671C86.3398 111.211 86.3562 111.76 86.2677 112.291C85.9893 113.959 84.6922 115.004 83.0707 114.916C81.4787 114.831 80.3061 113.621 80.2143 111.933C80.1783 111.285 80.2045 110.631 80.2045 109.981C80.2045 102.499 80.2045 95.0198 80.2045 87.5377V87.5409Z" fill="#00BA9D"/>
+<path d="M128.278 100.967C120.328 100.967 112.381 100.954 104.431 100.98C103.082 100.983 101.952 100.671 101.231 99.4606C100.183 97.7007 101.175 95.4365 103.2 95.0136C103.779 94.8932 104.389 94.8965 104.985 94.8965C120.557 94.89 136.126 94.89 151.699 94.8965C152.187 94.8965 152.682 94.8932 153.163 94.9648C154.817 95.212 155.885 96.5198 155.79 98.1398C155.702 99.6623 154.539 100.895 152.94 100.937C150.166 101.009 147.388 100.97 144.61 100.97C139.166 100.97 133.722 100.97 128.278 100.97V100.967Z" fill="#00BA9D"/>
+<path d="M128.343 87.0172C120.668 87.0172 112.99 87.0172 105.315 87.0172C104.772 87.0172 104.225 87.0367 103.684 86.9879C102 86.8415 100.844 85.6249 100.828 84.0211C100.811 82.414 101.958 81.1616 103.619 80.9957C103.995 80.9567 104.379 80.9664 104.762 80.9664C120.439 80.9664 136.12 80.9664 151.797 80.9664C152.125 80.9664 152.452 80.9599 152.776 80.9794C154.578 81.0998 155.777 82.2872 155.793 83.9593C155.81 85.6281 154.614 86.8708 152.842 87.0009C152.354 87.0367 151.862 87.0204 151.371 87.0204C143.696 87.0204 136.018 87.0204 128.343 87.0204V87.0172Z" fill="#00BA9D"/>
+<path d="M73.0897 92.4433C73.0897 98.8356 73.1028 105.228 73.0798 111.62C73.0733 113.702 71.763 115.004 69.8926 114.916C68.4644 114.851 67.318 113.868 67.0854 112.437C66.9838 111.799 66.9937 111.142 66.9937 110.495C66.9904 98.468 66.9904 86.4413 66.9937 74.4146C66.9937 73.8745 66.9773 73.328 67.033 72.7913C67.2197 71.0281 68.5103 69.9058 70.2104 69.9806C71.8056 70.0521 73.0438 71.246 73.0667 72.9376C73.1224 76.5649 73.0897 80.1953 73.0929 83.8258C73.0929 86.6983 73.0929 89.5675 73.0929 92.44L73.0897 92.4433Z" fill="#00BA9D"/>
+<path d="M121.877 114.929C116.102 114.929 110.327 114.932 104.552 114.929C102.217 114.929 100.88 113.855 100.828 111.985C100.775 110.04 102.154 108.829 104.536 108.826C116.194 108.813 127.852 108.813 139.513 108.826C141.515 108.826 142.753 109.75 143.028 111.315C143.287 112.792 142.537 114.223 141.128 114.698C140.529 114.9 139.847 114.916 139.205 114.919C133.43 114.935 127.655 114.929 121.88 114.929H121.877Z" fill="#00BA9D"/>
+<path d="M53.7568 96.3502C53.7568 91.5258 53.7503 86.7047 53.7568 81.8804C53.7601 79.4698 54.8836 78.1133 56.8392 78.1133C58.7915 78.1133 59.9183 79.4731 59.9216 81.8836C59.9281 91.6397 59.9281 101.392 59.9216 111.149C59.9216 113.556 58.7849 114.922 56.8392 114.922C54.8902 114.922 53.7634 113.553 53.7601 111.149C53.7535 106.217 53.7601 101.285 53.7601 96.3534L53.7568 96.3502Z" fill="#00BA9D"/>
+<path d="M43.6908 41.3532C39.118 41.3532 34.5452 41.363 29.9756 41.35C27.7646 41.3435 26.3233 40.1008 26.3462 38.266C26.3659 36.4931 27.7777 35.2309 29.8708 35.2276C39.1245 35.2114 48.3783 35.2049 57.6287 35.2276C60.3377 35.2341 61.9427 37.4853 60.829 39.6486C60.1575 40.9531 58.9979 41.3727 57.5697 41.363C52.9445 41.337 48.316 41.3532 43.6908 41.3532Z" fill="#00BA9D"/>
+<path d="M43.8085 46.8448C48.3781 46.8448 52.9509 46.835 57.5204 46.8448C59.7872 46.8513 61.1826 48.0224 61.176 49.8702C61.1695 51.6952 59.7577 52.9118 57.504 52.9151C48.3093 52.9313 39.1145 52.9411 29.9165 52.9118C27.2239 52.9021 25.6647 50.8526 26.6179 48.6763C27.2108 47.323 28.3212 46.8285 29.7691 46.835C34.4467 46.8578 39.1276 46.8448 43.8085 46.8448Z" fill="#00BA9D"/>
+<path d="M40.6017 100.104C40.6017 96.3698 40.5919 92.6384 40.605 88.9039C40.6148 86.7536 41.758 85.4035 43.5629 85.3515C45.4038 85.2994 46.6944 86.708 46.7042 88.9169C46.7272 96.3828 46.7272 103.852 46.7042 111.318C46.6977 113.608 45.5315 114.922 43.6317 114.919C41.7285 114.916 40.6115 113.601 40.605 111.305C40.5919 107.57 40.605 103.839 40.605 100.104H40.6017Z" fill="#00BA9D"/>
+<path d="M33.4839 104.246C33.4839 106.685 33.5035 109.125 33.4773 111.562C33.4577 113.592 32.2883 114.883 30.503 114.919C28.7047 114.955 27.3911 113.702 27.3715 111.698C27.3191 106.711 27.3224 101.724 27.3682 96.7407C27.3879 94.7433 28.6949 93.4388 30.4539 93.4453C32.226 93.4551 33.4577 94.7726 33.4806 96.77C33.5068 99.2619 33.4871 101.757 33.4871 104.249L33.4839 104.246Z" fill="#00BA9D"/>
+</g>
+<defs>
+<clipPath id="clip0_735_1273">
+<rect width="184" height="168" fill="white"/>
+</clipPath>
+</defs>
+                    </svg>
+                    <div
+                      style={{
+                        marginLeft: "33px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+ทำ Data Analysis                        </div>
+                      </div>
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+สร้าง Dashboard                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "59px",
+                      color: "#000",
+                      fontFamily: '"LINE Seed Sans TH"',
+                      fontSize: "32px",
+                      fontStyle: "normal",
+                      fontWeight: 700,
+                      marginLeft: "33px",
+                      marginTop: "24px",
+                    }}
+                  >
+เติบโตด้วย Data                  </div>
+                </swiper-slide>
+                <swiper-slide
+                  style={{
+                    height: "470px",
+                    borderRadius: "0px 0px 70px 0px",
+                    background: "#56D7A6",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "369px",
+                      background: "#C8F0C0",
+                      borderRadius: "0px 0px 70px 0px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="220"
+                      height="196"
+                      viewBox="0 0 167 196"
+                      fill="none"
+                      style={{ marginLeft: "30px", marginTop: "40px" }}
+                    >
+                    <g clip-path="url(#clip0_735_1288)">
+<path d="M82.8815 -5.64223e-05C84.8511 0.994961 87.1135 1.66391 88.6992 3.08248C90.1031 4.3397 90.8741 6.38016 91.6821 8.18531C92.0626 9.03242 92.3151 9.55682 93.3217 9.6543C101.863 10.4712 110.404 11.3082 118.939 12.2192C120.06 12.3402 120.228 11.7116 120.568 11.0023C122.76 6.44739 127.652 4.11448 132.463 5.30783C137.382 6.52807 140.674 10.9149 140.456 15.9639C140.452 16.0749 140.479 16.2026 140.435 16.2967C139.146 19.0498 140.991 20.1121 142.957 21.3424C148.755 24.9695 154.475 28.7176 160.201 32.4557C160.962 32.9532 161.44 33.0238 162.235 32.4153C167.238 28.5966 173.89 29.5412 177.358 34.4928C180.806 39.4074 179.483 45.8582 174.318 49.3407C174.089 49.4953 173.86 49.65 173.523 49.8786C174.998 55.3713 176.469 60.8708 177.951 66.367C178.796 69.4999 179.705 72.6161 180.482 75.7625C180.738 76.7978 181.152 77.181 182.253 77.2617C187.788 77.6786 191.902 82.0183 191.99 87.3968C192.077 92.8257 188.165 97.2596 182.678 97.9588C179.86 98.3151 177.372 97.4411 175.035 95.8578C168.672 101.253 162.346 106.618 155.949 112.044C157.107 114.521 157.548 117.062 156.865 119.715C155.633 124.502 151.317 127.702 146.209 127.463C145.041 127.409 144.563 127.735 144.135 128.794C141.607 135.074 139.005 141.323 136.395 147.568C136.042 148.416 135.924 148.95 136.783 149.7C141.23 153.582 141.701 159.885 137.991 164.299C134.402 168.565 128.032 169.237 123.609 165.815C119.077 162.309 118.249 156.003 121.696 151.259C121.892 150.991 122.097 150.725 122.376 150.352C115.784 140.966 109.189 131.578 102.533 122.101C99.8498 122.985 97.1766 123.217 94.4967 122.162C91.8673 121.127 90.0324 119.244 88.706 116.726C83.0701 117.963 77.4881 119.153 71.9364 120.464C71.492 120.569 71.0408 121.466 70.9398 122.054C70.216 126.381 67.8425 129.366 63.6947 130.727C56.601 133.053 49.6286 127.45 50.2043 119.889C50.3154 118.437 49.9821 117.755 48.6455 117.126C44.2418 115.052 39.919 112.807 35.5793 110.635C30.637 115.99 23.4558 115.624 19.2541 110.86C16.1635 107.354 15.0996 100.409 21.2203 95.4376C19.8669 92.2475 18.5 89.0137 17.1264 85.7832C15.9211 82.9528 14.6215 80.156 13.5341 77.2819C12.9651 75.7793 12.2682 75.2045 10.5445 75.2616C5.31595 75.4364 0.966166 71.6143 0.121123 66.4006C-0.67342 61.5129 2.39028 56.4605 7.28211 55.0486C8.9419 54.5713 10.8071 54.8402 12.5678 54.6721C13.1772 54.615 14.0627 54.4402 14.3118 54.02C18.0253 47.7642 21.6512 41.4545 25.3445 35.0844C23.2437 32.9061 21.8835 30.4119 21.8903 27.3125C21.9004 22.8551 24.55 18.986 28.6944 17.4531C32.9095 15.8933 37.5657 17.0699 40.3567 20.6566C41.2488 21.8029 41.9289 21.8029 43.1275 21.3895C51.9179 18.3607 60.7286 15.3857 69.5426 12.4276C70.5863 12.078 71.1688 11.7317 71.1654 10.3905C71.1553 5.64398 74.3705 1.65046 78.9425 0.403329C79.3633 0.289037 79.7707 0.131044 80.1848 -0.00341797C81.0837 -0.00341797 81.9826 -0.00341797 82.8782 -0.00341797L82.8815 -5.64223e-05ZM88.0461 70.821C88.1706 71.0429 88.2077 71.1538 88.2818 71.2311C93.1736 76.2028 93.3217 81.6519 88.7834 86.8556C88.477 87.2085 88.4232 88.0926 88.642 88.5431C90.7193 92.8156 92.9009 97.0411 94.9983 101.304C95.3889 102.097 95.8467 102.245 96.6952 102.208C98.1327 102.144 99.6343 102.097 101.008 102.446C102.173 102.742 102.668 102.473 103.291 101.559C109.367 92.6307 115.495 83.7327 121.605 74.8246C121.885 74.4145 122.137 73.9842 122.427 73.5237C119.168 69.6747 118.73 65.4862 120.878 61.0389C116.155 56.9042 111.536 52.8636 106.9 48.8029C104.418 50.5677 101.802 51.0954 98.9542 50.8232C98.4728 50.7761 97.6782 51.2198 97.4628 51.6501C94.2913 58.0001 91.1906 64.387 88.0495 70.821H88.0461ZM59.116 53.9427C62.0888 56.9815 63.2974 60.4607 62.3211 64.6021C62.2436 64.9282 62.587 65.5434 62.9102 65.7383C66.2601 67.7788 69.6369 69.7756 73.0373 71.732C73.3672 71.9202 74.0776 71.937 74.32 71.7152C77.1447 69.11 80.4777 68.4343 84.235 69.0932C87.4704 62.4944 90.6856 55.9764 93.8234 49.418C93.985 49.0819 93.5978 48.302 93.2477 47.939C90.7832 45.3808 89.5914 42.3252 90.3422 38.8829C90.8135 36.7248 92.0053 34.7214 92.9817 32.4019C90.7765 28.9193 88.3659 25.0771 85.8948 21.2718C85.6524 20.8987 85.0531 20.5323 84.6289 20.5424C82.5314 20.5894 80.4373 20.7676 78.0335 20.9188C71.8724 31.6758 65.5093 42.7891 59.1193 53.9427H59.116ZM45.2215 53.899C42.1713 48.581 39.1817 43.3269 36.118 38.1199C35.8789 37.7098 35.0945 37.4577 34.5457 37.424C33.162 37.3467 31.7345 37.6358 30.3912 37.3971C29.196 37.1854 28.7112 37.5484 28.1658 38.5065C24.8395 44.3421 21.4492 50.1408 18.0859 55.9529C17.8704 56.326 17.692 56.7193 17.5203 57.0622C22.2774 62.8071 22.0889 67.6712 17.0624 73.0463C16.756 73.3724 16.7729 74.2666 16.9782 74.7574C19.3518 80.4317 21.7893 86.0791 24.2133 91.7332C24.5129 92.4324 24.826 93.1282 25.0516 93.6425C27.0683 93.7636 28.8459 93.8711 30.7649 93.9854C35.5052 85.9648 40.3129 77.8332 45.1071 69.7218C40.1816 64.2122 41.0468 58.2791 45.2249 53.8956L45.2215 53.899ZM73.0743 85.4336C69.4619 87.0875 65.9066 88.7179 62.3514 90.3415C54.4564 93.9484 46.5682 97.5655 38.6632 101.152C36.1718 102.282 38.4915 104.517 37.5118 106.013C37.3839 106.208 37.7407 107.001 38.0538 107.163C42.7807 109.583 47.5378 111.946 52.4431 114.4C52.8842 113.886 53.2343 113.361 53.6922 112.958C58.0689 109.092 65.0582 109.486 68.4754 114.195C70.014 116.316 71.391 116.659 73.5255 115.795C73.7308 115.711 73.9631 115.701 74.182 115.654C78.7136 114.649 83.2485 113.644 87.8205 112.629C87.9283 109.486 89.0191 106.884 91.2209 104.736C91.4835 104.48 91.5138 103.7 91.3286 103.32C89.1874 98.9471 87.0091 94.5972 84.7635 90.2776C84.5615 89.8877 83.8108 89.4843 83.3832 89.5482C79.2152 90.1835 75.9192 88.6809 73.071 85.4336H73.0743ZM105.913 105.065C106.583 106.114 107.512 106.954 107.657 107.912C108.155 111.264 110.327 111.644 113.165 111.849C120.599 112.387 128.012 113.22 135.429 113.96C136.321 114.05 136.732 113.795 137.22 112.958C138.079 111.489 139.119 110.023 140.405 108.934C141.395 108.094 141.419 107.479 141.062 106.427C139.348 101.34 137.695 96.2377 136.012 91.1416C134.422 86.3278 132.827 81.5141 131.288 76.8718C129.369 76.6029 127.666 76.3676 125.794 76.1053C119.229 85.6656 112.579 95.3536 105.913 105.065ZM139.765 62.2995C141.344 67.4998 140.112 71.6244 135.975 74.8986C135.628 75.1742 135.48 76.0717 135.635 76.5524C138.752 86.1799 141.934 95.7872 145.088 105.401C145.327 106.124 145.482 106.695 146.499 106.692C147.59 106.692 147.751 106.084 147.98 105.28C149.337 100.493 150.738 95.7166 152.118 90.9365C155.946 77.6685 159.77 64.3971 163.575 51.1223C163.716 50.6316 163.841 49.9223 163.598 49.576C162.598 48.1507 161.289 47.9927 159.831 48.9609C159.316 49.3004 158.804 49.6399 158.289 49.9828C152.135 54.0738 145.98 58.1681 139.762 62.3028L139.765 62.2995ZM136.304 118.296C135.88 118.212 135.503 118.101 135.123 118.064C126.982 117.274 118.838 116.521 110.701 115.688C109.098 115.523 107.856 115.617 107.442 117.479C107.361 117.839 107.098 118.202 106.822 118.464C105.964 119.281 106.088 119.957 106.768 120.901C109.977 125.349 113.098 129.86 116.249 134.348C119.427 138.872 122.609 143.397 125.608 147.663C127.642 147.501 129.413 147.41 131.167 147.192C131.598 147.138 132.194 146.765 132.352 146.385C135.103 139.844 137.809 133.285 140.476 126.707C140.631 126.327 140.53 125.564 140.25 125.328C138.048 123.476 136.793 121.12 136.308 118.289L136.304 118.296ZM72.4582 15.8127C62.5433 19.1776 52.6889 22.5189 42.774 25.8839C43.0164 29.5244 41.8582 32.57 39.249 35.0979C42.242 40.315 45.2215 45.438 48.1169 50.6114C48.6859 51.6266 49.2246 51.8552 50.3726 51.6131C51.5476 51.3677 52.8673 51.3543 54.0322 51.6232C55.224 51.8989 55.7122 51.5392 56.261 50.5744C61.8228 40.7923 67.4317 31.0337 73.0238 21.2718C74.072 19.4409 73.8823 17.6212 72.4549 15.8127H72.4582ZM137.661 58.6825C144.452 54.1713 151.401 49.5659 158.313 44.9035C158.649 44.6749 158.75 43.9286 158.764 43.4177C158.804 41.4881 158.794 39.5553 158.73 37.6257C158.713 37.1249 158.572 36.3954 158.229 36.1702C151.583 31.8103 144.903 27.5008 138.203 23.2249C137.904 23.0333 137.274 23.0904 136.927 23.2753C135.369 24.1123 133.857 25.0367 132.153 26.0351V55.7344C133.985 56.7126 135.692 57.6269 137.665 58.6791L137.661 58.6825ZM176.84 78.1996C175.543 73.3892 174.264 68.6427 172.985 63.8962C171.907 59.8993 170.85 55.8991 169.719 51.919C169.605 51.5123 169.079 51.0786 168.659 50.9576C168.45 50.8971 168.009 51.4988 167.743 51.8518C167.585 52.0636 167.551 52.3728 167.473 52.6418C164.44 63.1768 161.403 73.7086 158.373 84.2437C156.118 92.0828 153.872 99.9253 151.61 107.815C152.168 108.181 152.667 108.507 153.236 108.877C159.444 103.613 165.608 98.4025 171.732 93.1518C172.002 92.9232 172.123 92.2542 172.008 91.8912C170.076 85.8034 171.419 81.8603 176.843 78.1996H176.84ZM71.4347 75.6717C67.6842 73.4531 63.8428 71.1773 59.9711 68.8848C56.9916 71.732 53.608 72.8715 49.5848 72.0043C49.1707 71.9135 48.3964 72.448 48.1237 72.8951C45.2249 77.6786 42.3935 82.5024 39.5486 87.3195C37.7879 90.3012 36.0372 93.2862 34.2494 96.3217C34.741 96.8764 35.1787 97.3705 35.687 97.942C47.6287 92.4828 59.5099 87.0505 71.088 81.7595C71.2125 79.5913 71.3169 77.766 71.4347 75.6717ZM127.884 55.8588V25.8637C126.629 25.2653 125.494 24.6602 124.302 24.1964C123.891 24.035 123.178 24.035 122.878 24.2871C118.495 27.9478 114.158 31.6657 109.771 35.4038C111.286 38.6308 111.475 41.8109 110.004 45.0312C109.872 45.3203 110.014 45.9422 110.256 46.154C114.694 50.0937 119.165 53.9931 123.551 57.832C125.06 57.1429 126.427 56.5243 127.884 55.8588ZM119.424 16.4682C115.633 16.0782 111.791 15.6748 107.95 15.2849C102.93 14.7773 97.9139 14.263 92.8908 13.7957C92.406 13.752 91.6485 13.8562 91.4296 14.1756C90.5307 15.4866 89.7934 16.9085 88.9854 18.3136C91.3791 22.0887 93.7527 25.8872 96.2036 29.632C96.4797 30.0522 97.2776 30.506 97.6984 30.4018C101.082 29.5681 104.136 30.2202 107.034 32.2372C111.435 28.4991 115.838 24.7745 120.208 21.013C120.464 20.7945 120.626 20.2297 120.542 19.9003C120.252 18.7775 119.831 17.6884 119.424 16.4749V16.4682ZM136.301 66.2022C136.247 62.7365 133.352 59.9397 129.898 60.017C126.484 60.0943 123.726 62.8878 123.72 66.2695C123.716 69.6882 126.629 72.5892 130.046 72.5623C133.483 72.5387 136.352 69.6209 136.298 66.2022H136.301ZM16.7762 64.9719C16.8166 61.5532 13.9415 58.6556 10.5007 58.6421C7.05318 58.6287 4.18811 61.4927 4.19821 64.9383C4.20831 68.3032 6.99257 71.1202 10.3795 71.1941C13.7799 71.2714 16.7325 68.394 16.7729 64.9719H16.7762ZM130.036 21.6853C133.503 21.6718 136.352 18.7977 136.301 15.3622C136.251 11.9771 133.456 9.18369 130.079 9.14335C126.662 9.10301 123.74 11.9771 123.723 15.4059C123.703 18.8414 126.578 21.7021 130.039 21.6886L130.036 21.6853ZM152.987 117.167C153.01 113.637 150.28 110.884 146.751 110.884C143.304 110.884 140.536 113.566 140.476 116.978C140.412 120.448 143.189 123.328 146.65 123.382C150.135 123.433 152.963 120.659 152.99 117.17L152.987 117.167ZM100.59 34.244C97.0722 34.2373 94.3082 36.9904 94.3149 40.4999C94.3216 43.9824 97.1396 46.7624 100.634 46.7322C104.048 46.7019 106.795 43.9555 106.822 40.5402C106.849 37.024 104.105 34.2507 100.59 34.244ZM33.4515 104.053C33.428 100.557 30.61 97.7941 27.1188 97.8411C23.7318 97.8882 20.9509 100.685 20.9307 104.067C20.9105 107.543 23.7083 110.333 27.213 110.336C30.7346 110.336 33.4751 107.576 33.4515 104.053ZM60.5906 114.578C57.0757 114.561 54.2679 117.325 54.2679 120.804C54.2679 124.249 57.1296 127.097 60.5805 127.08C63.9943 127.063 66.7483 124.323 66.7853 120.901C66.8257 117.365 64.1122 114.598 60.5906 114.582V114.578ZM38.5858 27.178C38.5555 23.7123 35.6668 20.8751 32.2362 20.9457C28.8526 21.013 26.0616 23.8199 26.0313 27.1848C26.001 30.6035 28.8829 33.491 32.3237 33.4944C35.7779 33.4978 38.6127 30.6371 38.5824 27.178H38.5858ZM58.4392 61.7852C58.4022 58.3127 55.5169 55.4856 52.0863 55.5629C48.6994 55.6403 45.9151 58.4505 45.8949 61.8154C45.8747 65.2408 48.7532 68.1116 52.2007 68.1082C55.6684 68.1049 58.4763 65.2576 58.4392 61.7852ZM130.012 163.811C133.507 163.811 136.335 160.991 136.301 157.539C136.267 154.147 133.487 151.354 130.103 151.313C126.656 151.27 123.76 154.093 123.723 157.535C123.686 160.981 126.521 163.811 130.012 163.815V163.811ZM168.824 34.244C165.309 34.2373 162.535 37.0106 162.558 40.5133C162.578 43.9354 165.312 46.6918 168.723 46.7322C172.184 46.7725 175.072 43.969 175.109 40.5267C175.146 37.0812 172.311 34.2507 168.824 34.244ZM81.518 85.4874C85.0228 85.5143 87.8643 82.741 87.8777 79.2753C87.8878 75.8532 84.9992 72.9724 81.5652 72.9791C78.1648 72.9858 75.394 75.7255 75.3267 79.1442C75.256 82.6368 78.0133 85.4572 81.5214 85.4841L81.518 85.4874ZM181.604 93.8442C185.075 93.8207 187.903 90.9365 187.825 87.5044C187.748 84.0957 184.964 81.3662 181.563 81.3595C178.099 81.3527 175.234 84.1966 175.247 87.6287C175.257 91.071 178.119 93.8678 181.604 93.8442ZM98.1933 118.703C101.708 118.75 104.519 116.024 104.56 112.528C104.597 109.092 101.91 106.292 98.5031 106.218C94.9916 106.144 92.1198 108.837 92.0188 112.302C91.9178 115.728 94.7425 118.656 98.1933 118.703ZM81.6157 4.29264C78.0975 4.27919 75.3098 7.04238 75.3233 10.535C75.3334 13.9504 78.0672 16.7337 81.4675 16.7942C84.9049 16.8547 87.8205 14.0344 87.8777 10.5989C87.935 7.15668 85.1069 4.30945 81.6157 4.29264Z" fill="#00BA9D"/>
+</g>
+<defs>
+<clipPath id="clip0_735_1288">
+<rect width="192" height="168" fill="white"/>
+</clipPath>
+</defs>
+                    </svg>
+                    <div
+                      style={{
+                        marginLeft: "33px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+ลดเวลาทำงาน                        </div>
+                      </div>
+                      <div
+                        style={{
+                          width: "270px",
+                          height: "25px",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "21px",
+                            height: "20px",
+                            background: "#114940",
+                            marginTop: "auto",
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            width: "234px",
+                            height: "20px",
+                            color: "#black",
+                            fontFamily: '"LINE Seed Sans TH"',
+                            fontSize: "20px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                          }}
+                        >
+บูรณาการระบบ Cloud                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "300px",
+                      height: "59px",
+                      color: "#000",
+                      fontFamily: '"LINE Seed Sans TH"',
+                      fontSize: "32px",
+                      fontStyle: "normal",
+                      fontWeight: 700,
+                      marginLeft: "33px",
+                      marginTop: "24px",
+                    }}
+                  >
+ประสิทธิภาพจาก AI                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+      
+            <div
+              style={{
+                width: "354px",
+                height: "188px",
+                color: "#000",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "14px",
+                fontStyle: "normal",
+                fontWeight: 400,
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>  
+          </div>
+        </>
+      ) : (
+        <>
+          {" "}
+          <>
+            <div className="header">
+              <div className="logo_box">
+                <a href="/">
+                  {" "}
+                  <img src={pic}></img>
+                </a>
+              </div>
+              <div className="appbar">
+                <div className="menu">
+                  <div className="menu_box">About us</div>
+                  <div className="menu_box">
+                    <a href="Consulting_service">Consulting</a>
+                  </div>
+                  <div className="menu_box">
+                    <a href="Consulting_article">Academy</a>
+                  </div>
+                  <div className="menu_box">
+                    <a href="Innovation">Innovation</a>
+                  </div>
+                  <div className="menu_box">
+                    <a href="Contact">Contact us</a>
+                  </div>
+                  <div className="button_signin">Sign in</div>
                 </div>
-        
-      </>
+                <div className="underline"></div>
+              </div>
+            </div>
+            <div className="service_selector">
+              <div className="consulting_text">Consulting</div>
+              <div className="ourservice">Our service</div>
+              <div className="portfolio">
+                <a href="Consulting_portfolio">Portfolio</a>
+              </div>
+            </div>
+            <div></div>
+            <div className="service_fader">
+              <div className="service_fader_top">
+                {" "}
+                <div className="service_fader_body">
+                  <div>
+                    <div className="fader_text">
+                      Impvest พร้อมรับฟัง<br></br>
+                      และช่วยเหลือ SME ไทย <br></br>
+                      สู่การเติบโตแบบยั่งยืน
+                    </div>
+                    <div
+                      style={{
+                        color: "#6D6D6D",
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "14px",
+                        fontStyle: "normal",
+                        fontWeight: 400,
+                        lineHeight: "20px",
+                        width: "572px",
+                        height: "118px",
+                        marginLeft: "30px",
+                        marginTop: "55px",
+                      }}
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div
+                      style={{
+                        width: "216px",
+                        height: "45px",
+                        marginLeft: "30px",
+                        marginTop: "55px",
+                        color: "#FFF", // Changed to white (#FFF)
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "24px", // Updated font size
+                        fontStyle: "normal",
+                        fontWeight: 700, // Updated font weight
+                        lineHeight: "45px", // Updated line height
+                        borderRadius: "8px",
+                        textAlign: "center",
+                        background: "#56D7A6",
+                        boxShadow: "6px 7px 14.7px 1px rgba(0, 0, 0, 0.25)",
+                      }}
+                    >
+                      คุยกับเราเลย!
+                    </div>
+                  </div>
+                  <div className="fader_pic"></div>
+                </div>
+                <div className="service_fader_bot"></div>
+                <div className="service_main">
+                  <div className="service_content_top">Business Strategy</div>
+                  <div
+                    style={{
+                      width: "1340px",
+                      height: "2px",
+                      background: "#114940",
+                      marginTop: "19px",
+                    }}
+                  ></div>
+                  <div className="service_content_body">
+                    <div className="service_content_body_text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum. Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div className="service_content_body_pic">
+                      <Servicecard
+                        val={{
+                          subword1: "ออกแบบภาพรวมธุรกิจ",
+                          subword2: "วางตำแหน่งทางการตลาด",
+                          tail: "พัฒนากลยุทธ์",
+                          picid: 0,
+                        }}
+                      />
+                      <Servicecard
+                        val={{
+                          subword1: "กำจัดงานซ้ำซ้อน",
+                          subword2: "พัฒนาบุคลากร",
+                          tail: "เพิ่มประสิทธิภาพ",
+                          picid: 1,
+                        }}
+                      />
+                      <Servicecard
+                        val={{
+                          subword1: "กู้ยืมธนาคาร",
+                          subword2: "ออกแบบ Pitch Deck",
+                          tail: "สรรหาเงินทุน",
+                          picid: 2,
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="service_main" style={{ marginTop: "112px" }}>
+                  <div
+                    className="service_content_top"
+                    style={{ marginLeft: "960px" }}
+                  >
+                    Marketing & Branding
+                  </div>
+                  <div
+                    style={{
+                      width: "1340px",
+                      height: "2px",
+                      background: "#114940",
+                      marginTop: "19px",
+                    }}
+                  ></div>
+                  <div className="service_content_body">
+                    {" "}
+                    <div className="service_content_body_pic">
+                      <Servicecard
+                        val={{
+                          subword1: "พัฒนาเอกลักษณ์",
+                          subword2: "ขยายกลุ่มลูกค้า",
+                          tail: "กลยุทธ์แบรนด์",
+                          picid: 3,
+                        }}
+                      />
+                      <Servicecard
+                        val={{
+                          subword1: "การตลาดออนไลน์",
+                          subword2: "แคมเปญโฆษณา",
+                          tail: "เพิ่มยอดขาย",
+                          picid: 4,
+                        }}
+                      />
+                      <Servicecard
+                        val={{
+                          subword1: "เพิ่มความพึงพอใจ",
+                          subword2: "สร้างลูกค้าประจำ",
+                          tail: "รักษาลูกค้า",
+                          picid: 5,
+                        }}
+                      />
+                    </div>
+                    <span
+                      className="service_content_body_text"
+                      style={{
+                        direction: "rtl",
+                        marginLeft: "90px",
+                        marginRight: "0px",
+                      }}
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum. Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </span>
+                  </div>
+                </div>
+                <div className="service_main" style={{ marginTop: "112px" }}>
+                  <div className="service_content_top">
+                    Digital Transformation
+                  </div>
+                  <div
+                    style={{
+                      width: "1340px",
+                      height: "2px",
+                      background: "#114940",
+                      marginTop: "19px",
+                    }}
+                  ></div>
+                  <div className="service_content_body">
+                    {" "}
+                    <div className="service_content_body_text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum. Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div className="service_content_body_pic">
+                      <Servicecard
+                        val={{
+                          subword1: "สร้างหน้าร้านออนไลน์",
+                          subword2: "พัฒนา Database และ Digital Product",
+                          tail: "จัดวางระบบ IT",
+                          picid: 6,
+                        }}
+                      />
+                      <Servicecard
+                        val={{
+                          subword1: "ทำ Data Analysis",
+                          subword2: "สร้าง Dashboard",
+                          tail: "เติบโตด้วย Data",
+                          picid: 7,
+                        }}
+                      />
+                      <Servicecard
+                        val={{
+                          subword1: "ลดเวลาทำงาน",
+                          subword2: "บูรณาการระบบ Cloud",
+                          tail: "ประสิทธิภาพจาก AI",
+                          picid: 8,
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="footer_black" style={{ marginTop: "2400px" }}>
+              <img
+                src={pic2}
+                style={{
+                  width: "230.493px",
+                  height: "59px",
+                  marginLeft: "110px",
+                  marginRight: "387px",
+                }}
+              ></img>
+              <div className="footer_log">
+                <img src={line} style={{ marginRight: "17px" }}></img>
+                <img src={face} style={{ marginRight: "17px" }}></img>
+
+                <img src={ig} style={{ marginRight: "17px" }}></img>
+
+                <img src={link} style={{ marginRight: "17px" }}></img>
+
+                <img src={x} style={{ marginRight: "17px" }}></img>
+
+                <img src={email} style={{ marginRight: "17px" }}></img>
+              </div>
+
+              <div
+                style={{
+                  display: "flex",
+                  gap: "90px",
+                  fontSize: "20px",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  marginLeft: "96px",
+                  lineHeight: "30px",
+                }}
+              >
+                <div>
+                  <div>About us</div>
+                  <div>
+                    <a href="Consulting_article">Academy</a>
+                  </div>
+
+                  <div>
+                    <a href="Contact">Contact us</a>
+                  </div>
+                </div>
+                <div>
+                  {" "}
+                  <div>
+                    <a href="Consulting_service">Consulting</a>
+                  </div>
+                  <div>
+                    <a href="Innovation">Innovation</a>
+                  </div>
+                  <div>Sign in</div>
+                </div>
+              </div>
+            </div>
+          </>
+        </>
+      )}
     </>
   );
 }
