@@ -30,7 +30,7 @@ import p31 from "../assets/3.1.png";
 import p32 from "../assets/3.2.png";
 import p33 from "../assets/3.3.png";
 function Consulting_service() {
-  var isMobile = window.innerWidth <= 5000;
+  var isMobile = window.innerWidth <= 500;
 
   return (
     <>
