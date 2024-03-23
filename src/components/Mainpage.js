@@ -25,7 +25,7 @@ git add --all .
 git commit -a -m "final draft v2"
 git push  */
 function MainPage() {
-  var isMobile = window.innerWidth <= 5000;
+  var isMobile = window.innerWidth <= 500;
 
   // ScrollableItem component definition
   function ScrollableItem({ hi1, underpic_head, underpic_desc }) {
