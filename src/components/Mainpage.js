@@ -25,7 +25,7 @@ git add --all .
 git commit -a -m "final draft v2"
 git push  */
 function MainPage() {
-  var isMobile = window.innerWidth <= 500;
+  var isMobile = window.innerWidth <= 5000;
 
   // ScrollableItem component definition
   function ScrollableItem({ hi1, underpic_head, underpic_desc }) {
@@ -158,7 +158,7 @@ function MainPage() {
               ผ่านการให้คำปรึกษา ให้ความรู้ และ สร้างนวัตกรรมต่าง ๆ เพื่อ
               เสริมสร้างศักยภาพให้กับผู้ประกอบการไทย
             </div>
-            <img src={tryer} style={{marginLeft:'26px',marginTop:'40px'}}></img>
+            <img className= "tryer" src={tryer} style={{marginLeft:'26px',marginTop:'40px'}}></img>
           </div>
           <div className="mol_service">
             {" "}
