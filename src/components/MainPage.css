@@ -1,3 +1,17 @@
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+}
+.appbar a{
+  text-decoration: none;
+}
+.appbar a:visited{
+  color: 
+  #929292;
+}
 .lord{
 
  
@@ -46,16 +60,14 @@
   font-style: normal;
   font-weight: 700;
   line-height: 43px;
-  padding-top: 10px;
   padding-right: 55px;
+  align-items: flex-end;
 }
 .appbar {
   margin-left: 46px;
   display: flex;
   gap: 0;
-
   flex-direction: column;
-  align-self: center;
 }
 .main_img {
   padding-left: 82px;
@@ -194,7 +206,6 @@ font-weight: 700;
 line-height: 280%; /* 458.333% */
 }
 .footer_green{
-    margin-top:61px;
     width: 1512px;
 
     height: 781px;
@@ -226,10 +237,22 @@ line-height: 280%; /* 458.333% */
     height: 106px;
 }
 .footer_black{
+  display: flex;
   width: 1512px;
-
+    color:white;
     height: 193px;
     background: #3E3E3E;
+    align-items: center;
+}
+.footer_black a{
+  text-decoration: none;
+}
+.footer_black a:visited{
+  color:white;
+}
+.footer_log img{
+  width: 38px;
+height: 37px;
 }
 @media (min-width: 1530px) {
   .lord{
@@ -239,4 +262,16 @@ line-height: 280%; /* 458.333% */
     position:relative;
    
   }
+}
+.scrollable-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* For momentum scrolling on iOS devices */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.scrollable-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }

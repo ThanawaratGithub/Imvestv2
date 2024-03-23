@@ -11,6 +11,7 @@ import Consulting_service from "./components/Consulting_service";
 import Innovation from "./components/Innovation";
 import Contact from "./components/Contact";
 import { register } from 'swiper/element/bundle';
+import Consulting_portfolio from "./components/Consulting_portfolio";
 // register Swiper custom elements
 register();
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -69,6 +70,15 @@ root.render(
           element={
             <>
               <Contact />
+            </>
+          }
+        ></Route>
+
+<Route
+          path="/Consulting_portfolio"
+          element={
+            <>
+              <Consulting_portfolio />
             </>
           }
         ></Route>

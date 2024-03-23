@@ -1,0 +1,55 @@
+.service_selector{
+    margin-top: 60px;
+    width: 1380px;
+    margin-left: 66px;
+    display: flex;
+    align-items: baseline;
+}
+.consulting_text{
+    height: 74px;
+    color: #000;
+    font-family: "LINE Seed Sans TH";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+.ourservice_port{
+    margin-left: 99px;
+    margin-right:90px;
+    width: 335px;
+    height: 74px;
+    flex-shrink: 0;
+    background: #C8F0C0;
+
+    color: #000;
+    text-align: center;
+    font-family: "LINE Seed Sans TH";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 300%;
+
+}
+.portfolio_port{
+    width: 335px;
+    height: 74px;
+    color: #000;
+    text-align: center;
+    font-family: "LINE Seed Sans TH";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+        line-height: 300%;
+
+
+}
+.service_fader_port{
+    margin-left: 66px;
+}
+.service_fader_top_port{
+    position:relative;
+    width:  1363px;
+    height: 80px;
+    background: linear-gradient(180deg, #89CDBA 0%, rgba(217, 217, 217, 0.00) 100%);
+    padding-top: 100px;
+}

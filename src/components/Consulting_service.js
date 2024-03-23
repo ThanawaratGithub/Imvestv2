@@ -1,6 +1,24 @@
 import "./Consulting_service.css";
 import pic from "../assets/Imvest_logo.png";
 import Servicecard from "./Servicecard";
+import "./MainPage.css";
+import { useRef, useState } from "react";
+import ig from "../assets/ig_logo.png";
+import face from "../assets/facebook_logo.png";
+import link from "../assets/linkedin_logo.png";
+import x from "../assets/X_logo.png";
+import email from "../assets/email_logo.png";
+import line from "../assets/Line_logo.png";
+import BackToTopButton from "./Backtotop";
+import AnchorTemporaryDrawer from "./Drawer";
+import "./Mainpage_mol.css";
+import molser from "../assets/molser.png.png";
+import highlight from "../assets/highlight.png";
+import cheatail from "../assets/cheatail.png";
+import hi1 from "../assets/hi1.png";
+import hi2 from "../assets/hi2.png";
+import ScrollableList from "./Scrollablelist";
+import pic2 from "../assets/pic2.png";
 function Consulting_service() {
   return (
     <>
@@ -14,14 +32,20 @@ function Consulting_service() {
           </div>
           <div className="appbar">
             <div className="menu">
-              <div className="menu_box">About us</div>
-              <div className="menu_box">Consulting</div>
-              <div className="menu_box">
-                <a href="Consulting_article">Academy</a>
-              </div>
-              <div className="menu_box">Innovation</div>
-              <div className="menu_box">Contact us</div>
-              <div className="button_signin">Sign in</div>
+            <div className="menu_box">About us</div>
+                    <div className="menu_box">
+                      <a href="Consulting_service">Consulting</a>
+                    </div>
+                    <div className="menu_box">
+                      <a href="Consulting_article">Academy</a>
+                    </div>
+                    <div className="menu_box">
+                      <a href="Innovation">Innovation</a>
+                    </div>
+                    <div className="menu_box">
+                      <a href="Contact">Contact us</a>
+                    </div>
+                    <div className="button_signin">Sign in</div>
             </div>
             <div className="underline"></div>
           </div>
@@ -29,8 +53,9 @@ function Consulting_service() {
         <div className="service_selector">
           <div className="consulting_text">Consulting</div>
           <div className="ourservice">Our service</div>
-          <div className="portfolio">Portfolio</div>
+          <div className="portfolio"><a href="Consulting_portfolio">Portfolio</a></div>
         </div>
+        <div></div>
         <div className="service_fader">
           <div className="service_fader_top">
             {" "}
@@ -258,10 +283,48 @@ function Consulting_service() {
                     }}
                   />
                 </div>
+                
               </div>
             </div>
+            
+            
           </div>
+          
+        
         </div>
+        <div className="footer_black" style={{marginTop:'2400px'}}>
+                  <img src={pic2} style={{width: '230.493px',
+height: '59px',marginLeft:'110px',marginRight:'387px'}}></img>
+                  <div className="footer_log">
+                    <img src={line} style={{marginRight:'17px'}}></img>
+                    <img src={face} style={{marginRight:'17px'}}></img>
+
+                    <img src={ig} style={{marginRight:'17px'}}></img>
+
+                    <img src={link} style={{marginRight:'17px'}}></img>
+
+                    <img src={x} style={{marginRight:'17px'}}></img>
+
+                    <img src={email} style={{marginRight:'17px'}}></img>
+
+                  </div>
+                  
+                  <div style={{display:'flex',gap:'90px',fontSize:'20px',fontStyle:'normal',fontWeight:'400',marginLeft:'96px',lineHeight:'30px'}}>
+                  <div>
+                        <div>About us</div>
+                        <div><a href="Consulting_article">Academy</a></div>
+
+                        <div><a href="Contact">Contact us</a></div>
+                      </div>
+                      <div>
+                        {" "}
+                        <div><a href="Consulting_service">Consulting</a></div>
+                        <div><a href="Innovation">Innovation</a></div>
+                        <div>Sign in</div>
+                      </div>
+                    </div>
+                </div>
+        
       </>
     </>
   );

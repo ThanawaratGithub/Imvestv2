@@ -1,0 +1,11 @@
+.scrollable-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* For momentum scrolling on iOS devices */
+  }
+  .scrollable-item {
+    display: inline-block;
+    padding: 10px; /* Adjust padding as needed */
+    margin-right: 10px; /* Space between items */
+  }
