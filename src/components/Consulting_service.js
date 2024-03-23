@@ -30,7 +30,7 @@ import p31 from "../assets/3.1.png";
 import p32 from "../assets/3.2.png";
 import p33 from "../assets/3.3.png";
 function Consulting_service() {
-  var isMobile = window.innerWidth <= 500;
+  var isMobile = window.innerWidth <= 5000;
 
   return (
     <>
@@ -1391,7 +1391,9 @@ Digital Transformation
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>  
-            <div className="momofooter">
+           
+          </div>
+          <div className="momofooter" style={{marginLeft:'auto',marginRight:'auto',marginTop:'3120px'}}>
             <img src={pic2} className="foot1" ></img>
             <div className="foot2">
             <div style={{color:'white',display:'flex',gap:'90px',marginBottom:'32px',marginTop:'16px',lineHeight:'30px'}}>
@@ -1429,8 +1431,6 @@ Digital Transformation
             </div>
 
           </div>
-          </div>
-       
        
         </>
       ) : (

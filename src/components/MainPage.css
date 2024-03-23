@@ -66,6 +66,9 @@ a:visited{
 .appbar a{
   text-decoration: none;
 }
+.momofooter a:visited{
+  color:white;
+}
 .appbar a:visited{
   color: 
   #929292;
