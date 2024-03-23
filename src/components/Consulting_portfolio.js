@@ -20,11 +20,112 @@ import hi2 from "../assets/hi2.png";
 import ScrollableList from "./Scrollablelist";
 import pic2 from "../assets/pic2.png";
 import "./Consulting_portfolio.css";
-
+import mol_port from "../assets/mol_port.png"
 function Consulting_portfolio() {
+    var isMobile = window.innerWidth <= 5000;
+
   return (
     <>
-      <>
+    {isMobile?(<>
+        <div className="molbar">
+            <img src={pic}></img>
+
+            <AnchorTemporaryDrawer />
+          </div>
+          
+          <div className="molar_select">
+            <div style={{ width: "350px", display: "flex" }}>
+              <div
+                className="molar_ar"
+                style={{
+                  width: "186px",
+                  height: "74px",
+                  borderRadius: "10px 10px 0px 0px",
+                  color: "#000",
+                  fontFamily: '"LINE Seed Sans TH"',
+                  fontSize: "20px",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  lineHeight: "80px",
+                  textAlign: "center",
+                }}
+              >
+                <a href="Consulting_service">our service</a>
+              </div>
+              <div
+                className="molar_course"
+                style={{
+                  width: "164px",
+                  height: "74px",
+                  borderRadius: "10px 10px 0px 0px",
+                  background: "#89CDBA",
+                  color: "#000",
+                  fontFamily: '"LINE Seed Sans TH"',
+                  fontSize: "20px",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  lineHeight: "80px",
+                  textAlign: "center",
+                }}
+              >
+                <a href="Consulting_portfolio">portfolio</a>
+
+              </div>
+              
+            </div>
+            
+          </div>
+          
+      <div
+            style={{
+              width: "350px",
+              height: "163px",
+              background: 'linear-gradient(180deg, #89CDBA 0%, rgba(217, 217, 217, 0.00) 100%)',
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            <div
+              style={{
+                width: "348px",
+                height: "136px",
+                color: "#000",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "32px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                lineHeight: "40px",
+                paddingTop: "57px",
+              }}
+            >
+              Impvest เชื่อและมั่นใจ<br></br> ในศักยภาพของ<br></br>  ผู้ประกอบการไทย
+
+            </div>
+            <div
+              style={{
+                
+                width: "354px",
+                height: "188px",
+                color: "#000",
+                fontFamily: '"LINE Seed Sans TH"',
+                fontSize: "14px",
+                fontStyle: "normal",
+                fontWeight: 400,
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>  
+            <img src={mol_port} style={{marginTop:'29px'}}></img>
+            </div>
+    
+    
+    </>):( <>
         <div className="header">
           <div className="logo_box">
             <a href="/">
@@ -121,7 +222,8 @@ height: '59px',marginLeft:'110px',marginRight:'387px'}}></img>
                     </div>
                 </div>
         
-      </>
+      </>)}
+     
     </>
   );
 }

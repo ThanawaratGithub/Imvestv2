@@ -14,19 +14,21 @@ import molser from "../assets/molser.png.png";
 import highlight from "../assets/highlight.png";
 import cheatail from "../assets/cheatail.png";
 import hi1 from "../assets/hi1.png";
+import hi2 from "../assets/hi2.png";
+import hi3 from "../assets/hi3.png";
+import hi4 from "../assets/hi4.png";
+
 import pic2 from "../assets/pic2.png";
 import { useEffect } from "react";
 /* git rm -r --cached .
 git add --all .
-git commit -a -m "Versioning untracked files"
-git push origin master */
+git commit -a -m "final draft v2"
+git push  */
 function MainPage() {
-  var isMobile = window.innerWidth <= 500;
+  var isMobile = window.innerWidth <= 5000;
 
   // ScrollableItem component definition
-
-  // ScrollableItem component remains the same
-  function ScrollableItem({ hi1 }) {
+  function ScrollableItem({ hi1, underpic_head, underpic_desc }) {
     return (
       <div>
         <div
@@ -46,8 +48,9 @@ function MainPage() {
                 borderRadius: "0px 0px 100px 0px",
               }}
             >
-              <img src={hi1} alt="Item Visual" />
+              <img src={hi1} style={{ width: '580px', height: '332px', borderRadius: "0px 0px 100px 0px" }} alt="Item Visual" />
               <div
+                className="underpic_head"
                 style={{
                   color: "#3A3A3A",
                   fontFamily: '"LINE Seed Sans TH"',
@@ -56,12 +59,13 @@ function MainPage() {
                   fontWeight: 700,
                   lineHeight: "24px",
                   marginLeft: "40px",
-                  marginTop: "40px",
+                  marginTop: "25px",
                 }}
               >
-                Amazon
+                {underpic_head}
               </div>
               <div
+                className="underpic_desc"
                 style={{
                   color: "#3A3A3A",
                   width: "479px",
@@ -76,7 +80,7 @@ function MainPage() {
                   whiteSpace: "initial",
                 }}
               >
-                Co-hosted product Selection workshop for 60+ SME
+                {underpic_desc}
               </div>
             </div>
           </div>
@@ -84,24 +88,24 @@ function MainPage() {
       </div>
     );
   }
-
-  // Modified ScrollableList component with drag-to-scroll functionality
+  
+  // ScrollableList component maps over items and passes new props to ScrollableItem
   function ScrollableList({ items }) {
     const listRef = useRef(null);
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
-
+  
     const startDragging = (e) => {
       setIsDragging(true);
       setStartX(e.pageX - listRef.current.offsetLeft);
       setScrollLeft(listRef.current.scrollLeft);
     };
-
+  
     const stopDragging = () => {
       setIsDragging(false);
     };
-
+  
     const onDrag = (e) => {
       if (!isDragging) return;
       e.preventDefault();
@@ -109,7 +113,7 @@ function MainPage() {
       const walk = (x - startX) * 2; // The * 2 is the speed of the scrolling
       listRef.current.scrollLeft = scrollLeft - walk;
     };
-
+  
     return (
       <div
         ref={listRef}
@@ -120,18 +124,17 @@ function MainPage() {
         onMouseMove={onDrag}
       >
         {items.map((item, index) => (
-          <ScrollableItem key={index} hi1={item.hi1} />
+          <ScrollableItem key={index} hi1={item.hi1} underpic_head={item.underpic_head} underpic_desc={item.underpic_desc} />
         ))}
       </div>
     );
   }
 
   const items = [
-    { hi1: hi1 },
-    { hi1: hi1 },
-    { hi1: hi1 },
-    { hi1: hi1 },
-
+    { hi1: hi1, underpic_head: "Amazon SME Workshop", underpic_desc: "พาร์ทเนอร์กับ Amazon ร่วมจัดงานเวิร์คชอปภายใต้หัวข้อ Product Selection Workshop สำหรับผู้ประกอบการกว่า 70 ท่าน" },
+    { hi1: hi2, underpic_head: "BMA Partnership", underpic_desc: "พาร์ทเนอรกับกรุงเทพมหานคร (กทม.) ในการให้บริการที่ปรึกษาสำหรับธุรกิจ SMEs ไทยในชุมชนตลาดน้อย" },
+    { hi1: hi3, underpic_head: "KBANK SME Bootcamp", underpic_desc: "หารือร่วมกับคุณธเนศ นวะบุศย์ รองผู้อำนวยการฝ่ายพัฒนาและส่งเสริมเครือข่ายธุรกิจธนาคารกสิกรไทย ในการสร้างความรู้ทางการเงินให้ SME" },
+    { hi1: hi4, underpic_head: "Consulting Training", underpic_desc: "จัดการอบรมเสริมสร้างทักษะการให้คำปรึกษาเชิงธุรกิจเพื่อพัฒนาศักยภาพสำหรับผู้ประกอบการธุรกิจและที่ปรึกษาทางด้านกลยุทธ์ธุรกิจ" },
     // Add more items as needed
   ];
   return (
@@ -277,7 +280,7 @@ function MainPage() {
                         fontWeight: 700,
                       }}
                     >
-                      Consulting
+                      Academy 
                     </div>
                     <div
                       style={{
@@ -288,8 +291,7 @@ function MainPage() {
                         fontWeight: 400,
                       }}
                     >
-                      ให้คำปรึกษาและบริการทางธุรกิจ สำหรับ SME และบุคคลทั่วไป
-                      ตั้งแต่ เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ
+                      ให้ความรู้และเสริมสร้างทักษะทางธุรกิจสำหรับ SME และบุคคลทั่วไป
                     </div>
                   </div>
                 </swiper-slide>
@@ -324,7 +326,7 @@ function MainPage() {
                         fontWeight: 700,
                       }}
                     >
-                      Consulting
+                      Innovation 
                     </div>
                     <div
                       style={{
@@ -335,58 +337,11 @@ function MainPage() {
                         fontWeight: 400,
                       }}
                     >
-                      ให้คำปรึกษาและบริการทางธุรกิจ สำหรับ SME และบุคคลทั่วไป
-                      ตั้งแต่ เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ
+                    สร้างนวัตกรรมดิจิทัลต่าง ๆ เพื่อสนับสนุน การดำเนินการธุรกิจของ SME และบุคคลทั่วไป 
                     </div>
                   </div>
                 </swiper-slide>
-                <swiper-slide
-                  style={{
-                    borderRadius: "0px 0px 70px 0px",
-                    position: "relative",
-                  }}
-                >
-                  <img
-                    src={molser}
-                    style={{
-                      position: "absolute",
-                      width: "325px",
-                      height: "325px",
-                    }}
-                  ></img>
-                  <div
-                    style={{
-                      marginTop: "349px",
-                      position: "absolute",
-                      width: "329px",
-                      height: "114px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        color: "#3A3A3A",
-                        fontFamily: '"LINE Seed Sans TH"',
-                        fontSize: "23px",
-                        fontStyle: "normal",
-                        fontWeight: 700,
-                      }}
-                    >
-                      Consulting
-                    </div>
-                    <div
-                      style={{
-                        color: "#3A3A3A",
-                        fontFamily: '"LINE Seed Sans TH"',
-                        fontSize: "23px",
-                        fontStyle: "normal",
-                        fontWeight: 400,
-                      }}
-                    >
-                      ให้คำปรึกษาและบริการทางธุรกิจ สำหรับ SME และบุคคลทั่วไป
-                      ตั้งแต่ เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ
-                    </div>
-                  </div>
-                </swiper-slide>
+              
               </swiper-container>
               <div
                 style={{
@@ -465,14 +420,14 @@ function MainPage() {
                     background: "white",
                   }}
                 >
-                  <img
-                    src={highlight}
+                  <div
+                  className="hi1"
                     style={{
                       position: "absolute",
                       width: "325px",
                       height: "325px",
                     }}
-                  ></img>
+                  ></div>
                   <div
                     style={{
                       marginTop: "349px",
@@ -491,7 +446,7 @@ function MainPage() {
                         marginLeft: "20px",
                       }}
                     >
-                      Convention 2023{" "}
+                      Amazon SME Workshop
                     </div>
                     <div
                       style={{
@@ -506,9 +461,8 @@ function MainPage() {
                         marginLeft: "20px",
                       }}
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
+                      พาร์ทเนอร์กับ Amazon ร่วมจัดงานเวิร์คชอป
+ภายใต้หัวข้อ Product Selection
                     </div>
                   </div>
                 </swiper-slide>
@@ -519,14 +473,15 @@ function MainPage() {
                     background: "white",
                   }}
                 >
-                  <img
-                    src={highlight}
+                  <div
+                  className="hi2"
                     style={{
-                      position: "absolute",
+                      position: "absolute",                    borderRadius: "30px 0px 70px 0px",
+
                       width: "325px",
                       height: "325px",
                     }}
-                  ></img>
+                  ></div>
                   <div
                     style={{
                       marginTop: "349px",
@@ -545,8 +500,7 @@ function MainPage() {
                         marginLeft: "20px",
                       }}
                     >
-                      Convention 2023{" "}
-                    </div>
+BMA Partnership                    </div>
                     <div
                       style={{
                         color: "#3A3A3A",
@@ -560,9 +514,7 @@ function MainPage() {
                         marginLeft: "20px",
                       }}
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
+                    พาร์ทเนอรกับกรุงเทพมหานคร (กทม.) ในการให้บริการที่ปรึกษาสำหรับธุรกิจ SMEs ไทยในชุมชนตลาดน้อย
                     </div>
                   </div>
                 </swiper-slide>
@@ -573,14 +525,14 @@ function MainPage() {
                     background: "white",
                   }}
                 >
-                  <img
-                    src={highlight}
+                  <div
+                    className="hi3"
                     style={{
                       position: "absolute",
                       width: "325px",
                       height: "325px",
                     }}
-                  ></img>
+                  ></div>
                   <div
                     style={{
                       marginTop: "349px",
@@ -599,8 +551,7 @@ function MainPage() {
                         marginLeft: "20px",
                       }}
                     >
-                      Convention 2023{" "}
-                    </div>
+KBANK SME Bootcamp                  </div>
                     <div
                       style={{
                         color: "#3A3A3A",
@@ -614,10 +565,62 @@ function MainPage() {
                         marginLeft: "20px",
                       }}
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
+                  หารือร่วมกับคุณธเนศ นวะบุศย์ รองผู้อำนวยการ
+ฝ่ายพัฒนาและส่งเสริมเครือข่ายธุรกิจธนาคาร
                     </div>
+                  </div>
+                </swiper-slide>
+
+                <swiper-slide
+                  style={{
+                    borderRadius: "30px 0px 70px 0px",
+                    position: "relative",
+                    background: "white",
+                  }}
+                >
+                  <div
+                  className="hi4"
+                    style={{
+                      position: "absolute",                    borderRadius: "30px 0px 70px 0px",
+
+                      width: "325px",
+                      height: "325px",
+                    }}
+                  ></div>
+                  <div
+                    style={{
+                      marginTop: "349px",
+                      position: "absolute",
+                      width: "329px",
+                      height: "114px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        color: "#3A3A3A",
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "23px",
+                        fontStyle: "normal",
+                        fontWeight: 700,
+                        marginLeft: "20px",
+                      }}
+                    >
+Consulting Training                   </div>
+                    <div
+                      style={{
+                        color: "#3A3A3A",
+                        fontFamily: '"LINE Seed Sans TH"',
+                        fontSize: "16px",
+                        fontStyle: "normal",
+                        fontWeight: 400,
+                        lineHeight: "24px",
+                        width: "283px",
+                        height: "96px",
+                        marginLeft: "20px",
+                      }}
+                    >
+จัดการอบรมเสริมสร้างทักษะการให้คำปรึกษา
+เชิิงธุรกิจเพื่อพัฒนาศักยภาพสำหรับผู้ปร                    </div>
                   </div>
                 </swiper-slide>
               </swiper-container>
@@ -756,15 +759,17 @@ function MainPage() {
                     ไปกับ Impvest
                   </div>
                   <div className="footer_green_logo">
+                 
+                    <img src={line}></img>
+
+                    <img src={face}></img>
                     <img src={ig}></img>
                     <img src={link}></img>
+                    <img src={x}></img>
 
-                    <img src={line}></img>
 
                     <img src={email}></img>
 
-                    <img src={x}></img>
-                    <img src={face}></img>
                   </div>
                 </div>
                 <div className="footer_black">

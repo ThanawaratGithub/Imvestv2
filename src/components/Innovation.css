@@ -12,3 +12,51 @@ height: 59px;
 margin-top: 70px;
 
 }
+.foo1{
+    width: 400px;
+    height: 316px;
+
+    background: url('../assets/phonepic.png') lightgray 100% 50% / cover no-repeat;
+    margin-left: 20px;
+}
+.foo2{
+
+    color: #C8C8C8;
+
+    font-family: "LINE Seed Sans TH";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 20px;
+
+}
+.foo3{
+    margin-top: 12px;
+    color: #000;
+    font-family: "LINE Seed Sans TH";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 20px;
+
+}
+.foo4{
+    width: 333px;
+    margin-top:24px;
+    color: #000;
+    font-family: "LINE Seed Sans TH";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 20px;
+
+}
+.foo5{
+    margin-top: 24px;
+    width: 323px;
+    height: 48px;
+    flex-shrink: 0;
+    background: url('../assets/apppic.png')  50% / cover no-repeat;
+    margin-left: 20px;
+
+}

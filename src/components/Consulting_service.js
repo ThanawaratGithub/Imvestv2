@@ -41,7 +41,7 @@ function Consulting_service() {
 
             <AnchorTemporaryDrawer />
           </div>
-
+          
           <div className="molar_select">
             <div style={{ width: "350px", display: "flex" }}>
               <div
@@ -60,7 +60,7 @@ function Consulting_service() {
                   textAlign: "center",
                 }}
               >
-                our service
+                <a href="Consulting_service">our service</a>
               </div>
               <div
                 className="molar_course"
@@ -78,7 +78,7 @@ function Consulting_service() {
                   textAlign: "center",
                 }}
               >
-                <a href="Consulting_course">portfolio</a>
+                <a href="Consulting_portfolio">portfolio</a>
               </div>
             </div>
           </div>
@@ -300,7 +300,7 @@ function Consulting_service() {
                   </div>
                   <div
                     style={{
-                      width: "199px",
+                      width: "220px",
                       height: "59px",
                       color: "#000",
                       fontFamily: '"LINE Seed Sans TH"',
@@ -708,7 +708,7 @@ Marketing & Branding
                   </div>
                   <div
                     style={{
-                      width: "199px",
+                      width: "220px",
                       height: "59px",
                       color: "#000",
                       fontFamily: '"LINE Seed Sans TH"',
@@ -959,6 +959,8 @@ Marketing & Branding
             </div>
             <div
               style={{
+                marginTop:'10px',
+                marginBottom:'10px',
                 width: "354px",
                 height: "188px",
                 color: "#000",
@@ -1105,7 +1107,7 @@ Digital Transformation
                   </div>
                   <div
                     style={{
-                      width: "199px",
+                      width: "220px",
                       height: "59px",
                       color: "#000",
                       fontFamily: '"LINE Seed Sans TH"',

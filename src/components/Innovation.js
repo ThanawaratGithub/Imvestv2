@@ -9,8 +9,36 @@ import x from "../assets/X_logo.png";
 import email from "../assets/email_logo.png";
 import line from "../assets/Line_logo.png";
 import pic2 from "../assets/pic2.png";
+import AnchorTemporaryDrawer from './Drawer';
+
 function Innovation(){
-    return (<> <div className="lord">
+
+  var isMobile = window.innerWidth <= 5000;
+
+    return (<>
+    
+
+    {isMobile?(<>
+    
+      <div className="molbar">
+            <img src={pic}></img>
+
+            <AnchorTemporaryDrawer />
+          </div>
+          <div style={{width:'100%',height:'624px',display:'flex',justifyContent:'center',flexDirection:'column'}}>
+
+      <div className='foo1'>
+
+      </div>
+      <div className='foo2'>(Coming Soon)</div>
+      <div className='foo3'>JAIBOON</div>
+      <div className='foo4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</div>
+      <div className='foo5'></div>
+
+
+    </div>
+    
+    </>):(<><> <div className="lord">
     <div className="landlord">
   <div className="header">
   <div className="logo_box">
@@ -107,7 +135,8 @@ height: '59px',marginLeft:'110px',marginRight:'387px'}}></img>
                       </div>
                     </div>
                 </div>
-  </>);
+  </></>)}
+    </>);
 
 
 

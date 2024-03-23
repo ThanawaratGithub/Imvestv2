@@ -1,3 +1,13 @@
+
+.mol_con_head{
+    color: #000;
+
+font-family: "LINE Seed Sans TH";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 110px; /* 343.75% */
+}
 .contact_head{
         display: flex;
     flex-direction: row;
@@ -60,4 +70,26 @@ font-size: 20px;
 font-style: normal;
 font-weight: 700;
 margin-left: 93px;
+}
+.con_box{
+    border-radius: 10px;
+
+}
+.con_box::nth-child(1){
+    height: 42px;
+}
+.con_box::nth-child(2){
+    height: 170px;
+}
+.con_box::nth-child(3){
+    height: 42px;
+}
+.con_text{
+    color: #000;
+
+font-family: "LINE Seed Sans TH";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 80px; /* 550% */
 }
