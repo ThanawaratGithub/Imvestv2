@@ -17,7 +17,7 @@ import hi1 from "../assets/hi1.png";
 import hi2 from "../assets/hi2.png";
 import hi3 from "../assets/hi3.png";
 import hi4 from "../assets/hi4.png";
-
+import tryer from "../assets/try.png";
 import pic2 from "../assets/pic2.png";
 import { useEffect } from "react";
 /* git rm -r --cached .
@@ -25,7 +25,7 @@ git add --all .
 git commit -a -m "final draft v2"
 git push  */
 function MainPage() {
-  var isMobile = window.innerWidth <= 500;
+  var isMobile = window.innerWidth <= 5000;
 
   // ScrollableItem component definition
   function ScrollableItem({ hi1, underpic_head, underpic_desc }) {
@@ -158,6 +158,7 @@ function MainPage() {
               ผ่านการให้คำปรึกษา ให้ความรู้ และ สร้างนวัตกรรมต่าง ๆ เพื่อ
               เสริมสร้างศักยภาพให้กับผู้ประกอบการไทย
             </div>
+            <img src={tryer} style={{marginLeft:'26px',marginTop:'40px'}}></img>
           </div>
           <div className="mol_service">
             {" "}
