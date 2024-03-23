@@ -1,6 +1,5 @@
-a:active {
-  color: none;
-}
+a { color: inherit; } 
+
 a{
   text-decoration: none;
 }
