@@ -30,8 +30,7 @@ function Innovation(){
       <div className='foo1'>
 
       </div>
-      <div className='foo2'>(Coming Soon)</div>
-      <div className='foo3'>JAIBOON</div>
+      <div className='foo3'>TRENDIFY AI</div>
       <div className='foo4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</div>
       <div className='foo5' style={{marginBottom:'30px'}}></div>
 
@@ -114,7 +113,7 @@ function Innovation(){
     marginTop:'127px',
     height:'80px'
 
-}}>(Coming Soon)</div>
+}}></div>
    <div style={{ 
     color: "#000",
     fontFamily: '"LINE Seed Sans TH"',
@@ -122,7 +121,7 @@ function Innovation(){
     fontStyle: "normal",
     fontWeight: 700,
     marginBottom:'50px'
-}}>JAIBOON</div>
+}}>TRENDIFY AI</div>
     <div style={{ 
     display: "flex",
     width: "439px",
@@ -136,7 +135,10 @@ function Innovation(){
     fontStyle: "normal",
     fontWeight: 400,
     lineHeight: "24px"
-}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+}}>Trendify AI เป็นเครื่องมือ AI ที่ออกแบบมาโดยเฉพาะสำหรับธุรกิจขนาดเล็ก
+และขนาดกลางในประเทศไทย เพื่อปฏิวัติกลยุทธ์การตลาดของคุณ สร้างเนื้อหาการตลาดที่น่าดึงดูดด้วยภาพที่ปรับแต่งได้ คำบรรยายที่น่าสนใจ และคำยอดนิยมที่กำลังเป็นที่นิยม 
+ีคุณสมบัติหลักได้แก่การสร้างเนื้อหาอัตโนมัติด้วยภาพคุณภาพสูงและคำบรรยายที่ทันสมัย การปรับแต่งเทมเพลตที่หลากหลายให้เข้ากับแบรนด์ของคุณ การผสมผสานแนวโน้มและคำยอดนิยมล่าสุดเพื่อให้เนื้อหาของคุณโดดเด่น อินเทอร์เฟซที่ใช้งานง่ายสำหรับผู้ใช้ทุกระดับ 
+การรองรับเนื้อหาที่สอดคล้องกับวัฒนธรรมไทย และการวิเคราะห์เชิงลึกจาก AI ที่ให้คำแนะนำและข้อมูลเชิงลึกแบบเรียลไทม์เพื่อปรับปรุงเนื้อหา</div>
     <div className='apppic'><img src = {apppic}></img></div>
     </div></div>
 

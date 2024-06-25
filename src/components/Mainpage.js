@@ -48,7 +48,15 @@ function MainPage() {
                 borderRadius: "0px 0px 100px 0px",
               }}
             >
-              <img src={hi1} style={{ width: '580px', height: '332px', borderRadius: "0px 0px 100px 0px" }} alt="Item Visual" />
+              <img
+                src={hi1}
+                style={{
+                  width: "580px",
+                  height: "332px",
+                  borderRadius: "0px 0px 100px 0px",
+                }}
+                alt="Item Visual"
+              />
               <div
                 className="underpic_head"
                 style={{
@@ -88,24 +96,24 @@ function MainPage() {
       </div>
     );
   }
-  
+
   // ScrollableList component maps over items and passes new props to ScrollableItem
   function ScrollableList({ items }) {
     const listRef = useRef(null);
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
-  
+
     const startDragging = (e) => {
       setIsDragging(true);
       setStartX(e.pageX - listRef.current.offsetLeft);
       setScrollLeft(listRef.current.scrollLeft);
     };
-  
+
     const stopDragging = () => {
       setIsDragging(false);
     };
-  
+
     const onDrag = (e) => {
       if (!isDragging) return;
       e.preventDefault();
@@ -113,7 +121,7 @@ function MainPage() {
       const walk = (x - startX) * 2; // The * 2 is the speed of the scrolling
       listRef.current.scrollLeft = scrollLeft - walk;
     };
-  
+
     return (
       <div
         ref={listRef}
@@ -124,17 +132,42 @@ function MainPage() {
         onMouseMove={onDrag}
       >
         {items.map((item, index) => (
-          <ScrollableItem key={index} hi1={item.hi1} underpic_head={item.underpic_head} underpic_desc={item.underpic_desc} />
+          <ScrollableItem
+            key={index}
+            hi1={item.hi1}
+            underpic_head={item.underpic_head}
+            underpic_desc={item.underpic_desc}
+          />
         ))}
       </div>
     );
   }
 
   const items = [
-    { hi1: hi1, underpic_head: "Amazon SME Workshop", underpic_desc: "พาร์ทเนอร์กับ Amazon ร่วมจัดงานเวิร์คชอปภายใต้หัวข้อ Product Selection Workshop สำหรับผู้ประกอบการกว่า 70 ท่าน" },
-    { hi1: hi2, underpic_head: "BMA Partnership", underpic_desc: "พาร์ทเนอรกับกรุงเทพมหานคร (กทม.) ในการให้บริการที่ปรึกษาสำหรับธุรกิจ SMEs ไทยในชุมชนตลาดน้อย" },
-    { hi1: hi3, underpic_head: "KBANK SME Bootcamp", underpic_desc: "หารือร่วมกับคุณธเนศ นวะบุศย์ รองผู้อำนวยการฝ่ายพัฒนาและส่งเสริมเครือข่ายธุรกิจธนาคารกสิกรไทย ในการสร้างความรู้ทางการเงินให้ SME" },
-    { hi1: hi4, underpic_head: "Consulting Training", underpic_desc: "จัดการอบรมเสริมสร้างทักษะการให้คำปรึกษาเชิงธุรกิจเพื่อพัฒนาศักยภาพสำหรับผู้ประกอบการธุรกิจและที่ปรึกษาทางด้านกลยุทธ์ธุรกิจ" },
+    {
+      hi1: hi1,
+      underpic_head: "Amazon SME Workshop",
+      underpic_desc:
+        "พาร์ทเนอร์กับ Amazon ร่วมจัดงานเวิร์คชอปภายใต้หัวข้อ Product Selection Workshop สำหรับผู้ประกอบการกว่า 70 ท่าน",
+    },
+    {
+      hi1: hi2,
+      underpic_head: "BMA Partnership",
+      underpic_desc:
+        "พาร์ทเนอรกับกรุงเทพมหานคร (กทม.) ในการให้บริการที่ปรึกษาสำหรับธุรกิจ SMEs ไทยในชุมชนตลาดน้อย",
+    },
+    {
+      hi1: hi3,
+      underpic_head: "KBANK SME Bootcamp",
+      underpic_desc:
+        "หารือร่วมกับคุณธเนศ นวะบุศย์ รองผู้อำนวยการฝ่ายพัฒนาและส่งเสริมเครือข่ายธุรกิจธนาคารกสิกรไทย ในการสร้างความรู้ทางการเงินให้ SME",
+    },
+    {
+      hi1: hi4,
+      underpic_head: "Consulting Training",
+      underpic_desc:
+        "จัดการอบรมเสริมสร้างทักษะการให้คำปรึกษาเชิงธุรกิจเพื่อพัฒนาศักยภาพสำหรับผู้ประกอบการธุรกิจและที่ปรึกษาทางด้านกลยุทธ์ธุรกิจ",
+    },
     // Add more items as needed
   ];
   return (
@@ -158,7 +191,11 @@ function MainPage() {
               ผ่านการให้คำปรึกษา ให้ความรู้ และ สร้างนวัตกรรมต่าง ๆ เพื่อ
               เสริมสร้างศักยภาพให้กับผู้ประกอบการไทย
             </div>
-            <img className= "tryer" src={tryer} style={{marginLeft:'26px',marginTop:'40px'}}></img>
+            <img
+              className="tryer"
+              src={tryer}
+              style={{ marginLeft: "26px", marginTop: "40px" }}
+            ></img>
           </div>
           <div className="mol_service">
             {" "}
@@ -281,7 +318,7 @@ function MainPage() {
                         fontWeight: 700,
                       }}
                     >
-                      Academy 
+                      Academy
                     </div>
                     <div
                       style={{
@@ -292,7 +329,8 @@ function MainPage() {
                         fontWeight: 400,
                       }}
                     >
-                      ให้ความรู้และเสริมสร้างทักษะทางธุรกิจสำหรับ SME และบุคคลทั่วไป
+                      ให้ความรู้และเสริมสร้างทักษะทางธุรกิจสำหรับ SME
+                      และบุคคลทั่วไป
                     </div>
                   </div>
                 </swiper-slide>
@@ -327,7 +365,7 @@ function MainPage() {
                         fontWeight: 700,
                       }}
                     >
-                      Innovation 
+                      Innovation
                     </div>
                     <div
                       style={{
@@ -338,11 +376,11 @@ function MainPage() {
                         fontWeight: 400,
                       }}
                     >
-                    สร้างนวัตกรรมดิจิทัลต่าง ๆ เพื่อสนับสนุน การดำเนินการธุรกิจของ SME และบุคคลทั่วไป 
+                      สร้างนวัตกรรมดิจิทัลต่าง ๆ เพื่อสนับสนุน
+                      การดำเนินการธุรกิจของ SME และบุคคลทั่วไป
                     </div>
                   </div>
                 </swiper-slide>
-              
               </swiper-container>
               <div
                 style={{
@@ -422,7 +460,7 @@ function MainPage() {
                   }}
                 >
                   <div
-                  className="hi1"
+                    className="hi1"
                     style={{
                       position: "absolute",
                       width: "325px",
@@ -462,8 +500,8 @@ function MainPage() {
                         marginLeft: "20px",
                       }}
                     >
-                      พาร์ทเนอร์กับ Amazon ร่วมจัดงานเวิร์คชอป
-ภายใต้หัวข้อ Product Selection
+                      พาร์ทเนอร์กับ Amazon ร่วมจัดงานเวิร์คชอป ภายใต้หัวข้อ
+                      Product Selection
                     </div>
                   </div>
                 </swiper-slide>
@@ -475,9 +513,10 @@ function MainPage() {
                   }}
                 >
                   <div
-                  className="hi2"
+                    className="hi2"
                     style={{
-                      position: "absolute",                    borderRadius: "30px 0px 70px 0px",
+                      position: "absolute",
+                      borderRadius: "30px 0px 70px 0px",
 
                       width: "325px",
                       height: "325px",
@@ -501,7 +540,8 @@ function MainPage() {
                         marginLeft: "20px",
                       }}
                     >
-BMA Partnership                    </div>
+                      BMA Partnership{" "}
+                    </div>
                     <div
                       style={{
                         color: "#3A3A3A",
@@ -515,7 +555,9 @@ BMA Partnership                    </div>
                         marginLeft: "20px",
                       }}
                     >
-                    พาร์ทเนอรกับกรุงเทพมหานคร (กทม.) ในการให้บริการที่ปรึกษาสำหรับธุรกิจ SMEs ไทยในชุมชนตลาดน้อย
+                      พาร์ทเนอรกับกรุงเทพมหานคร (กทม.)
+                      ในการให้บริการที่ปรึกษาสำหรับธุรกิจ SMEs
+                      ไทยในชุมชนตลาดน้อย
                     </div>
                   </div>
                 </swiper-slide>
@@ -552,7 +594,8 @@ BMA Partnership                    </div>
                         marginLeft: "20px",
                       }}
                     >
-KBANK SME Bootcamp                  </div>
+                      KBANK SME Bootcamp{" "}
+                    </div>
                     <div
                       style={{
                         color: "#3A3A3A",
@@ -566,8 +609,8 @@ KBANK SME Bootcamp                  </div>
                         marginLeft: "20px",
                       }}
                     >
-                  หารือร่วมกับคุณธเนศ นวะบุศย์ รองผู้อำนวยการ
-ฝ่ายพัฒนาและส่งเสริมเครือข่ายธุรกิจธนาคาร
+                      หารือร่วมกับคุณธเนศ นวะบุศย์ รองผู้อำนวยการ
+                      ฝ่ายพัฒนาและส่งเสริมเครือข่ายธุรกิจธนาคาร
                     </div>
                   </div>
                 </swiper-slide>
@@ -580,9 +623,10 @@ KBANK SME Bootcamp                  </div>
                   }}
                 >
                   <div
-                  className="hi4"
+                    className="hi4"
                     style={{
-                      position: "absolute",                    borderRadius: "30px 0px 70px 0px",
+                      position: "absolute",
+                      borderRadius: "30px 0px 70px 0px",
 
                       width: "325px",
                       height: "325px",
@@ -606,7 +650,8 @@ KBANK SME Bootcamp                  </div>
                         marginLeft: "20px",
                       }}
                     >
-Consulting Training                   </div>
+                      Consulting Training{" "}
+                    </div>
                     <div
                       style={{
                         color: "#3A3A3A",
@@ -620,8 +665,9 @@ Consulting Training                   </div>
                         marginLeft: "20px",
                       }}
                     >
-จัดการอบรมเสริมสร้างทักษะการให้คำปรึกษา
-เชิิงธุรกิจเพื่อพัฒนาศักยภาพสำหรับผู้ปร                    </div>
+                      จัดการอบรมเสริมสร้างทักษะการให้คำปรึกษา
+                      เชิิงธุรกิจเพื่อพัฒนาศักยภาพสำหรับผู้ปร{" "}
+                    </div>
                   </div>
                 </swiper-slide>
               </swiper-container>
@@ -629,42 +675,57 @@ Consulting Training                   </div>
           </div>
           <img src={cheatail} style={{ width: "100%" }}></img>
           <div className="momofooter">
-            <img src={pic2} className="foot1" ></img>
+            <img src={pic2} className="foot1"></img>
             <div className="foot2">
-            <div style={{color:'white',display:'flex',gap:'90px',marginBottom:'32px',marginTop:'16px',lineHeight:'30px'}}>
+              <div
+                style={{
+                  color: "white",
+                  display: "flex",
+                  gap: "90px",
+                  marginBottom: "32px",
+                  marginTop: "16px",
+                  lineHeight: "30px",
+                }}
+              >
+                <div>
                   <div>
-                        <div><a href="/">About us</a></div>
-                        <div><a href="Consulting_article">Academy</a></div>
+                    <a href="/">About us</a>
+                  </div>
+                  <div>
+                    <a href="Consulting_article">Academy</a>
+                  </div>
 
-                        <div><a href="Contact">Contact us</a></div>
-                      </div>
-                      <div>
-                        {" "}
-                        <div><a href="Consulting_service">Consulting</a></div>
-                        <div><a href="Innovation">Innovation</a></div>
-                        <div>Sign in</div>
-                      </div>
-                    </div>
-
+                  <div>
+                    <a href="Contact">Contact us</a>
+                  </div>
+                </div>
+                <div>
+                  {" "}
+                  <div>
+                    <a href="Consulting_service">Consulting</a>
+                  </div>
+                  <div>
+                    <a href="Innovation">Innovation</a>
+                  </div>
+                  <div>Sign in</div>
+                </div>
+              </div>
             </div>
             <div className="foot3">
+              <div className="footer_log" style={{ marginLeft: "16px" }}>
+                <img src={line} style={{ marginRight: "17px" }}></img>
+                <img src={face} style={{ marginRight: "17px" }}></img>
 
-            <div className="footer_log" style={{marginLeft:'16px'}}>
-                    <img src={line} style={{marginRight:'17px'}}></img>
-                    <img src={face} style={{marginRight:'17px'}}></img>
+                <img src={ig} style={{ marginRight: "17px" }}></img>
 
-                    <img src={ig} style={{marginRight:'17px'}}></img>
+                <img src={link} style={{ marginRight: "17px" }}></img>
 
-                    <img src={link} style={{marginRight:'17px'}}></img>
+                <img src={x} style={{ marginRight: "17px" }}></img>
 
-                    <img src={x} style={{marginRight:'17px'}}></img>
-
-                    <img src={email} style={{marginRight:'17px'}}></img>
-
-                  </div>
-                  © 2023 Impvest. All Rights Reserved
+                <img src={email} style={{ marginRight: "17px" }}></img>
+              </div>
+              © 2023 Impvest. All Rights Reserved
             </div>
-
           </div>
         </>
       ) : (
@@ -678,7 +739,9 @@ Consulting Training                   </div>
                 </div>
                 <div className="appbar">
                   <div className="menu">
-                    <div className="menu_box" ><a href = '/'>About us</a></div>
+                    <div className="menu_box">
+                      <a href="/">About us</a>
+                    </div>
                     <div className="menu_box">
                       <a href="Consulting_service">Consulting</a>
                     </div>
@@ -697,68 +760,65 @@ Consulting Training                   </div>
                 </div>
               </div>
               <div className="main_page">
-                <div className="main_img">
-                  <div className="img_content">
-                    Impvest พร้อมที่จะอยู่เคียงข้างคุณ<br></br>ผลักดันธุรกิจ
-                    SMEs ไทยเติบโตอย่างยั่งยืน
-                  </div>
-                  <div className="img_subcontent">
-                    เรามุ่งมั่นสนับสนุนให้ธุรกิจ SMEs ไทย ประสบความสำเร็จ
-                    <br></br>
-                    อย่างยั่งยืนผ่านการให้คำปรึกษา ให้ความรู้ และสร้างนวัตกรรม
-                    <br></br>
-                    ต่าง ๆ เพื่อเสริมสร้างศักยภาพให้กับผู้ประกอบการไทย
-                  </div>
-                </div>
-              </div>
-              <div className="service">
-                <div className="service_box">
-                  <div className="service_box_top">
-                    <div className="service_box_header">Consulting</div>
+              <div class="main_img">
+  <div class="img_content">
+    Impvest พร้อมที่จะอยู่เคียงข้างคุณ
+  </div>
+  <div class="img_subcontent">
+    ผลักดัน SME ไทยให้เติบโตอย่างยั่งยืน <br></br>
+    เรามีความมุ่งมั่นในการเสริมสร้างศักยภาพให้กับผู้ประกอบการไทยและสนับสนุนให้ประสบความสำเร็จอย่างยั่งยืน ผ่านการให้คำปรึกษา การมอบความรู้ และการสร้างนวัตกรรม
+  </div>
+</div>
 
-                    <div className="service_box_bottom"></div>
-                  </div>
-                  <div className="service_box_top">
-                    <div className="service_box_header">Academy</div>
-                    <div className="service_box_bottom"></div>
-                  </div>
-                  <div className="service_box_top">
-                    <div className="service_box_header">Innovation</div>
-                    <div className="service_box_bottom"></div>
-                  </div>
-                </div>
-                <div className="service_content">
-                  <div className="service_content_head">บริการของเรา</div>
-                  <div className="service_content_line"></div>
-                  <div className="service_content_typo">
-                    <div>
-                      <div></div> <b>Consulting </b>
-                      <br></br>
-                      ให้คำปรึกษาและบริการทางธุรกิจสำหรับ SME
-                      <br></br>
-                      และบุคคลทั่วไปตั้งแต่เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ
-                    </div>
-                    <br></br>
-                    <div>
-                      <b>Academy</b>
-                      <br></br>
-                      ให้ความรู้และเสริมสร้างทักษะทางธุรกิจสำหรับ SME <br></br>
-                      และบุคคลทั่วไป
-                    </div>
-                    <br></br>
-                    <div>
-                      <b>Innovation</b> <br></br>
-                      สร้างนวัตกรรมดิจิทัลต่าง ๆ เพื่อสนับสนุน <br></br>
-                      การดำเนินการธุรกิจของ SME และบุคคลทั่วไป
-                    </div>
-                  </div>
-                  <div className="service_button">เรียนรู้เพิ่มเติมเลย!</div>
-                </div>
               </div>
+              <div class="impact-section">
+  <div class="impact-content">
+    <div class="impact-item">
+      <div class="impact-number">12,000+</div>
+      <div class="impact-title">Individuals Impacted</div>
+      <div class="impact-description">สร้างผลกระทบให้คนไทยมากกว่า 12,000 ราย</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-number">300+</div>
+      <div class="impact-title">Community Members</div>
+      <div class="impact-description">สร้างเครือข่ายเยาวชนไทยมากกว่า 300 ราย</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-number">20+</div>
+      <div class="impact-title">Organizational Collaborations</div>
+      <div class="impact-description">ร่วมมือผลักดัน SME ไทยกับมากกว่า 20 องค์กร</div>
+    </div>
+  </div>
+</div>
+<div class="services-section">
+  <h2 class="services-title">OUR SERVICES</h2>
+  <div class="services-content">
+    <div class="service-item">
+      <img></img>
+      <h3 class="service-title">Consulting</h3>
+      <p class="service-description">ให้คำปรึกษาและบริการทางธุรกิจตั้งแต่เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ</p>
+      <button class="service-button">ศึกษเพิ่มเติม</button>
+    </div>
+    <div class="service-item">
+    <img></img>
+    <h3 class="service-title">Academy</h3>
+      <p class="service-description">ให้ความรู้และเสริมสร้างทักษะทางธุรกิจผ่านบทความ คอร์สเรียน และงานสัมมนา</p>
+      <button class="service-button">ศึกษเพิ่มเติม</button>
+    </div>
+    <div class="service-item">
+    <img></img>
+
+      <h3 class="service-title">Innovation</h3>
+      <p class="service-description">สร้างนวัตกรรมดิจิทัลและปัญญาประดิษฐ์เพื่อสนับสนุนการดำเนินการธุรกิจ</p>
+      <button class="service-button">ศึกษเพิ่มเติม</button>
+    </div>
+  </div>
+</div>
+              <div className="slider_wrapper">
               <div
                 className="service_slider"
                 style={{
-                  width: "1530px",
+                  width: "99vw",
                   height: "728px",
                   backgroundColor: "#E2F9CC",
                   marginTop: "57px",
@@ -790,7 +850,7 @@ Consulting Training                   </div>
                   }}
                 ></div>
                 <ScrollableList items={items} />
-              </div>
+              </div></div>
               <div className="footer">
                 <div className="footer_green">
                   <div className="footer_green_content">
@@ -798,7 +858,6 @@ Consulting Training                   </div>
                     ไปกับ Impvest
                   </div>
                   <div className="footer_green_logo">
-                 
                     <img src={line}></img>
 
                     <img src={face}></img>
@@ -806,42 +865,64 @@ Consulting Training                   </div>
                     <img src={link}></img>
                     <img src={x}></img>
 
-
                     <img src={email}></img>
-
                   </div>
                 </div>
                 <div className="footer_black">
-                  <img src={pic2} style={{width: '230.493px',
-height: '59px',marginLeft:'110px',marginRight:'387px'}}></img>
+                  <img
+                    src={pic2}
+                    style={{
+                      width: "230.493px",
+                      height: "59px",
+                      marginLeft: "110px",
+                      marginRight: "387px",
+                    }}
+                  ></img>
                   <div className="footer_log">
-                    <img src={line} style={{marginRight:'17px'}}></img>
-                    <img src={face} style={{marginRight:'17px'}}></img>
+                    <img src={line} style={{ marginRight: "17px" }}></img>
+                    <img src={face} style={{ marginRight: "17px" }}></img>
 
-                    <img src={ig} style={{marginRight:'17px'}}></img>
+                    <img src={ig} style={{ marginRight: "17px" }}></img>
 
-                    <img src={link} style={{marginRight:'17px'}}></img>
+                    <img src={link} style={{ marginRight: "17px" }}></img>
 
-                    <img src={x} style={{marginRight:'17px'}}></img>
+                    <img src={x} style={{ marginRight: "17px" }}></img>
 
-                    <img src={email} style={{marginRight:'17px'}}></img>
-
+                    <img src={email} style={{ marginRight: "17px" }}></img>
                   </div>
-                  
-                  <div style={{display:'flex',gap:'90px',fontSize:'20px',fontStyle:'normal',fontWeight:'400',marginLeft:'96px',lineHeight:'30px'}}>
-                  <div>
-                        <div>About us</div>
-                        <div><a href="Consulting_article">Academy</a></div>
 
-                        <div><a href="Contact">Contact us</a></div>
-                      </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "90px",
+                      fontSize: "20px",
+                      fontStyle: "normal",
+                      fontWeight: "400",
+                      marginLeft: "96px",
+                      lineHeight: "30px",
+                    }}
+                  >
+                    <div>
+                      <div>About us</div>
                       <div>
-                        {" "}
-                        <div><a href="Consulting_service">Consulting</a></div>
-                        <div><a href="Innovation">Innovation</a></div>
-                        <div>Sign in</div>
+                        <a href="Consulting_article">Academy</a>
+                      </div>
+
+                      <div>
+                        <a href="Contact">Contact us</a>
                       </div>
                     </div>
+                    <div>
+                      {" "}
+                      <div>
+                        <a href="Consulting_service">Consulting</a>
+                      </div>
+                      <div>
+                        <a href="Innovation">Innovation</a>
+                      </div>
+                      <div>Sign in</div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <BackToTopButton />
