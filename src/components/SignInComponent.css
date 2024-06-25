@@ -1,0 +1,138 @@
+/* General Styles for Sign In Page */
+.signin-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #E0F7FA, #A5D6A7);
+  }
+  
+  /* Sign In Section Styles */
+  .signin-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .signin-container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .signin-title {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .signin-subtitle {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .signin-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .signin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signin-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .signin-button.google {
+    background: #ffffff;
+    color: #757575;
+    border: 1px solid #757575;
+  }
+  
+  .signin-button.facebook {
+    background: #3b5998;
+    color: #ffffff;
+  }
+  
+  .signin-button.apple {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .signin-button:hover {
+    opacity: 0.9;
+  }
+  
+  .register-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-text {
+    color: #757575;
+    font-size: 18px;
+  }
+  
+  .register-link {
+    color: #1E88E5;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .signin-container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .signin-title {
+      font-size: 30px;
+    }
+  
+    .signin-subtitle {
+      font-size: 18px;
+    }
+  
+    .signin-buttons {
+      gap: 15px;
+    }
+  
+    .signin-button {
+      font-size: 16px;
+    }
+  
+    .register-text, .register-link {
+      font-size: 16px;
+    }
+  }
+  

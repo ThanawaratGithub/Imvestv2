@@ -754,7 +754,7 @@ function MainPage() {
                     <div className="menu_box">
                       <a href="Contact">Contact us</a>
                     </div>
-                    <div className="button_signin">Sign in</div>
+                    <div className="button_signin"><a href="Sign_in">Sign in</a></div>
                   </div>
                   <div className="underline"></div>
                 </div>

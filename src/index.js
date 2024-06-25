@@ -12,6 +12,7 @@ import Innovation from "./components/Innovation";
 import Contact from "./components/Contact";
 import { register } from 'swiper/element/bundle';
 import Consulting_portfolio from "./components/Consulting_portfolio";
+import SignInComponent from "./components/Signin";
 // register Swiper custom elements
 register();
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -79,6 +80,14 @@ root.render(
           element={
             <>
               <Consulting_portfolio />
+            </>
+          }
+        ></Route>
+<Route
+          path="/Sign_in"
+          element={
+            <>
+              <SignInComponent />
             </>
           }
         ></Route>
