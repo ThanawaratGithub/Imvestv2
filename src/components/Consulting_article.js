@@ -545,35 +545,35 @@ function Consulting_article() {
             >
               <tr>
                 <th>
-                  <Card />
+                <Card title="2024 mkt trends" subtitle="สำหรับมือใหม่ลงสนาม" />
                 </th>
                 <th>
-                  <Card />
+                  <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
                 </th>
                 <th>
-                  <Card />
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <Card />
-                </th>
-                <th>
-                  <Card />
-                </th>
-                <th>
-                  <Card />
+                <Card title = "ตัวอย่าง Framework การคิด Marketing Campaign"  />
                 </th>
               </tr>
               <tr>
                 <th>
-                  <Card />
+                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
                 </th>
                 <th>
-                  <Card />
+                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
                 </th>
                 <th>
-                  <Card />
+                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
+                </th>
+                <th>
+                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
+                </th>
+                <th>
+                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
                 </th>
               </tr>
             </table>

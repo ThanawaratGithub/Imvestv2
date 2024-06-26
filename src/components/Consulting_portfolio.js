@@ -113,13 +113,9 @@ function Consulting_portfolio() {
                 fontWeight: 400,
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+           ด้วยปัญหาธุรกิจในก็ตาม ทีมของเรามีความแน่แน่และมีความยินดี
+ที่จะให้ความช่วยเหลือกับ SME ทุกขนาด  ไม่ว่าจะเป็นธุรกิจที่กำลังเริ่มก่อตั้ง
+หรือธุรกิจที่มีรากฐานมาเป็นเวลานานแล้
             </div>  
             <img src={mol_port} style={{marginTop:'29px',marginBottom:'30px'}}></img>
 
@@ -211,13 +207,15 @@ function Consulting_portfolio() {
     lineHeight: '60px',position:'absolute',right:'20px',top:'150px'}}>Impvest เชื่อและมั่นใจใน
 ศักยภาพของผู้ประกอบการไทย</div>
 
-<div style={{width: '621px',
+<div style={{width: '553px',
     color: '#000',
     fontFamily: '"LINE Seed Sans TH"',
-    fontSize: '14px',
+    fontSize: '19px',
     fontStyle: 'normal',
     fontWeight: 400,
-    lineHeight: '20px',position:'absolute',right:'20px',top:'300px',marginBottom:'163px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    lineHeight: '25px',position:'absolute',right:'85px',top:'300px',marginBottom:'163px'}}>ด้วยปัญหาธุรกิจในก็ตาม ทีมของเรามีความแน่แน่และมีความยินดี
+    ที่จะให้ความช่วยเหลือกับ SME ทุกขนาด  ไม่ว่าจะเป็นธุรกิจที่กำลังเริ่มก่อตั้ง
+    หรือธุรกิจที่มีรากฐานมาเป็นเวลานานแล้ว</div>
 
           <img src={pinter} style={{marginLeft:'50px',position:'relative'}}>
 

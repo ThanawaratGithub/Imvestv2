@@ -60,3 +60,84 @@ margin-top: 70px;
     margin-left: 20px;
 
 }
+
+.inv_header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 40px; /* Adjust padding to match design */
+    box-sizing: border-box;
+    color: #929292;
+  
+  font-family: "LINE Seed Sans TH App";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px; /* 179.167% */
+  }
+  
+  .inv_logo_box {
+    width: 281px;
+    height: 72px; /* Adjust logo size as needed */
+    flex-shrink: 0;
+    margin-right: 40px; /* Adjust margin between logo and menu */
+  }
+  
+  .inv_logo_box img {
+  
+  }
+  
+  .inv_appbar {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  
+  .inv_menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    color: #929292;
+  
+    font-family: "LINE Seed Sans TH";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px; /* 179.167% */
+    color: #929292;
+  }
+  
+  .inv_menu_box {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .inv_menu_box a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  
+  .inv_button_signin {
+    width: 123px;
+    height: 43px;
+    border-radius: 5px;
+    background: #3affbb;
+    color: #000;
+    color: #000;
+
+    text-align: center;
+    font-family: "LINE Seed Sans TH";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+  }
+  
+  .inv_underline {
+    width: 100%;
+    height: 2px;
+    background: #d9d9d9;
+    margin-top: 10px;
+  }
+  

@@ -19,6 +19,10 @@ import hi3 from "../assets/hi3.png";
 import hi4 from "../assets/hi4.png";
 import tryer from "../assets/try.png";
 import pic2 from "../assets/pic2.png";
+import talk from "../assets/talk 1.png";
+import book from "../assets/book.png";
+import innovation from "../assets/innovation.png";
+import collab from "../assets/Group 134.png"
 import { useEffect } from "react";
 /* git rm -r --cached .
 git add --all .
@@ -772,14 +776,18 @@ function MainPage() {
 
               </div>
               <div class="impact-section">
+                <div className="foo_imp">OUR IMPACT</div>
   <div class="impact-content">
     <div class="impact-item">
+      
       <div class="impact-number">12,000+</div>
       <div class="impact-title">Individuals Impacted</div>
       <div class="impact-description">สร้างผลกระทบให้คนไทยมากกว่า 12,000 ราย</div>
     </div>
+    
     <div class="impact-item">
-      <div class="impact-number">300+</div>
+      
+      <div class="impact-number" style={{marginLeft:'20px'}}>300+</div>
       <div class="impact-title">Community Members</div>
       <div class="impact-description">สร้างเครือข่ายเยาวชนไทยมากกว่า 300 ราย</div>
     </div>
@@ -791,26 +799,29 @@ function MainPage() {
   </div>
 </div>
 <div class="services-section">
-  <h2 class="services-title">OUR SERVICES</h2>
+  <p class="services-title">OUR SERVICES</p>
   <div class="services-content">
     <div class="service-item">
-      <img></img>
-      <h3 class="service-title">Consulting</h3>
-      <p class="service-description">ให้คำปรึกษาและบริการทางธุรกิจตั้งแต่เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ</p>
-      <button class="service-button">ศึกษเพิ่มเติม</button>
-    </div>
-    <div class="service-item">
-    <img></img>
-    <h3 class="service-title">Academy</h3>
-      <p class="service-description">ให้ความรู้และเสริมสร้างทักษะทางธุรกิจผ่านบทความ คอร์สเรียน และงานสัมมนา</p>
-      <button class="service-button">ศึกษเพิ่มเติม</button>
-    </div>
-    <div class="service-item">
-    <img></img>
+    <h3 class="service-title">Consulting</h3>
 
-      <h3 class="service-title">Innovation</h3>
+      <img src={talk}></img>
+      <p class="service-description">ให้คำปรึกษาและบริการทางธุรกิจตั้งแต่เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ</p>
+      <button class="service-button">ศึกษาเพิ่มเติม</button>
+    </div>
+    <div class="service-item">
+    <h3 class="service-title">Academy</h3>
+
+    <img src={book}></img>
+      <p class="service-description">ให้ความรู้และเสริมสร้างทักษะทางธุรกิจผ่านบทความ คอร์สเรียน และงานสัมมนา</p>
+      <button class="service-button">ศึกษาเพิ่มเติม</button>
+    </div>
+    <div class="service-item">
+    <h3 class="service-title">Innovation</h3>
+
+    <img src={innovation}></img>
+
       <p class="service-description">สร้างนวัตกรรมดิจิทัลและปัญญาประดิษฐ์เพื่อสนับสนุนการดำเนินการธุรกิจ</p>
-      <button class="service-button">ศึกษเพิ่มเติม</button>
+      <button class="service-button">ศึกษาเพิ่มเติม</button>
     </div>
   </div>
 </div>
@@ -851,12 +862,16 @@ function MainPage() {
                 ></div>
                 <ScrollableList items={items} />
               </div></div>
+              <div style={{width:"100%" ,backgroundColor:'white',display:'flex',justifyContent:'center'}}>
+                <img  src = {collab}></img>
+              </div>
               <div className="footer">
                 <div className="footer_green">
                   <div className="footer_green_content">
                     มาร่วมกันสร้างคอมมูนิตี้ SMEs ไทย<br></br> ที่แข็งแกร่ง
                     ไปกับ Impvest
                   </div>
+                  
                   <div className="footer_green_logo">
                     <img src={line}></img>
 
