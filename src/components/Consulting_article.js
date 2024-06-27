@@ -21,6 +21,47 @@ function Consulting_article() {
     navigate('/');
     window.location.reload(); // Optional: to refresh the page
   };
+  const customerPersona = {
+    title: "Customer Persona",
+    author: "Author Name",
+    date: "dd/mm/yy",
+    views: 1600,
+    sections: [
+      {
+        title: "Demographic",
+        text: "การใช้ข้อมูลประชากรศาสตร์เช่น เพศ อายุ สัญชาติ สถานะ และรายได้ เช่น กลุ่มลูกค้าชาวไทย และ กลุ่มลูกค้าที่เป็นนักท่องเที่ยวชาวต่างชาติ เป็นต้น"
+      },
+      // Add more sections as needed
+    ]
+  };
+
+  const marketingCampaign = {
+    title: "Marketing Campaign",
+    author: "Author Name",
+    date: "dd/mm/yy",
+    views: 1200,
+    sections: [
+      {
+        title: "Overview",
+        text: "ในการคิด campaign การวิเคราะห์ธุรกิจให้รอบด้านเป็นสิ่งสำคัญ ผ่านการวิเคราะห์โครงสร้าง 3 กลุ่ม..."
+      },
+      // Add more sections as needed
+    ]
+  };
+
+  const purchaseFunnel = {
+    title: "Purchase Funnel",
+    author: "Author Name",
+    date: "dd/mm/yy",
+    views: 1800,
+    sections: [
+      {
+        title: "Awareness",
+        text: "ในขั้นตอนนี้ลูกค้าจะเริ่มรู้จักแบรนด์ สินค้าหรือบริการผ่านช่องทางต่างๆ เช่น โซเชียลมีเดีย โฆษณาทั้งออนไลน์และออฟไลน์..."
+      },
+      // Add more sections as needed
+    ]
+  };
   return (
     <>
       {isMobile ? (
@@ -557,37 +598,17 @@ function Consulting_article() {
             >
               <tr>
                 <th>
-                <Card title="2024 mkt trends" subtitle="สำหรับมือใหม่ลงสนาม" />
+
+                <Card title="Customer Persona" subtitle="Understanding yours" link="/customer-persona" />
                 </th>
                 <th>
-                  <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
+                <Card title="Marketing Campaign" subtitle="Framework for Marketing" link="/marketing-campaign" />
                 </th>
                 <th>
-                <Card title = "ตัวอย่าง Framework การคิด Marketing Campaign"  />
+                <Card title="Purchase Funnel" subtitle="Customer Purchase" link="/customer-purchase-funnel" />
                 </th>
               </tr>
-              <tr>
-                <th>
-                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
-                </th>
-                <th>
-                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
-                </th>
-                <th>
-                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
-                </th>
-              </tr>
-              <tr>
-                <th>
-                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
-                </th>
-                <th>
-                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
-                </th>
-                <th>
-                <Card title = "Customer Persona"  subtitle="ทำความรู้จักและเข้าใจลูกค้า"/>
-                </th>
-              </tr>
+             
             </table>
           </div>
           <div className="footer_black" style={{ marginTop: "1400px" }}>

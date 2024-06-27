@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ArticleCard.css';
 
 const ArticlePage = ({ title, author, date, views, sections }) => {
@@ -12,7 +13,7 @@ const ArticlePage = ({ title, author, date, views, sections }) => {
       </div>
       <div className="article-content">
         {sections.map((section, index) => (
-          <div key={index}>
+          <div key={index} className="article-section">
             <h2 className="section-title">{section.title}</h2>
             <p className="section-text">{section.text}</p>
           </div>
@@ -20,6 +21,19 @@ const ArticlePage = ({ title, author, date, views, sections }) => {
       </div>
     </div>
   );
+};
+
+ArticlePage.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  views: PropTypes.number.isRequired,
+  sections: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired
+    })
+  ).isRequired
 };
 
 export default ArticlePage;
