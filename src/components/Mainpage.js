@@ -24,6 +24,7 @@ import book from "../assets/book.png";
 import innovation from "../assets/innovation.png";
 import collab from "../assets/Group 134.png"
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 /* git rm -r --cached .
 git add --all .
 git commit -a -m "final draft v2"
@@ -174,6 +175,14 @@ function MainPage() {
     },
     // Add more items as needed
   ];
+  const navigate = useNavigate();
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    navigate('/');
+    window.location.reload(); // Optional: to refresh the page
+  };
   return (
     <>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
@@ -737,32 +746,38 @@ function MainPage() {
           {" "}
           <div className="lord">
             <div className="landlord">
-              <div className="header">
-                <div className="logo_box">
-                  <img src={pic}></img>
-                </div>
-                <div className="appbar">
-                  <div className="menu">
-                    <div className="menu_box">
-                      <a href="/">About us</a>
-                    </div>
-                    <div className="menu_box">
-                      <a href="Consulting_service">Consulting</a>
-                    </div>
-                    <div className="menu_box">
-                      <a href="Consulting_article">Academy</a>
-                    </div>
-                    <div className="menu_box">
-                      <a href="Innovation">Innovation</a>
-                    </div>
-                    <div className="menu_box">
-                      <a href="Contact">Contact us</a>
-                    </div>
-                    <div className="button_signin"><a href="Sign_in">Sign in</a></div>
-                  </div>
-                  <div className="underline"></div>
-                </div>
-              </div>
+            <div className="header">
+      <div className="logo_box">
+        <a href='/'><img src={pic} alt="Logo" /></a>
+      </div>
+      <div className="appbar">
+        <div className="menu">
+          <div className="menu_box">
+            <a href="/">About us</a>
+          </div>
+          <div className="menu_box">
+            <a href="/Consulting_service">Consulting</a>
+          </div>
+          <div className="menu_box">
+            <a href="/Consulting_article">Academy</a>
+          </div>
+          <div className="menu_box">
+            <a href="/Innovation">Innovation</a>
+          </div>
+          <div className="menu_box">
+            <a href="/Contact">Contact us</a>
+          </div>
+          <div className="button_signin">
+            {isLoggedIn ? (
+              <a onClick={handleLogout}>Logout</a>
+            ) : (
+              <a href="/Sign_in">Sign in</a>
+            )}
+          </div>
+        </div>
+        <div className="underline"></div>
+      </div>
+    </div>
               <div className="main_page">
               <div class="main_img">
   <div class="img_content">
@@ -806,14 +821,14 @@ function MainPage() {
 
       <img src={talk}></img>
       <p class="service-description">ให้คำปรึกษาและบริการทางธุรกิจตั้งแต่เริ่มก่อตั้งไปจนถึงการดำเนินธุรกิจ</p>
-      <button class="service-button">ศึกษาเพิ่มเติม</button>
+      <button class="service-button"><a href="/Consulting_service">ศึกษาเพิ่มเติม</a></button>
     </div>
     <div class="service-item">
     <h3 class="service-title">Academy</h3>
 
     <img src={book}></img>
       <p class="service-description">ให้ความรู้และเสริมสร้างทักษะทางธุรกิจผ่านบทความ คอร์สเรียน และงานสัมมนา</p>
-      <button class="service-button">ศึกษาเพิ่มเติม</button>
+      <button class="service-button"><a href="/Consulting_article">ศึกษาเพิ่มเติม</a></button>
     </div>
     <div class="service-item">
     <h3 class="service-title">Innovation</h3>
@@ -821,7 +836,7 @@ function MainPage() {
     <img src={innovation}></img>
 
       <p class="service-description">สร้างนวัตกรรมดิจิทัลและปัญญาประดิษฐ์เพื่อสนับสนุนการดำเนินการธุรกิจ</p>
-      <button class="service-button">ศึกษาเพิ่มเติม</button>
+      <button class="service-button"><a href="/Innovation">ศึกษาเพิ่มเติม</a></button>
     </div>
   </div>
 </div>

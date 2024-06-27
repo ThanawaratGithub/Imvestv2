@@ -6,7 +6,7 @@ const BackToTopButton = () => {
 
   // Show button when page is scrolled up to a given distance
   const toggleVisibility = () => {
-    if (window.pageYOffset > 1900) {
+    if (window.pageYOffset > 3500) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

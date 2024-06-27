@@ -34,6 +34,8 @@ const SignUpComponent = () => {
     try {
       const { data } = await axios.request(options);
       console.log(data);
+      localStorage.setItem('isLoggedIn', 'true');
+      window.location.href = '/'; // Redirect to the main page after successful signup
     } catch (error) {
       console.error(error);
     }
@@ -69,28 +71,35 @@ const SignUpComponent = () => {
           <form onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
-                <label>ชื่อจริง</label>
-                <input type="text" name="firstname" value={formData.firstname} onChange={handleChange} />
+                <label>อีเมล</label>
+                <input type="email" name="email" value={formData.email} onChange={handleChange} required />
               </div>
               <div className="form-group">
-                <label>นามสกุล</label>
-                <input type="text" name="lastname" value={formData.lastname} onChange={handleChange} />
+                <label>รหัสผ่าน</label>
+                <input type="password" name="password" value={formData.password} onChange={handleChange} required />
               </div>
             </div>
             <div className="form-row">
               <div className="form-group">
-                <label>ที่อยู่อีเมล</label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} />
+                <label>ชื่อจริง</label>
+                <input type="text" name="firstname" value={formData.firstname} onChange={handleChange} required />
               </div>
               <div className="form-group">
+                <label>นามสกุล</label>
+                <input type="text" name="lastname" value={formData.lastname} onChange={handleChange} required />
+              </div>
+            </div>
+            <div className="form-row">
+              <div className="form-group">
                 <label>เบอร์โทรศัพท์</label>
-                <input type="tel" name="phone" value={formData.phone} onChange={handleChange} />
+                <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
               </div>
             </div>
             <div className="form-row">
               <div className="form-group">
                 <label>หมวดธุรกิจ</label>
-                <select name="industry" value={formData.industry} onChange={handleChange}>
+                <select name="industry" value={formData.industry} onChange={handleChange} required>
+                  <option value="">เลือกหมวดธุรกิจ</option>
                   <option value="agriculture">เกษตรและอุตสาหกรรมอาหาร</option>
                   <option value="consumer_goods">สินค้าอุปโภคบริโภค</option>
                   <option value="finance">ธุรกิจการเงิน</option>
@@ -103,7 +112,8 @@ const SignUpComponent = () => {
               </div>
               <div className="form-group">
                 <label>ขนาดธุรกิจ</label>
-                <select name="companysize" value={formData.companysize} onChange={handleChange}>
+                <select name="companysize" value={formData.companysize} onChange={handleChange} required>
+                  <option value="">เลือกขนาดธุรกิจ</option>
                   <option value="micro">ธุรกิจรายย่อย (ลูกจ้าง 1 - 4 คน)</option>
                   <option value="small">ธุรกิจขนาดย่อม (ลูกจ้าง 5 - 19 คน)</option>
                   <option value="medium">ธุรกิจขนาดกลาง (ลูกจ้าง 20 - 99 คน)</option>
@@ -114,19 +124,8 @@ const SignUpComponent = () => {
             <div className="form-row">
               <div className="form-group">
                 <label>ที่ตั้งธุรกิจ</label>
-                <select name="company" value={formData.company} onChange={handleChange}>
-                  <option value="">เลือก</option>
-                </select>
-              </div>
-            </div>
-            <div className="form-row">
-              <div className="form-group">
-                <label>ปัญหาที่พบ</label>
-                <textarea name="problem" value={formData.problem} onChange={handleChange}></textarea>
-              </div>
-              <div className="form-group">
-                <label>เป้าหมายที่ตั้งไว้</label>
-                <textarea name="goal" value={formData.goal} onChange={handleChange}></textarea>
+                <textarea name="company" value={formData.company} onChange={handleChange} required>
+                </textarea>
               </div>
             </div>
             <button type="submit" className="submit-button">เสร็จสิ้น</button>

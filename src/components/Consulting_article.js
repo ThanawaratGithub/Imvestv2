@@ -9,11 +9,18 @@ import x from "../assets/X_logo.png";
 import email from "../assets/email_logo.png";
 import line from "../assets/Line_logo.png";
 import pic2 from "../assets/pic2.png";
-
+import { useNavigate } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 function Consulting_article() {
   var isMobile = window.innerWidth <= 500;
+  const navigate = useNavigate();
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    navigate('/');
+    window.location.reload(); // Optional: to refresh the page
+  };
   return (
     <>
       {isMobile ? (
@@ -491,32 +498,37 @@ function Consulting_article() {
         <>
           {" "}
           <div className="header">
-            <div className="logo_box">
-              <a href="/">
-                {" "}
-                <img src={pic}></img>
-              </a>
-            </div>
-            <div className="appbar">
-              <div className="menu">
-                <div className="menu_box"><a href = '/'>About us</a></div>
-                <div className="menu_box">
-                  <a href="Consulting_service">Consulting</a>
-                </div>
-                <div className="menu_box">
-                  <a href="Consulting_article">Academy</a>
-                </div>
-                <div className="menu_box">
-                  <a href="Innovation">Innovation</a>
-                </div>
-                <div className="menu_box">
-                  <a href="Contact">Contact us</a>
-                </div>
-                <div className="button_signin">Sign in</div>
-              </div>
-              <div className="underline"></div>
-            </div>
+      <div className="logo_box">
+        <a href='/'><img src={pic} alt="Logo" /></a>
+      </div>
+      <div className="appbar">
+        <div className="menu">
+          <div className="menu_box">
+            <a href="/">About us</a>
           </div>
+          <div className="menu_box">
+            <a href="/Consulting_service">Consulting</a>
+          </div>
+          <div className="menu_box">
+            <a href="/Consulting_article">Academy</a>
+          </div>
+          <div className="menu_box">
+            <a href="/Innovation">Innovation</a>
+          </div>
+          <div className="menu_box">
+            <a href="/Contact">Contact us</a>
+          </div>
+          <div className="button_signin">
+            {isLoggedIn ? (
+              <a onClick={handleLogout}>Logout</a>
+            ) : (
+              <a href="/Sign_in">Sign in</a>
+            )}
+          </div>
+        </div>
+        <div className="underline"></div>
+      </div>
+    </div>
           <div className="appbar_selector">
             <div className="appbar_article">
               <a href="Consulting_article">บทความน่าสนใจ</a>

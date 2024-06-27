@@ -14,6 +14,7 @@ import { register } from 'swiper/element/bundle';
 import Consulting_portfolio from "./components/Consulting_portfolio";
 import SignInComponent from "./components/Signin";
 import ProfileSetupComponent from "./components/Sign_up";
+import PrivateRoute from "./components/PrivateRoute";
 // register Swiper custom elements
 register();
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -35,7 +36,8 @@ root.render(
           path="/Consulting_article"
           element={
             <>
-              <Consulting_article />
+            <PrivateRoute>       <Consulting_article /></PrivateRoute>
+       
             </>
           }
         ></Route>
@@ -44,7 +46,7 @@ root.render(
           path="/Consulting_course"
           element={
             <>
-              <Consulting_course />
+              <PrivateRoute><Consulting_course /></PrivateRoute>
             </>
           }
         ></Route>
