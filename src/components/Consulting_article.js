@@ -14,7 +14,7 @@ import Grid from "@mui/material/Grid";
 function Consulting_article() {
   var isMobile = window.innerWidth <= 500;
   const navigate = useNavigate();
-  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'false';
 
   const handleLogout = () => {
     localStorage.removeItem('isLoggedIn');

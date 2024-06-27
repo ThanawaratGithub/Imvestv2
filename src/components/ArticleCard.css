@@ -1,63 +1,45 @@
-body {
-    font-family: 'Sarabun', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  .article-container {
-    max-width: 803px;
-    margin: 0 auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  ul li {
-    margin-bottom: 20px;
-  }
-  
-  ul li strong {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
-  
-  ul li p {
-    margin: 5px 0;
-  }
-  
-  @media (max-width: 768px) {
-    .article-container {
-      padding: 10px;
-    }
-  
-    h1 {
-      font-size: 20px;
-    }
-  
-    p, ul li p {
-      font-size: 16px;
-    }
-  
-    ul li strong {
-      font-size: 16px;
-    }
-  }
-  
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  font-family: 'LINE Seed Sans TH', sans-serif;
+}
+
+.article-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000;
+}
+
+.article-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #757575;
+}
+
+.article-author,
+.article-date,
+.article-views {
+  margin-right: 10px;
+}
+
+.article-content {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.section-text {
+  margin-bottom: 20px;
+}

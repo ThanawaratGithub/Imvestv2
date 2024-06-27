@@ -67,7 +67,7 @@
     width: 100%;
     padding: 10px 0;
     border-bottom: 1px solid #e0e0e0;
-    font-size: 14px;
+    font-size: 18px;
     color: #757575;
   }
   
@@ -147,7 +147,7 @@
   }
   
   .submit-button {
-    background: #00acc1;
+    background: #12574C;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -158,6 +158,8 @@
     transition: background-color 0.3s;
     margin: 20px auto;
     display: block;
+    font-family: "LINE Seed Sans TH", sans-serif;
+
   }
   
   .submit-button:hover {

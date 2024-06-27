@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './SignInComponent.css';
-
+import { useNavigate } from 'react-router-dom';
 const SignInComponent = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
-
+  const navigate = useNavigate()
   const handleEmailSignIn = async (event) => {
     event.preventDefault();
     try {
@@ -29,6 +29,9 @@ const SignInComponent = () => {
     <div className="signin-page">
       <div className="signin-section">
         <div className="signin-container">
+        <button className="back-button"  onClick={() => navigate('/')}>
+            ← 
+          </button>
           <h1 className="signin-title">ยินดีต้อนรับ</h1>
           <p className="signin-subtitle">ลงชื่อเข้าใช้</p>
           <form onSubmit={handleEmailSignIn}>

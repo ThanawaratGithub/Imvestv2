@@ -55,7 +55,7 @@
 }
 
 .signin-button {
-  background: #00acc1;
+  background: rgba(0, 186, 157, 0.38);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -66,6 +66,8 @@
   transition: background-color 0.3s;
   margin: 20px auto;
   display: block;
+  font-family: "LINE Seed Sans TH", sans-serif;
+
 }
 
 .signin-button:hover {
@@ -87,10 +89,9 @@
 }
 
 .register-link {
-  color: #1E88E5;
+  color: #12574C;;
   font-size: 18px;
   font-weight: 700;
-  margin-left: 10px;
   text-decoration: none;
 }
 

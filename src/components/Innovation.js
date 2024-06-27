@@ -38,8 +38,10 @@ function Innovation(){
 
       </div>
       <div className='foo2'>(Coming Soon)</div>
-      <div className='foo3'>JAIBOON</div>
-      <div className='foo4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</div>
+      <div className='foo3'>TRENDIFY AI</div>
+      <div className='foo4'>Trendify AI เป็นเครื่องมือ AI ที่ออกแบบมาโดยเฉพาะสำหรับธุรกิจขนาดเล็ก
+และขนาดกลางในประเทศไทย เพื่อปฏิวัติกลยุทธ์การตลาดของคุณ สร้างเนื้อหาการตลาดที่น่าดึงดูดด้วยภาพที่ปรับแต่งได้  
+</div>
       <div className='foo5' style={{marginBottom:'30px'}}></div>
 
 

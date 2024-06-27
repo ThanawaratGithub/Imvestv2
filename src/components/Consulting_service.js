@@ -132,13 +132,15 @@ function Consulting_service() {
                 fontWeight: 400,
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+เราให้ความสำคัญกับการเข้าใจปัญหาธุรกิจของคุณอย่างถ่องแท้และมีความมุ่งมั่นที่
+จะช่วยเหลือธุรกิจของคุณผ่านการสร้างกลยุทธ์การเติบโตที่ยั่งยืนและสอดคล้องกับวิสัยทัศน์
+์และค่านิยมของคุณ โดยเรามีความเชี่ยวชาญใน 3 ด้าน ได้แก่ 
+<ul>
+<li>กลยุทธ์ธุรกิจ (Business Strategy)</li>
+<li>การตลาดและการสร้างแบรนด์ (Marketing & Branding)</li>
+<li>กลยุทธ์เชิงดิจิทัล (Digital Transformation)</li>
+
+</ul>
             </div>  
          
               <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'350px',height:'163px',background: 'linear-gradient(0deg, #C8F0C0 0%, rgba(217, 217, 217, 0.00) 100%)'}}>
@@ -146,7 +148,7 @@ function Consulting_service() {
                 fontFamily: '"LINE Seed Sans TH"',
                 fontSize: "24px",
                 fontStyle: "normal",
-                fontWeight: 700,lineHeight:'52px',color:'white',textAlign:'center'}}>
+                fontWeight: 700,lineHeight:'52px',color:'white',textAlign:'center'}} onClick={()=>{window.location.href = 'https://www.instagram.com/impvest_official/'}}>
                   <div>คุยกับเราเลย</div>
                 </div>
 
@@ -588,13 +590,12 @@ function Consulting_service() {
                 fontWeight: 400,
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+             บริการการวิเคราะห์กลยุทธ์ธุรกิจปัจจุบันของคุณ
+ผ่าน SWOT Analysis เพื่อช่วยให้คุณปรับปรุงกลยุทธ์ ให้สอดคล้องกับสภาพแวดล้อมทางธุรกิจที่เปลี่ยนแปลงไป  
+
+การยกระดับการดำเนินงาน (Operational Improvement):  เราช่วยคุณวิเคราะห์กระบวนการทำงานภายในองค์กร  เพื่อหาจุดที่สามารถปรับปรุงประสิทธิภาพ  ลดความสูญเปล่า  และเพิ่มผลผลิต
+
+การหาแหล่งทุน (Funding):  Impvest ช่วยเชื่อมต่อธุรกิจ SMEs ไทยกับแหล่งเงินทุนที่เหมาะสม  ไม่ว่าจะเป็น สินเชื่อธนาคาร  เงินลงทุนจาก Venture 
             </div>  
             <div
               style={{
@@ -978,13 +979,9 @@ Marketing & Branding
                 fontWeight: 400,
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+         กลยุทธ์การสร้างแบรนด์ (Brand Strategy):   เราช่วยคุณกำหนดจุดยืนของแบรนด์ (Brand Positioning) สร้างเอกลักษณ์ของแบรนด์ และพัฒนาแผนการสื่อสารการตลาด (Marketing Communication)  เพื่อให้แบรนด์ของคุณเป็นที่รู้จักและจดจำ  
+
+การบริหารความสัมพันธ์ลูกค้า (Customer Relationship Management: CRM):   Impvest ช่วยคุณออกแบบระบบ CRM  เพื่อติดตามความพึงพอใจของลูกค้า  สร้างความสัมพันธ์ที่ดีกับลูกค้า  และกระตุ้นให้ลูกค้ากลับมาซื้อซ้ำ  (Customer Retention)
             </div>  
 
 
@@ -1391,13 +1388,11 @@ Digital Transformation
                 fontWeight: 400,
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+บริการการให้คำปรึกษาด้าน Digital Transformation
+โดยเรามีความเชี่ยวชาญในด้านการจัดวางระบบ IT การเสริมสร้างการเติบโตด้วย Data และการเพิ่มประสิทธิภาพจาก AI
+
+ทางเราสามารถให้ความช่วยเหลือด้านการสร้างหน้าร้าน
+ออนไลน์ การพัฒนา Database และ Digital Product การทำ Data Analysis และการสร้าง Dashboard การลดเวลาทำงาน 
             </div>  
            
           </div>

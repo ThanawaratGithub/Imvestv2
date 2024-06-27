@@ -25,6 +25,7 @@ import innovation from "../assets/innovation.png";
 import collab from "../assets/Group 134.png"
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import collab_mol from "../assets/Group 5773.png"
 /* git rm -r --cached .
 git add --all .
 git commit -a -m "final draft v2"
@@ -204,12 +205,37 @@ function MainPage() {
               ผ่านการให้คำปรึกษา ให้ความรู้ และ สร้างนวัตกรรมต่าง ๆ เพื่อ
               เสริมสร้างศักยภาพให้กับผู้ประกอบการไทย
             </div>
+         
             <img
+              onClick={()=>{    window.location.href = 'https://www.instagram.com/impvest_official/';
+              }}
               className="tryer"
               src={tryer}
               style={{ marginLeft: "26px", marginTop: "40px" }}
             ></img>
+      
           </div>
+          <div className="mol_impact-section">
+
+      <div className="mol_impact-stats">
+        <div className="mol_impact-stat">
+        <h1 className="mol_impact-title" style = {{marginTop:'20px'}}>OUR IMPACT</h1>
+          <h3>12,000+</h3>
+          <p>Individuals Impacted</p>
+          <p>สร้างผลกระทบให้คนไทยมากกว่า 12,000 ราย</p>
+        </div>
+        <div className="mol_impact-stat">
+          <h3>300+</h3>
+          <p>Community Members</p>
+          <p>สร้างเครือข่ายเยาวชนไทย มากกว่า 300 ราย</p>
+        </div>
+        <div className="mol_impact-stat">
+          <h3>20+</h3>
+          <p>Collaborations</p>
+          <p>ร่วมมือผลักดัน SME ไทย กับมากกว่า 20 องค์กร</p>
+        </div>
+      </div>
+    </div>
           <div className="mol_service">
             {" "}
             <div
@@ -255,16 +281,17 @@ function MainPage() {
               >
                 <swiper-slide
                   style={{
-                    borderRadius: "0px 0px 70px 0px",
                     position: "relative",
                   }}
                 >
                   <img
-                    src={molser}
+                    src={talk}
                     style={{
+                      left:'80px',
+                      top:'120px',
                       position: "absolute",
-                      width: "325px",
-                      height: "325px",
+                      width: "160px",
+                      height: "160px",
                     }}
                   ></img>
                   <div
@@ -302,16 +329,17 @@ function MainPage() {
                 </swiper-slide>
                 <swiper-slide
                   style={{
-                    borderRadius: "0px 0px 70px 0px",
                     position: "relative",
                   }}
                 >
                   <img
-                    src={molser}
+                    src={book}
                     style={{
+                      left:'85px',
+                      top:'100px',
                       position: "absolute",
-                      width: "325px",
-                      height: "325px",
+                      width: "160px",
+                      height: "160px",
                     }}
                   ></img>
                   <div
@@ -342,23 +370,24 @@ function MainPage() {
                         fontWeight: 400,
                       }}
                     >
-                      ให้ความรู้และเสริมสร้างทักษะทางธุรกิจสำหรับ SME
-                      และบุคคลทั่วไป
+                      ให้ความรู้และเสริมสร้างทักษะทางธุรกิจ
+                      ผ่านบทความ คอร์สเรียน และงานสัมมนา
                     </div>
                   </div>
                 </swiper-slide>
                 <swiper-slide
                   style={{
-                    borderRadius: "0px 0px 70px 0px",
                     position: "relative",
                   }}
                 >
                   <img
-                    src={molser}
+                    src={innovation}
                     style={{
+                      left:'85px',
+                      top:'100px',
                       position: "absolute",
-                      width: "325px",
-                      height: "325px",
+                      width: "160px",
+                      height: "160px",
                     }}
                   ></img>
                   <div
@@ -389,8 +418,8 @@ function MainPage() {
                         fontWeight: 400,
                       }}
                     >
-                      สร้างนวัตกรรมดิจิทัลต่าง ๆ เพื่อสนับสนุน
-                      การดำเนินการธุรกิจของ SME และบุคคลทั่วไป
+                      สร้างนวัตกรรมดิจิทัลและปัญญาประดิษฐ์
+                      เพื่อสนับสนุนการดำเนินการธุรกิจ
                     </div>
                   </div>
                 </swiper-slide>
@@ -687,6 +716,8 @@ function MainPage() {
             </div>
           </div>
           <img src={cheatail} style={{ width: "100%" }}></img>
+          <img src={collab_mol} style={{ width: "100%" ,marginBottom:'20px'}}></img>
+
           <div className="momofooter">
             <img src={pic2} className="foot1"></img>
             <div className="foot2">

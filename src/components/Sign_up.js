@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Sign_up.css';
+import log from "../assets/Imvest_logo.png";
 
 const SignUpComponent = () => {
   const [formData, setFormData] = useState({
@@ -45,27 +46,21 @@ const SignUpComponent = () => {
     <div className="profile-setup-page">
       <div className="profile-setup-container">
         <div className="profile-sidebar">
-          <img src="profile-picture.png" alt="Profile" className="profile-picture" />
-          <h2 className="profile-name">ชื่อจริง-นามสกุล</h2>
           <div className="auth-method">
-            <img src="apple-icon.png" alt="Apple" />
-            <span>ลงชื่อเข้าใช้ผ่าน Apple</span>
+            <img style={{width:'281px',height:'72px'}} src= {log} alt="Apple" />
           </div>
           <div className="progress-steps">
-            <div className="step completed">
+            <div className="step actived">
               <span>ลงทะเบียน</span>
             </div>
-            <div className="step active">
+            <div className="step completed">
               <span>รายละเอียดโปรไฟล์</span>
             </div>
-            <div className="step">
-              <span>สรุปโปรไฟล์</span>
-            </div>
+            
           </div>
         </div>
         <div className="profile-form">
           <h2 className="form-title">
-            <img src="logo-icon.png" alt="Logo" className="form-title-logo" />
             การตั้งค่าโปรไฟล์
           </h2>
           <form onSubmit={handleSubmit}>

@@ -123,14 +123,15 @@ function Consulting_portfolio() {
             >
            ด้วยปัญหาธุรกิจในก็ตาม ทีมของเรามีความแน่แน่และมีความยินดี
 ที่จะให้ความช่วยเหลือกับ SME ทุกขนาด  ไม่ว่าจะเป็นธุรกิจที่กำลังเริ่มก่อตั้ง
-หรือธุรกิจที่มีรากฐานมาเป็นเวลานานแล้
+หรือธุรกิจที่มีรากฐานมาเป็นเวลานานแล้ว
+<img src={mol_port} style={{marginTop:'30px', marginBottom:'10px'}}></img>
+
             </div>  
-            <img src={mol_port} style={{marginTop:'29px',marginBottom:'30px'}}></img>
 
                
    
             </div>
-            <div className="momofooter" style={{marginLeft:'auto',marginRight:'auto',marginTop:'1750px'}}>
+            <div className="momofooter" style={{marginLeft:'auto',marginRight:'auto',marginTop:'1640px'}}>
             <img src={pic2} className="foot1" ></img>
             <div className="foot2">
             <div style={{color:'white',display:'flex',gap:'90px',marginBottom:'32px',marginTop:'16px',lineHeight:'30px'}}>

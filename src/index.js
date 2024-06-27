@@ -36,7 +36,7 @@ root.render(
           path="/Consulting_article"
           element={
             <>
-            <PrivateRoute>       <Consulting_article /></PrivateRoute>
+             <Consulting_article />
        
             </>
           }
@@ -46,7 +46,7 @@ root.render(
           path="/Consulting_course"
           element={
             <>
-              <PrivateRoute><Consulting_course /></PrivateRoute>
+             <Consulting_course />
             </>
           }
         ></Route>

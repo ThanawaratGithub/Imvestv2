@@ -2,8 +2,12 @@
 body {
   margin: 0;
   font-family: "LINE Seed Sans TH", sans-serif;
+  
 }
-
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit; /* This ensures the link color remains the same */
+}
 /* Main Image Styles */
 .main_img {
   position: relative;
